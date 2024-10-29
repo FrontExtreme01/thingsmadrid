@@ -1,0 +1,62 @@
+---
+const navigation = [
+  { title: "Tours", link: "#" },
+  { title: "Restaurants", link: "#" },
+  { title: "Blog", link: "#" },
+  { title: "Contact", link: "#" },
+];
+---
+
+<header class="bg-white sticky top-0 z-10">
+  <nav
+    class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
+    aria-label="Global"
+  >
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Things to do in Madrid</span>
+        <img
+          class="h-24 w-auto"
+          src="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/logo-horizontal.webp"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="size-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      {
+        navigation.map((nav) => (
+          <a
+            href={nav.link}
+            class="text-lg hover:text-red-700 uppercase font-extrabold leading-6 text-gray-600"
+          >
+            {nav.title}
+          </a>
+        ))
+      }
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="#" class="rounded-lg text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"><i class="fa-solid fa-phone-volume fa-shake"></i> Call Now</a>
+    </div>
+  </nav>
+</header>
