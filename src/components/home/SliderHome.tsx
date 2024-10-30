@@ -7,10 +7,16 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // Importar CSS Module
 import styles from '../../styles/slider.module.css';
 
+import img1 from '../../img/home/slider/amazonia-adventure-park-near-madrid-zipline.webp'
+import img2 from '../../img/home/slider/atletico-de-madrid-stadium-and-museum-tour.webp'
+import img3 from '../../img/home/slider/chambao-madrid-best-restaurant-to-eat-spanish-cuisine.webp'
+import img4 from '../../img/home/slider/iberian-ham-and-wine-tasting-in-madrid-tours-and-activities.webp'
+
 const slides = [
-    { id: 1, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/slider/atletico-de-madrid-stadium-and-museum-tour.webp" },
-    { id: 2, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/slider/iberian-ham-and-wine-tasting-in-madrid-tours-and-activities.webp" },
-    { id: 3, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/slider/chambao-madrid-best-restaurant-to-eat-spanish-cuisine.webp" }
+    { id: 1, img: img1, title: "amazonia adventure" },
+    { id: 2, img: img2, title: "atletico madrid" },
+    { id: 3, img: img3, title: "chambao restaurant" },
+    { id: 3, img: img4, title: "iberian ham" }
 ]
 
 export default function SliderHome() {
@@ -35,7 +41,7 @@ export default function SliderHome() {
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <img className={styles.imgSlider} src={slide.img} />
+                        <img className={styles.imgSlider} src={slide.img.src} alt={slide.title} />
                     </SwiperSlide>
                 ))}
             </Swiper>

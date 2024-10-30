@@ -1,40 +1,56 @@
 ---
-
+import Image from "astro/components/Image.astro"
+import logo from "../img/logos/logo-footer-thigns-to-do-in-madrid.webp"
 ---
 
 <footer class="bg-sky-900">
-    <div class="container mx-auto text-center py-20">
-        <div class="flex justify-center flex-wrap gap-5">
-            <a
-                class="text-white font-bold hover:text-amber-400 text-2xl"
-                href="#"><i class="fa-brands fa-facebook-f"></i></a
+    <div class="container mx-auto text-center pt-20 pb-5">
+        <div class="flex justify-center flex-wrap gap-14 mb-5">
+            <a  aria-label="go to the facebook"
+                class="text-white font-bold hover:text-amber-400 text-4xl"
+                href="https://www.facebook.com/thingstodoinmadrid"
+                ><i class="fa-brands fa-facebook-f"></i></a
             >
-            <a
-                class="text-white font-bold hover:text-amber-400 text-2xl"
-                href="#"><i class="fa-brands fa-instagram"></i></a
+            <a aria-label="go to the instagram"
+                class="text-white font-bold hover:text-amber-400 text-4xl"
+                href="https://www.instagram.com/thingstodoinmadrid/"
+                ><i class="fa-brands fa-instagram"></i></a
             >
-            <a
-                class="text-white font-bold hover:text-amber-400 text-2xl"
-                href="#"><i class="fa-brands fa-youtube"></i></a
+            <a aria-label="go to the twitter"
+                class="text-white font-bold hover:text-amber-400 text-4xl"
+                href="https://www.youtube.com/@ThingsToDoInMadrid"
+                ><i class="fa-brands fa-youtube"></i></a
             >
-            <a
-                class="text-white font-bold hover:text-amber-400 text-2xl"
-                href="#"><i class="fa-brands fa-tiktok"></i></a
+            <a aria-label="go to the tiktok" 
+                class="text-white font-bold hover:text-amber-400 text-4xl"
+                href="https://www.tiktok.com/@thingstodoinmadrid"
+                ><i class="fa-brands fa-tiktok"></i></a
             >
-            <a
-                class="text-white font-bold hover:text-amber-400 text-2xl"
-                href="#"><i class="fa-solid fa-location-dot"></i></a
+            <a aria-label="go to the linkedin"
+                class="text-white font-bold hover:text-amber-400 text-4xl"
+                href="https://www.google.com/maps/place/Things+to+do+in+Madrid/@40.4359765,-3.6906525,17z/data=!4m6!3m5!1s0xd422985069773bf:0xe2ece3bdd86e7a12!8m2!3d40.4359765!4d-3.6906525!16s%2Fg%2F11v05x80p1?entry=ttu"
+                ><i class="fa-solid fa-location-dot"></i></a
             >
         </div>
-        <img class="mx-auto"
-            src="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/logo-footer-thigns-to-do-in-madrid.webp"
-            alt=""
-        />
-        <ul class="flex justify-center flex-wrap gap-5 text-white">
-            <li><a href="#"></a><i class="fa-solid fa-angle-right"></i> About Us</li>
-            <li><a href="#"></a><i class="fa-solid fa-angle-right"></i> Terms of services</li>
-            <li><a href="#"></a><i class="fa-solid fa-angle-right"></i> Privacy Policy</li>
+        <a href="/">
+            <Image src={logo} alt="things to do in madrid" class="mx-auto"/>
+            </a
+        >
+        <ul class="flex justify-center flex-wrap gap-14 text-white mt-10">
+            <li>
+                <a class="hover:text-amber-400" href="/about"><i class="fa-solid fa-angle-right"></i> About Us</a>
+            </li>
+            <li>
+                <a class="hover:text-amber-400" href="/terms"><i class="fa-solid fa-angle-right"></i> Terms of services</a>
+            </li>
+            <li>
+                <a class="hover:text-amber-400" href="/privacy"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a>
+            </li>
         </ul>
-        <p class="text-white"> &copy; 2014 - 2022 <span class="font-bold">Things To Do In Madrid</span>. All Rights Reserved</p>
+        <p class="text-white mt-10 text-sm">
+            &copy; 2014 - 2022 <span class="font-bold"
+                >Things To Do In Madrid</span
+            >. All Rights Reserved
+        </p>
     </div>
 </footer>
