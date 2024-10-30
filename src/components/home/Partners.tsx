@@ -2,27 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 
-import img1 from "../../img/partners/1-stripe-logo.webp"
-import img2 from "../../img/partners/2-expedia-logo.webp"
-import img3 from "../../img/partners/3-viator-logo.webp"
-import img4 from "../../img/partners/4-get-your-guide-logo.webp"
-import img5 from "../../img/partners/6-bokun-logo.webp"
-import img6 from "../../img/partners/amigo-tours-logo-partner.webp"
-import img7 from "../../img/partners/atletico-de-madrid-logo-partner.webp"
-import img8 from "../../img/partners/zuazo-gastroboutique-logo-partner.webp"
-
-const partners = [
-    { id: 1, imagen: img1, title: "stripe" },
-    { id: 2, imagen: img2, title: "expedia" },
-    { id: 3, imagen: img3, title: "viator" },
-    { id: 4, imagen: img4, title: "get your guide" },
-    { id: 5, imagen: img5, title: "bokun" },
-    { id: 6, imagen: img6, title: "amigo tours" },
-    { id: 7, imagen: img7, title: "atletico de madrid" },
-    { id: 7, imagen: img8, title: "zuazo gastroboutique" }
-]
-
-export default function Partners() {
+export default function Partners({ partners }: any) {
     return (
         <div className="py-10 px-5 md:px-24 container mx-auto text-center">
             <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Partners</h2>
@@ -56,7 +36,7 @@ export default function Partners() {
                 modules={[Autoplay]}
                 className="mySwiper"
             >
-                {partners.map((part) => (
+                {partners.map((part: any) => (
                     <SwiperSlide key={part.id}>
                         <img src={part.imagen.src} alt={part.title} decoding="async" loading="lazy" />
                     </SwiperSlide>
