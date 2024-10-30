@@ -51,7 +51,7 @@ export default function Testimonials() {
                             </div>
                             <p>{test.text}</p>
                             <div>
-                                <img src={test.img} className={`${styles.testimonialImg}`} alt={test.user} loading="lazy" />
+                                <img src={test.img} className={`${styles.testimonialImg}`} height="200" width="200" alt={test.user} loading="lazy" />
                                 <h3>{test.user}</h3>
                             </div>
                         </div>

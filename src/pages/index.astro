@@ -4,7 +4,7 @@ import Partners from "../components/home/Partners";
 import SliderHome from "../components/home/SliderHome";
 import Testimonials from "../components/home/Testimonials";
 import BaseLayout from "../layout/BaseLayout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 import img1 from "../img/home/slider/amazonia-adventure-park-near-madrid-zipline.webp";
 import img2 from "../img/home/slider/atletico-de-madrid-stadium-and-museum-tour.webp";
@@ -26,10 +26,10 @@ const seo = {
 };
 
 const slides = [
-	{ id: 1, img: img1, title: "amazonia adventure" },
-	{ id: 2, img: img2, title: "atletico madrid" },
-	{ id: 3, img: img3, title: "chambao restaurant" },
-	{ id: 3, img: img4, title: "iberian ham" },
+	{ id: 1, img: img1, title: "amazonia adventure", carga: "" },
+	{ id: 2, img: img2, title: "atletico madrid", carga: "lazy" },
+	{ id: 3, img: img3, title: "chambao restaurant", carga: "lazy" },
+	{ id: 3, img: img4, title: "iberian ham", carga: "lazy" },
 ];
 
 const partners = [
@@ -45,7 +45,7 @@ const partners = [
 ---
 
 <BaseLayout seo={seo}>
-	<SliderHome client:idle slides={slides} />
+	<SliderHome client:load slides={slides} />
 	<Intro />
 	<Testimonials client:visible />
 	<Partners client:visible partners={partners} />

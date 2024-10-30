@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-import logo from '../img/logos/logo-horizontal.webp';
+import { Image } from "astro:assets";
+import logo from "../img/logos/logo-horizontal.webp";
 
 const navigation = [
   { title: "Tours", link: "/tours" },
@@ -8,7 +8,6 @@ const navigation = [
   { title: "Blog", link: "/blog" },
   { title: "Contact", link: "/contact" },
 ];
-
 ---
 
 <header class="bg-white sticky top-0 z-10">
@@ -19,13 +18,17 @@ const navigation = [
     <div class="flex lg:flex-1">
       <a href="/" aria-label="go to main" class="-m-1.5 p-1.5">
         <span class="sr-only">Things to do in Madrid</span>
-        <Image src={logo} alt="Things to do in Madrid" alt="logo things to do in madrid" class="h-24 w-auto" />
+        <Image
+          src={logo}
+          alt="logo things to do in madrid"
+          class="h-24 w-auto"
+        />
       </a>
     </div>
     <div class="flex lg:hidden">
       <button
         type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -56,7 +59,43 @@ const navigation = [
       }
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="tel:+34672246803" aria-label="call us" class="rounded-lg text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"><i class="fa-solid fa-phone-volume fa-shake"></i> Call Now</a>
+      <a
+        href="tel:+34672246803"
+        aria-label="call us"
+        class="rounded-lg text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"
+        ><i class="fa-solid fa-phone-volume fa-shake"></i> Call Now</a
+      >
+    </div>
+  </nav>
+
+  <!-- Mobile -->
+  <nav class="flex flex-column">
+    <div
+      class="fixed top-0 left-0 bg-black/75 w-full h-full z-10 overlayMobile"
+    >
+    </div>
+    <div class="menuMobile z-20">
+      <div class="bg-white h-full py-24 px-5">
+        <a href="/" aria-label="go to main">
+          <Image
+            src={logo}
+            alt="logo things to do in madrid"
+            class="h-auto w-auto mb-5"
+          />
+        </a>
+        <div class="flex flex-col space-y-5">
+          {
+            navigation.map((nav) => (
+              <a
+                href={nav.link}
+                class="text-lg hover:text-red-700 uppercase font-extrabold leading-6 text-gray-600"
+              >
+                {nav.title}
+              </a>
+            ))
+          }
+        </div>
+      </div>
     </div>
   </nav>
 </header>

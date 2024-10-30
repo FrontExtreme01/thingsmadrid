@@ -38,7 +38,7 @@ export default function Partners({ partners }: any) {
             >
                 {partners.map((part: any) => (
                     <SwiperSlide key={part.id}>
-                        <img src={part.imagen.src} alt={part.title} decoding="async" loading="lazy" />
+                        <img src={part.imagen.src} width="350" height="300" alt={part.title} decoding="async" loading="lazy" />
                     </SwiperSlide>
                 ))}
             </Swiper>
