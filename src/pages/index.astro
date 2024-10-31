@@ -4,7 +4,6 @@ import Partners from "../components/home/Partners";
 import SliderHome from "../components/home/SliderHome";
 import Testimonials from "../components/home/Testimonials";
 import BaseLayout from "../layout/BaseLayout.astro";
-import { Image } from "astro:assets";
 
 import img1 from "../img/home/slider/amazonia-adventure-park-near-madrid-zipline.webp";
 import img2 from "../img/home/slider/atletico-de-madrid-stadium-and-museum-tour.webp";
@@ -12,7 +11,7 @@ import img3 from "../img/home/slider/chambao-madrid-best-restaurant-to-eat-spani
 import img4 from "../img/home/slider/iberian-ham-and-wine-tasting-in-madrid-tours-and-activities.webp";
 
 import imgpar1 from "../img/partners/1-stripe-logo.webp";
-import imgpar2 from "../img/partners/2-expedia-logo.webp";
+import imgpar2 from "../img/partners/2-expedia-logo.webp";	
 import imgpar3 from "../img/partners/3-viator-logo.webp";
 import imgpar4 from "../img/partners/4-get-your-guide-logo.webp";
 import imgpar5 from "../img/partners/6-bokun-logo.webp";
@@ -20,9 +19,9 @@ import imgpar6 from "../img/partners/amigo-tours-logo-partner.webp";
 import imgpar7 from "../img/partners/atletico-de-madrid-logo-partner.webp";
 import imgpar8 from "../img/partners/zuazo-gastroboutique-logo-partner.webp";
 
-import imgtest1 from '../img/home/testimonial/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp'
-import imgtest2 from '../img/home/testimonial/cenotes9.webp'
-import imgtest3 from '../img/home/testimonial/tequilatasting1.webp'
+import imgtest1 from '../img/home/testimonial/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp';
+import imgtest2 from '../img/home/testimonial/cenotes9.webp';
+import imgtest3 from '../img/home/testimonial/tequilatasting1.webp';
 
 const seo = {
 	title: "Simple Blog | A template by Little Sticks",
@@ -30,10 +29,10 @@ const seo = {
 };
 
 const slides = [
-	{ id: 1, img: img1, title: "amazonia adventure", carga: "" },
-	{ id: 2, img: img2, title: "atletico madrid", carga: "lazy" },
-	{ id: 3, img: img3, title: "chambao restaurant", carga: "lazy" },
-	{ id: 3, img: img4, title: "iberian ham", carga: "lazy" },
+	{ id: 1, img: img1, title: "amazonia adventure", carga: "", priority: "high" },
+	{ id: 2, img: img2, title: "atletico madrid", carga: "lazy", priority: "low" },
+	{ id: 3, img: img3, title: "chambao restaurant", carga: "lazy", priority: "low" },
+	{ id: 3, img: img4, title: "iberian ham", carga: "lazy", priority: "low" },
 ];
 
 const partners = [
