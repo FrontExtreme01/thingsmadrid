@@ -5,7 +5,7 @@ import logo from "../img/logos/logo-footer-thigns-to-do-in-madrid.webp"
 
 <footer class="bg-sky-900">
     <div class="container mx-auto text-center pt-20 pb-5">
-        <div class="flex justify-center flex-wrap gap-14 mb-5">
+        <div class="flex justify-center flex-wrap gap-7 sm:gap-14 mb-5">
             <a  aria-label="go to the facebook"
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.facebook.com/thingstodoinmadrid"
@@ -33,10 +33,10 @@ import logo from "../img/logos/logo-footer-thigns-to-do-in-madrid.webp"
             >
         </div>
         <a href="/">
-            <Image src={logo} alt="things to do in madrid" class="mx-auto"/>
+            <Image src={logo} alt="things to do in madrid" class="mx-auto" widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}/>
             </a
         >
-        <ul class="flex justify-center flex-wrap gap-14 text-white mt-10">
+        <ul class="flex justify-center flex-wrap gap-5 sm:gap-14 text-white mt-10">
             <li>
                 <a class="hover:text-amber-400" href="/about"><i class="fa-solid fa-angle-right"></i> About Us</a>
             </li>

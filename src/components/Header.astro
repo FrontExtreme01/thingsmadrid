@@ -10,7 +10,7 @@ const navigation = [
 ];
 ---
 
-<header class="bg-white sticky top-0 z-10">
+<header class="bg-white sticky top-0 z-10 shadow-md">
   <nav
     class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
     aria-label="Global"
@@ -22,6 +22,7 @@ const navigation = [
           src={logo}
           alt="logo things to do in madrid"
           class="h-24 w-auto"
+          widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
         />
       </a>
     </div>
@@ -69,11 +70,12 @@ const navigation = [
   </nav>
 
   <!-- Mobile -->
-  <nav class="flex flex-column">
+  <nav class="flex flex-column relative">
     <div
-      class="fixed top-0 left-0 bg-black/75 w-full h-full z-10 overlayMobile"
+      class="fixed top-0 left-0 bg-sky-900/[.80] w-full h-full z-10 overlayMobile"
     >
     </div>
+    <span class="bg-red-700 text-white rounded-full"><i class="fa-solid fa-xmark"></i></span>
     <div class="menuMobile z-20">
       <div class="bg-white h-full py-24 px-5">
         <a href="/" aria-label="go to main">
@@ -81,6 +83,7 @@ const navigation = [
             src={logo}
             alt="logo things to do in madrid"
             class="h-auto w-auto mb-5"
+            widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
           />
         </a>
         <div class="flex flex-col space-y-5">

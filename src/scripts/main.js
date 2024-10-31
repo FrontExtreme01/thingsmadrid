@@ -1,3 +1,5 @@
+import AOS from 'aos';
+AOS.init()
 
 document.querySelector('.navbarMobile').addEventListener('click', () => {
     document.querySelector('.menuMobile').classList.toggle('expanded');

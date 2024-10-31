@@ -15,7 +15,7 @@ const testimonial = [
 
 export default function Testimonials() {
     return (
-        <div className="relative pt-5 pb-20 px-5 md:px-24 container mx-auto text-center">
+        <div className="relative pt-5 pb-20 px-5 md:px-24 container mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
             <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Customer Reviews</h2>
             <Swiper
                 pagination={{

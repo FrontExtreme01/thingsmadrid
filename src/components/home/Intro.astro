@@ -20,9 +20,9 @@ import img4 from "../../img/home/the-best-tours-in-madrid-things-to-do-activitie
         </p>
 
         <div class="columns-1 md:columns-3 mt-16 space-y-5">
-            <Image src={img1} alt="segure checkout" />
-            <Image src={img2} alt="our advantages" />
-            <Image src={img3} alt="read our blog" />
+            <Image src={img1} alt="segure checkout" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img1.width}px`} />
+            <Image src={img2} alt="our advantages" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img2.width}px`}/>
+            <Image src={img3} alt="read our blog" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img3.width}px`}/>
         </div>
     </div>
 </section>
@@ -32,7 +32,7 @@ import img4 from "../../img/home/the-best-tours-in-madrid-things-to-do-activitie
 >
     <div class="container mx-auto px-10">
         <div class="flex flex-col md:flex-row py-8 items-center">
-            <div class="text-center md:text-left basis-full md:basis-1/2">
+            <div class="text-center md:text-left basis-full md:basis-1/2" data-aos="fade-right" data-aos-delay="300">
                 <h2 class="text-4xl md:text-5xl text-white italic">
                     Tours And Activities In Madrid
                 </h2>
@@ -45,7 +45,7 @@ import img4 from "../../img/home/the-best-tours-in-madrid-things-to-do-activitie
                     Tour.
                 </p>
                 <a
-                    class="text-xl md:text-2xl font-extrabold uppercase rounded transition duration-300 py-4 px-10 group bg-white text-red-800 hover:bg-amber-400 hover:text-white"
+                    class="text-base sm:text-xl md:text-2xl font-extrabold uppercase rounded transition duration-300 py-4 px-10 group bg-white text-red-800 hover:bg-amber-400 hover:text-white"
                     href="/tours"
                 >
                     Tours in Madrid <i
@@ -53,8 +53,9 @@ import img4 from "../../img/home/the-best-tours-in-madrid-things-to-do-activitie
                     ></i>
                 </a>
             </div>
-            <div class="basis-full md:basis-1/2 mt-12 md:mt-auto">
-                <Image src={img4} alt="the best tours" class="mx-auto px-5" />
+            <div class="basis-full md:basis-1/2 mt-12 md:mt-auto" data-aos="fade-left" data-aos-delay="300">
+                <Image src={img4} alt="the best tours" class="mx-auto px-5" widths={[240, 603, img4.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 603px,  ${img4.width}px`} />
             </div>
         </div>
     </div>

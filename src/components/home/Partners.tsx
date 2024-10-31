@@ -4,7 +4,7 @@ import { Autoplay } from 'swiper/modules';
 
 export default function Partners({ partners }: any) {
     return (
-        <div className="py-10 px-5 md:px-24 container mx-auto text-center">
+        <div className="py-10 px-5 md:px-24 container mx-auto text-center" data-aos="zoom-in" data-aos-delay="500">
             <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Partners</h2>
             <p className="text-lg md:text-2xl mb-10">
                 Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry.
