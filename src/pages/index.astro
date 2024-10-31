@@ -20,6 +20,10 @@ import imgpar6 from "../img/partners/amigo-tours-logo-partner.webp";
 import imgpar7 from "../img/partners/atletico-de-madrid-logo-partner.webp";
 import imgpar8 from "../img/partners/zuazo-gastroboutique-logo-partner.webp";
 
+import imgtest1 from '../img/home/testimonial/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp'
+import imgtest2 from '../img/home/testimonial/cenotes9.webp'
+import imgtest3 from '../img/home/testimonial/tequilatasting1.webp'
+
 const seo = {
 	title: "Simple Blog | A template by Little Sticks",
 	description: "A simple blog template for Astro by Little Sticks",
@@ -42,11 +46,18 @@ const partners = [
 	{ id: 7, imagen: imgpar7, title: "atletico de madrid" },
 	{ id: 7, imagen: imgpar8, title: "zuazo gastroboutique" },
 ];
+
+const testimonials = [
+    { id: 1, img: imgtest1, user: "Sarah Black", text: "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid." },
+    { id: 2, img: imgtest2, user: "Susan Brown", text: "The tour was a great way to learn about the history and culture of Madrid. The guide was knowledgeable and enthusiastic, and the tour was well-organized" },
+    { id: 3, img: imgtest3, user: "Peter Jones", text: "The tour was informative and well-organized, but it was a bit too long for my liking. I would have preferred a shorter tour that focused on the highlights." },
+    { id: 4, img: imgtest1, user: "Sarah Black", text: "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid." },
+]
 ---
 
 <BaseLayout seo={seo}>
 	<SliderHome client:load slides={slides} />
 	<Intro />
-	<Testimonials client:visible />
+	<Testimonials client:visible testimonials={testimonials} />
 	<Partners client:visible partners={partners} />
 </BaseLayout>

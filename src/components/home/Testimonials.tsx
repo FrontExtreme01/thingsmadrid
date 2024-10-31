@@ -6,14 +6,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // Importar CSS Module
 import styles from '../../styles/testimonial.module.css';
 
-const testimonial = [
-    { id: 1, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/testimonials/home/tequilatasting1.webp", user: "Sarah Black", text: "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid." },
-    { id: 2, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/testimonials/home/cenotes9.webp", user: "Susan Brown", text: "The tour was a great way to learn about the history and culture of Madrid. The guide was knowledgeable and enthusiastic, and the tour was well-organized" },
-    { id: 3, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/testimonials/home/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp", user: "Peter Jones", text: "The tour was informative and well-organized, but it was a bit too long for my liking. I would have preferred a shorter tour that focused on the highlights." },
-    { id: 4, img: "https://thingstodoinmadrid.jhonnycanul.pro/assets/img/testimonials/home/tequilatasting1.webp", user: "Sarah Black", text: "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid." },
-]
-
-export default function Testimonials() {
+export default function Testimonials({testimonials}:any) {
     return (
         <div className="relative pt-5 pb-20 px-5 md:px-24 container mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
             <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Customer Reviews</h2>
@@ -43,7 +36,7 @@ export default function Testimonials() {
                 modules={[Pagination, Autoplay]}
                 className={`mySwiper ${styles.testimonialSwip}`}
             >
-                {testimonial.map((test) => (
+                {testimonials.map((test:any) => (
                     <SwiperSlide key={test.id} className={`${styles.testimonialSlide}`}>
                         <div className={`${styles.testimonialItem}`}>
                             <div className={`${styles.stars}`}>
@@ -51,7 +44,7 @@ export default function Testimonials() {
                             </div>
                             <p>{test.text}</p>
                             <div>
-                                <img src={test.img} className={`${styles.testimonialImg}`} height="200" width="200" alt={test.user} loading="lazy" />
+                                <img src={test.img.src} className={`${styles.testimonialImg}`} height="200" width="200" alt={test.user} loading="lazy" />
                                 <h3>{test.user}</h3>
                             </div>
                         </div>

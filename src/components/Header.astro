@@ -29,7 +29,7 @@ const navigation = [
     <div class="flex lg:hidden">
       <button
         type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile"
+        class="ml-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -75,9 +75,9 @@ const navigation = [
       class="fixed top-0 left-0 bg-sky-900/[.80] w-full h-full z-10 overlayMobile"
     >
     </div>
-    <span class="bg-red-700 text-white rounded-full"><i class="fa-solid fa-xmark"></i></span>
     <div class="menuMobile z-20">
-      <div class="bg-white h-full py-24 px-5">
+      <span class="btnClose absolute top-5 right-2 z-30 bg-red-700 transition duration-400 cursor-pointer hover:bg-red-600 text-white rounded-full w-9 h-9 grid place-items-center"><i class="fa-solid fa-xmark"></i></span>
+      <div class="bg-white h-full py-10 px-5">
         <a href="/" aria-label="go to main">
           <Image
             src={logo}

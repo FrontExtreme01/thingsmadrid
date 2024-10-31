@@ -29,7 +29,7 @@ export default function SliderHome({ slides }: any) {
             >
                 {slides.map((slide: any) => (
                     <SwiperSlide key={slide.id}>
-                        <img className={styles.imgSlider} width="1920" height="994" src={slide.img.src} alt={slide.title} loading={slide.carga} decoding="async" fetchPriority="high" />
+                        <img className={styles.imgSlider} width="1920" height="994" src={slide.img.src} alt={slide.title} loading={slide.carga} decoding="async" fetchPriority="high" srcSet={`${slide.img.src} 240, ${slide.img.src} 600, ${slide.img.src} 720, ${slide.img.src} 840, ${slide.img.src} 994 `} sizes={`(max-width: 360px) 240px, (max-width: 640px) 600px, (max-width: 768px) 720px, (max-width: 1024px) 840px,  ${slide.img.width}px`} />
                     </SwiperSlide>
                 ))}
             </Swiper>
