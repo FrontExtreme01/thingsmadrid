@@ -1,7 +1,182 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
+import Card from "../components/tours/Card.astro";
+import Partners from "../components/home/Partners";
+
+import tours from "../data/toursEn.json";
+
+const seo = {
+    title: "Tours Archive - Things to do in Madrid Tours Agency",
+};
+
+import imgpar1 from "../img/partners/1-stripe-logo.webp";
+import imgpar2 from "../img/partners/2-expedia-logo.webp";
+import imgpar3 from "../img/partners/3-viator-logo.webp";
+import imgpar4 from "../img/partners/4-get-your-guide-logo.webp";
+import imgpar5 from "../img/partners/6-bokun-logo.webp";
+import imgpar6 from "../img/partners/amigo-tours-logo-partner.webp";
+import imgpar7 from "../img/partners/atletico-de-madrid-logo-partner.webp";
+import imgpar8 from "../img/partners/zuazo-gastroboutique-logo-partner.webp";
+
+const partners = [
+    { id: 1, imagen: imgpar1, title: "stripe" },
+    { id: 2, imagen: imgpar2, title: "expedia" },
+    { id: 3, imagen: imgpar3, title: "viator" },
+    { id: 4, imagen: imgpar4, title: "get your guide" },
+    { id: 5, imagen: imgpar5, title: "bokun" },
+    { id: 6, imagen: imgpar6, title: "amigo tours" },
+    { id: 7, imagen: imgpar7, title: "atletico de madrid" },
+    { id: 7, imagen: imgpar8, title: "zuazo gastroboutique" },
+];
 ---
 
-<BaseLayout>
-    <h1>Tours</h1>
+<BaseLayout seo={seo}>
+    <section
+        class="bg-[linear-gradient(rgba(0,74,124,0.5),rgba(0,74,124,0.5)),url('/things-to-do-in-madrid-tours-and-activities.webp')] bg-no-repeat bg-center"
+    >
+        <div class="container mx-auto py-32 md:py-60">
+            <h1 class="text-5xl italic font-extrabold text-center text-white">
+                The Best Tours in Madrid
+            </h1>
+        </div>
+    </section>
+
+    <section class="container mx-auto my-10">
+        <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
+            As one of the most vibrant and lively cities in Europe, Madrid is a
+            great destination for anyone looking to experience some of the best
+            attractions and activities that the city has to offer. If you are
+            planning a <strong>trip to Madrid</strong> and are interested in discovering
+            all of the amazing things that this city has to offer, then you might
+            want to consider taking a tour of the city. <strong
+                >Tours in Madrid</strong
+            > are an excellent way to explore the city and get a glimpse into the
+            local culture and history.
+        </p>
+        <div
+            class="flex flex-col md:flex-row py-8 items-center flex-wrap space-y-7"
+        >
+            {tours.map((tour: any) => <Card key={tour.id} tour={tour} />)}
+        </div>
+    </section>
+
+    <section class="container mx-auto my-10">
+        <h2 class="text-4xl text-red-700">Stadium Tours in Madrid</h2>
+        <p class="mb-7">
+            A great way to experience the city’s rich sporting history. <strong
+                >The Santiago Bernabeu Stadium</strong
+            >, home to <strong>Real Madrid</strong>, and <strong
+                >Territorio Atleti</strong
+            >, home of <strong>Atletico de Madrid</strong>. Those are the most
+            iconic stadiums in the world, and a tour of those stadiums offers
+            visitors a chance to see behind the scenes and learn about the
+            club’s history. Delve into the dressing rooms, the press room, and
+            the trophy room, where visitors can see some of the club’s most
+            prestigious trophies. If you are a football fan, then a stadium tour
+            in Madrid is a must-do activity.
+        </p>
+
+        <h2 class="text-4xl text-red-700">Culture Activities in Madrid</h2>
+        <p class="mb-7">
+            Madrid is a city <strong>rich in culture</strong> and history, and there
+            are countless <strong>cultural activities</strong> to enjoy. The city
+            boasts <strong>world-class museums</strong>. Madrid is home to
+            numerous
+            <strong>cultural centers</strong> that host exhibitions, <strong
+                >concerts, and theater performances</strong
+            > throughout the year.
+        </p>
+
+        <h2 class="text-4xl text-red-700">City Tours in Madrid</h2>
+        <p class="mb-7">
+            Madrid and its surrounding cities, consider a city tour that
+            includes <strong>Toledo, Segovia, and Avila</strong>. You can
+            explore the stunning <strong>Royal Palace of Madrid</strong>, marvel
+            at the iconic <strong>Cibeles Fountain</strong>, and relax in the
+            picturesque <strong>Retiro Park</strong>. Check out more <strong
+                >places to visit in Madrid</strong
+            > and near the city.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Museums in Madrid</h3>
+        <p class="mb-7">
+            Madrid is home to some of the <strong>best museums in Europe</strong
+            >. The city has a rich cultural heritage, and its museums reflect
+            this. Some of the most <strong>popular museums in Madrid</strong> include
+            the <strong>Prado Museum</strong>, the <strong
+                >Reina Sofia Museum</strong
+            >, and the Thyssen-Bornemisza Museum. These museums are home to some
+            of the most important works of art in the world, including paintings
+            by famous artists such as <strong
+                >Velazquez, Goya, Picasso, and Dali</strong
+            >. If you are interested in art and culture, then a tour of <strong
+                >Madrid’s museums</strong
+            > is a must.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Best Flamenco Show in Madrid</h3>
+        <p class="mb-7">
+            Flamenco is a <strong>traditional dance</strong> that is popular in Spain,
+            and Madrid is home to some of the best <strong
+                >flamenco shows</strong
+            > in the country. If you are interested in seeing a flamenco show, then
+            you might want to check out some of the shows at Corral de la Moreria,
+            Casa Patas, or Cardamomo. These venues offer some of the best <strong
+                >flamenco shows in Madrid</strong
+            >, with live music, singing, and dancing.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Best Tapas in Madrid</h3>
+        <p class="mb-7">
+            The Tapas are <strong>small plates of food</strong> that are typically
+            eaten with a drink. Madrid is famous for its <strong
+                >tapas bars</strong
+            >, and there are many great places to try them. Some of <strong
+                >the best tapas bars in Madrid</strong
+            > include La Casa del Abuelo, El Sur, and Casa Mono. These bars serve
+            a variety of tapas, including classics like patatas bravas and tortilla
+            de patatas, as well as more modern dishes.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Cathedral in Madrid</h3>
+        <p class="mb-7">
+            The Cathedral of Madrid, also known as the <strong
+                >Almudena Cathedral</strong
+            >, is one of the most important religious buildings in the city. The
+            cathedral is located in the heart of Madrid, near the <strong
+                >Royal Palace</strong
+            >. It is a beautiful building, with a mix of different architectural
+            styles, including <strong>Gothic and Baroque</strong>. If you love
+            architecture and history, then a visit to the cathedral is a must
+            for you.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Market in Madrid</h3>
+        <p class="mb-7">
+            If you are looking for a unique <strong>shopping experience</strong
+            >, then you might want to check out some of the <strong
+                >markets in Madrid</strong
+            >. One of the most popular markets in the city is the <strong
+                >Mercado de San Miguel</strong
+            >. This historic covered market is a foodie’s paradise, with stalls
+            selling everything from fresh seafood to gourmet cheeses. Other
+            popular markets in Madrid include the <strong
+                >Mercado de la Paz</strong
+            > and the <strong>Mercado de San Anton</strong>.
+        </p>
+
+        <h3 class="text-3xl text-red-700">Shopping in Madrid</h3>
+        <p class="mb-7">
+            Madrid is a great place to go shopping. The city has a wide variety
+            of stores, from high-end boutiques to vintage shops. Some of the
+            best shopping areas in Madrid include Gran Via, Salamanca, and
+            Chueca. These areas are home to some of the best stores in the city, <strong
+                >including luxury brands like Louis Vuitton, Prada, and Gucci</strong
+            >. If you are looking for something more unique, then you might want
+            to check out some of the vintage and second-hand shops in the
+            Malasaña neighborhood.
+        </p>
+    </section>
+
+    <Partners client:visible partners={partners} />
 </BaseLayout>

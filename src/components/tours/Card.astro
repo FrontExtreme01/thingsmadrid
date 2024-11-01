@@ -1,0 +1,33 @@
+---
+const { tour } = Astro.props;
+---
+<div class="basis-full md:basis-1/4">
+    <div class="box mx-3">
+        <div class="boxImg">
+            <span class="starsTour"><i class="fa-solid fa-star"></i>{tour.stars}</span>
+            {tour.featured != "" ? (<span class="featured">{tour.featured}</span>) : ""}
+            <a aria-label="go to activity details" href={tour.bokun} target="_blank">
+                <img loading="lazy" height="auto" width="auto"  src={tour.img} class="w-full h-full object-cover" alt={tour.name}>
+            </a>
+        </div>
+        <div class="box2">
+            <h3 class="title-dinner">{tour.name}</h3>
+            <p>{tour.description}</p>
+            <div class="flex justify-around gap-5 mb-5">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-comments" style="color: #004a7c;"></i> 
+                    <span class="text-sm">{tour.reviews} reviews</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="text-sm text-gray-500">From:</label>
+                    <strong class="text-xl text-amber-500">${tour.price} €</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-evenly mb-5">
+            <a aria-label="book now" href={tour.bokun} class="btn-buy" target="_blank">Book Now</a>
+            <a aria-label="more information" href=`{/tours/${tour.url}}` class="btn-read">More Info</a>
+        </div>
+    </div>
+</div>
