@@ -9,7 +9,7 @@ const { tour } = Astro.props;
             {tour.featured != "" ? (<span class="featured">{tour.featured}</span>) : ""}
             <a aria-label="go to activity details" href={"tours/"+tour.url} target="_blank">
                 <img width="650" height="450" decoding="async" loading="lazy"  src={tour.img} class="w-full h-full object-cover" alt={tour.name}
-                srcset={`${tour.img} 250, ${tour.img} 450, ${tour.img} 650, ${tour.img.src} 650 `} sizes={`(max-width: 360px) 250px, (max-width: 640px) 450px, (max-width: 768px) 650px,  ${tour.img.width}px`}
+                srcset={`${tour.img} 250w, ${tour.img} 450w, ${tour.img} 650w, ${tour.img.src} 650w `} sizes={`(max-width: 360px) 250px, (max-width: 640px) 450px, (max-width: 768px) 650px,  ${tour.img.width}px`}
                 >
             </a>
         </div>
