@@ -1,8 +1,9 @@
 /* SliderHome*/
 .sliderHome {
     width: 100%;
-    height: 80vh;
+    height: 80dvh;
     min-height: 400px;
+    background: #004a7c;
 }
 
 .imgSlider {
