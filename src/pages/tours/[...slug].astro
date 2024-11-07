@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import MdTourLayout from "../../layouts/MdTourLayout.astro";
+
+export async function getStaticPaths() {
+    const tourEntries = await getCollection("tours");
+    return tourEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<MdTourLayout frontmatter={entry.data}>
+    <Content />
+</MdTourLayout>

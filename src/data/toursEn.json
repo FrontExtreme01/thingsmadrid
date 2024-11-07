@@ -9,7 +9,7 @@
         "reviews": "470",
         "price": "30",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806806?partialView=1",
-        "url": "iberico-ham-tour-spain"
+        "slug": "iberico-ham-tour-spain"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "reviews": "3,590",
         "price": "29",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806807?partialView=1",
-        "url": "amazonia-adventure"
+        "slug": "amazonia-adventure"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "reviews": "2,793",
         "price": "55",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/869044?partialView=1",
-        "url": "real-madrid-stadium-tour"
+        "slug": "real-madrid-stadium-tour"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
         "reviews": "3250",
         "price": "30",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/817122?partialView=1",
-        "url": "madrid-stadium-and-museum-tour"
+        "slug": "madrid-stadium-and-museum-tour"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "reviews": "480",
         "price": "31",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845895?partialView=1",
-        "url": "madrid-highlights-walking-panoramic-bus-tour"
+        "slug": "madrid-highlights-walking-panoramic-bus-tour"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
         "reviews": "120",
         "price": "26",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845897?partialView=1",
-        "url": "madrid-hop-on-hop-off-sightseeing-tour"
+        "slug": "madrid-hop-on-hop-off-sightseeing-tour"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "reviews": "538",
         "price": "40",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846128?partialView=1",
-        "url": "guided-tour-of-the-royal-palace-with-preferential-access"
+        "slug": "guided-tour-of-the-royal-palace-with-preferential-access"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
         "reviews": "472",
         "price": "39",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846134?partialView=1",
-        "url": "guided-visit-to-the-prado-museum-with-preferential-access"
+        "slug": "guided-visit-to-the-prado-museum-with-preferential-access"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
         "reviews": "394",
         "price": "77",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846138?partialView=1",
-        "url": "royal-palace-and-prado-museum-guided-tour"
+        "slug": "royal-palace-and-prado-museum-guided-tour"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
         "reviews": "672",
         "price": "30",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846143?partialView=1",
-        "url": "guided-tour-of-the-reina-sofia-museum-with-preferential-access"
+        "slug": "guided-tour-of-the-reina-sofia-museum-with-preferential-access"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
         "reviews": "267",
         "price": "66",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846147?partialView=1",
-        "url": "the-best-of-prado-and-reina-sofía-guided-tour-with-preferred-access"
+        "slug": "the-best-of-prado-and-reina-sofía-guided-tour-with-preferred-access"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
         "reviews": "483",
         "price": "25",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846151?partialView=1",
-        "url": "santiago-bernabéu-stadium-guided-visit"
+        "slug": "santiago-bernabéu-stadium-guided-visit"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
         "reviews": "458",
         "price": "56",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846154?partialView=1",
-        "url": "toledo-guided-morning-tour-with-cathedral-visit"
+        "slug": "toledo-guided-morning-tour-with-cathedral-visit"
     },
     {
         "id": 14,
@@ -165,7 +165,7 @@
         "reviews": "682",
         "price": "56",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846156?partialView=1",
-        "url": "toledo-guided-afternoon-tour"
+        "slug": "toledo-guided-afternoon-tour"
     },
     {
         "id": 15,
@@ -177,7 +177,7 @@
         "reviews": "634",
         "price": "66",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846157?partialView=1",
-        "url": "toledo-full-day-tour-with-tapas-wine"
+        "slug": "toledo-full-day-tour-with-tapas-wine"
     },
     {
         "id": 16,
@@ -189,7 +189,7 @@
         "reviews": "752",
         "price": "65",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846160?partialView=1",
-        "url": "royal-monastery-of-escorial-and-basilica-of-the-valley-of-the-fallen"
+        "slug": "royal-monastery-of-escorial-and-basilica-of-the-valley-of-the-fallen"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
         "reviews": "456",
         "price": "168",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846161?partialView=1",
-        "url": "ribera-del-duero-and-rueda-white-red-wine-route"
+        "slug": "ribera-del-duero-and-rueda-white-red-wine-route"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
         "reviews": "952",
         "price": "122",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846563?partialView=1",
-        "url": "avila-segovia-full-day-tour-with-lunch"
+        "slug": "avila-segovia-full-day-tour-with-lunch"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
         "reviews": "96",
         "price": "55",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846571?partialView=1",
-        "url": "madrid-highlight-santiago-bernabeu-stadium-tour"
+        "slug": "madrid-highlight-santiago-bernabeu-stadium-tour"
     },
     {
         "id": 20,
@@ -237,7 +237,7 @@
         "reviews": "289",
         "price": "77",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846572?partialView=1",
-        "url": "madrid-highlights-toledo-in-the-afternoon-day-tour"
+        "slug": "madrid-highlights-toledo-in-the-afternoon-day-tour"
     },
     {
         "id": 21,
@@ -249,7 +249,7 @@
         "reviews": "211",
         "price": "92",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846573?partialView=1",
-        "url": "segovia-toledo-guided-day-tour"
+        "slug": "segovia-toledo-guided-day-tour"
     },
     {
         "id": 22,
@@ -261,7 +261,7 @@
         "reviews": "249",
         "price": "40",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846579?partialView=1",
-        "url": "live-flamenco-show-at-tablao-la-carmela"
+        "slug": "live-flamenco-show-at-tablao-la-carmela"
     },
     {
         "id": 23,
@@ -273,7 +273,7 @@
         "reviews": "248",
         "price": "30",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846580?partialView=1",
-        "url": "madrid-sightseeing-segway-tour"
+        "slug": "madrid-sightseeing-segway-tour"
     },
     {
         "id": 24,
@@ -285,7 +285,7 @@
         "reviews": "998",
         "price": "47",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/840699?partialView=1",
-        "url": "paella-sangria-madrid-food-tour"
+        "slug": "paella-sangria-madrid-food-tour"
     },
     {
         "id": 25,
@@ -297,7 +297,7 @@
         "reviews": "423",
         "price": "25",
         "bokun": "",
-        "url": "flamenco-cultural-center"
+        "slug": "flamenco-cultural-center"
     },
     {
         "id": 26,
@@ -309,6 +309,6 @@
         "reviews": "2,793",
         "price": "17",
         "bokun": "https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/544197?partialView=1",
-        "url": "pub-crawl-madrid-europe-night-journey"
+        "slug": "pub-crawl-madrid-europe-night-journey"
     }
 ]
