@@ -1,0 +1,33 @@
+/* Gabriela - Para encabezados */
+@font-face {
+    font-family: 'Gabriela';
+    src: url('../fonts/Gabriela/Gabriela-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Open Sans - Para el cuerpo del texto */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/static/OpenSans-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

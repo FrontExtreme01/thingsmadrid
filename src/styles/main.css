@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 *,
 *::before,
 *::after {
@@ -5,9 +7,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'Open Sans', sans-serif;
     color: #444444;
 }
 
@@ -22,8 +22,6 @@ h4,
 h5,
 h6 {
     font-family: "Gabriela", serif;
-    font-style: normal;
-    font-display: swap;
 }
 
 ul {
@@ -116,8 +114,6 @@ ul {
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-display: swap;
     transition: 0.3s;
     border: 1px solid #ffaa00;
     text-align: center;
@@ -138,8 +134,6 @@ ul {
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-display: swap;
     transition: 0.3s;
     border: 1px solid #e3e3e3;
     text-align: center;

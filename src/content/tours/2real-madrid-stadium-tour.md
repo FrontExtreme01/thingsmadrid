@@ -7,7 +7,7 @@ price: '55'
 stars: '4.5'
 reviews: '3,590'
 image:
-    url: '/src/img/tours/real-madrid-stadium-tour.webp'
+    url: '../src/img/tours/real-madrid-stadium-tour.webp'
     alt: 'El logotipo completo de Astro.'
 gallery: ["","",""]
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/869044?partialView=1'
