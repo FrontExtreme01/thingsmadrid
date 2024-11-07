@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Card from "../../components/tours/Card.astro";
 import Partners from "../../components/home/Partners";
+import Hero from "../../components/Hero.astro";
 
 const seo = {
     title: "Tours Archive - Things to do in Madrid Tours Agency",
@@ -32,15 +33,10 @@ const partners = [
 ---
 
 <BaseLayout seo={seo}>
-    <section
-        class="bg-[linear-gradient(rgba(0,74,124,0.5),rgba(0,74,124,0.5)),url('/things-to-do-in-madrid-tours-and-activities.webp')] bg-no-repeat bg-center h-96 flex items-center"
-    >
-        <div class="container mx-auto">
-            <h1 class="text-5xl italic font-extrabold text-center text-white">
-                The Best Tours in Madrid
-            </h1>
-        </div>
-    </section>
+    <Hero
+        title="The Best Tours in Madrid"
+        imgSrc="/things-to-do-in-madrid-tours-and-activities.webp"
+    />
 
     <section class="container mx-auto my-10">
         <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
