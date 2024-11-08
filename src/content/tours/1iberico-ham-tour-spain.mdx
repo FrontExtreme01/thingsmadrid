@@ -32,7 +32,16 @@ import SliderGallery from '../../components/tours/SliderGallery';
 export const imagesDirectory = path.join(process.cwd(), `/public/tours/${folderImgs}`);
 export const images = fs.readdirSync(imagesDirectory).map(file => ({ src: `/public/tours/${folderImgs}/${file}`, alt: file.replace(/\.[^/.]+$/, "") }));
 
-<SliderGallery client:load images={images} />
+import img1 from '../../img/tours/iberian-ham/carving-ham-and-tasting-in-madrid-food-tours.webp';
+import img2 from '../../img/tours/iberian-ham/food-tours-madrid-iberian-ham.webp';
+import img3 from '../../img/tours/iberian-ham/iberian-cured-ham-and-wine-tasting-in-madrid.webp';
+import img4 from '../../img/tours/iberian-ham/iberian-ham-tasting-in-madrid.webp';
+import img5 from '../../img/tours/iberian-ham/iberico-ham-tasting-in-madrid.webp';
+import img6 from '../../img/tours/iberian-ham/iberico-ham-tour-spain.webp';
+
+export const arrayImages = [img1, img2, img3, img4, img5, img6];
+
+<SliderGallery client:load images={arrayImages} />
 
 <h2 class="text-4xl font-bold mb-5"> About this tour </h2>
 
