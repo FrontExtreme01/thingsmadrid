@@ -14,8 +14,17 @@ const toursCollection = defineCollection({
             url: z.string(),
             alt: z.string()
         }),
-        gallery: z.array(z.string()),
         bokun: z.string(),
+        calendar: z.string(),
+        location: z.string(),
+        duration: z.string(),
+        offered: z.string(),
+        schedule: z.string(),
+        availability: z.string(),
+        cancelation: z.string(),
+        meetingPoint: z.string(),
+        difficulty: z.string(),
+        mapFrame: z.string(),
     })
 });
 // Exporta un solo objeto `collections` con las colecciones registradas

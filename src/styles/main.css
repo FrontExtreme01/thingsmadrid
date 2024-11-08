@@ -83,7 +83,7 @@ ul {
     min-height: 280px;
 }
 
-.box2 h3 {
+.box2 h2 {
     font-weight: 700;
     min-height: 60px;
     font-size: 20px;
@@ -209,7 +209,7 @@ ul {
         }
     }
 
-    .box2 h3 {
+    .box2 h2 {
         font-size: 18px;
         min-height: auto;
     }

@@ -5,10 +5,37 @@ description: 'Discover the authentic taste of Spain with our Iberico ham Tour Sp
 featured: 'New'
 price: '30'
 stars: '5.0'
-reviews: '470'
+reviews: '470 reviews'
 image:
     url: '/tours/iberian-ham-and-wine-tasting-in-madrid.webp'
-    alt: 'El logotipo completo de Astro.'
-gallery: ["","",""]
+    alt: 'cover iberian ham and wine tasting in madrid'
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806806?partialView=1'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/806806'
+location: 'Madrid, España'
+duration: '45 minutes'
+offered: 'English & Spanish'
+schedule: '11:00 am to 8:00 pm'
+availability: 'Every Day'
+cancelation: '24h before activity'
+meetingPoint: 'C. del Arenal, 17, 28013 Madrid, Spain. Meet your host at the Palomeque store'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
 ---
+
+{/* Nombre de la carpeta donde estara la galería */}
+export const folderImgs = 'iberian-ham'
+
+import fs from 'fs';
+import path from 'path';
+import SliderGallery from '../../components/tours/SliderGallery';
+
+export const imagesDirectory = path.join(process.cwd(), `/src/img/tours/${folderImgs}`);
+export const images = fs.readdirSync(imagesDirectory).map(file => ({ src: `/src/img/tours/${folderImgs}/${file}`, alt: file.replace(/\.[^/.]+$/, "") }));
+
+<SliderGallery client:load images={images} />
+
+<h2 class="text-4xl font-bold mb-5"> About this tour </h2>
+
+<p class="text-lg text-justify my-10">Experience a culinary journey in the heart of Madrid with a gastronomic tour that immerses you in the flavors of Spain. In a charming historic building, embark on a journey to discover the most authentic flavors. Your expert host will guide you through Iberico Ham Tour Spain, the world-renowned cured ham, and delicious chorizo, loin, and salchichón. Learn about the traditional production process of Iberico Ham Tour Spain and its surprising secret ingredient: the acorn. Enjoy the deep subtleties of the on-site produced organic olive oil and expertly selected wines that complement each dish.</p>
+
+<p class="text-lg text-justify my-10">In 1873, the iconic religious imagery shop “Palomeque” was founded. It has served products to figures ranging from Pope Pius IX to the present day and to the main European royal houses. It combines a space protected by National Heritage with modern lines that create a unique environment. An intimate place to taste and enjoy the finest and most select Spanish gastronomic products.</p>
