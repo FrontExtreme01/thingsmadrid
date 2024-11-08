@@ -29,8 +29,8 @@ import fs from 'fs';
 import path from 'path';
 import SliderGallery from '../../components/tours/SliderGallery';
 
-export const imagesDirectory = path.join(process.cwd(), `/src/img/tours/${folderImgs}`);
-export const images = fs.readdirSync(imagesDirectory).map(file => ({ src: `/src/img/tours/${folderImgs}/${file}`, alt: file.replace(/\.[^/.]+$/, "") }));
+export const imagesDirectory = path.join(process.cwd(), `/public/tours/${folderImgs}`);
+export const images = fs.readdirSync(imagesDirectory).map(file => ({ src: `/public/tours/${folderImgs}/${file}`, alt: file.replace(/\.[^/.]+$/, "") }));
 
 <SliderGallery client:load images={images} />
 
