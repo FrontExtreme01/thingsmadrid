@@ -22,24 +22,10 @@ difficulty: 'Easy'
 mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
 ---
 
-{/* Nombre de la carpeta donde estara la galería */}
-export const folderImgs = 'iberian-ham'
-
-import fs from 'fs';
-import path from 'path';
 import SliderGallery from '../../components/tours/SliderGallery';
 
-export const imagesDirectory = path.join(process.cwd(), `/public/tours/${folderImgs}`);
-export const images = fs.readdirSync(imagesDirectory).map(file => ({ src: `/public/tours/${folderImgs}/${file}`, alt: file.replace(/\.[^/.]+$/, "") }));
-
-import img1 from '../../img/tours/iberian-ham/carving-ham-and-tasting-in-madrid-food-tours.webp';
-import img2 from '../../img/tours/iberian-ham/food-tours-madrid-iberian-ham.webp';
-import img3 from '../../img/tours/iberian-ham/iberian-cured-ham-and-wine-tasting-in-madrid.webp';
-import img4 from '../../img/tours/iberian-ham/iberian-ham-tasting-in-madrid.webp';
-import img5 from '../../img/tours/iberian-ham/iberico-ham-tasting-in-madrid.webp';
-import img6 from '../../img/tours/iberian-ham/iberico-ham-tour-spain.webp';
-
-export const arrayImages = [img1, img2, img3, img4, img5, img6];
+export const images = import.meta.glob('../../img/tours/iberian-ham/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery client:load images={arrayImages} />
 
