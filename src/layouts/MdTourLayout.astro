@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Map from "../components/tours/Map";
-import logo from "../../public/favicon.webp";
+import FormBokun from "../components/tours/FormBokun";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout>
@@ -93,24 +93,15 @@ const { frontmatter } = Astro.props;
                 </ul>
 
                 <h3 class="text-4xl font-bold my-5">Location</h3>
-                <div class="w-full h-96">
-                    <Map client:visible url={frontmatter.mapFrame} />
-                </div>
+                    <Map client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title} />
             </div>
             <!-- Form -->
-            <div class="w-full lg:w-4/12">
-                <div class="w-full p-10 shadow-md rounded-2xl">
-                    <div class="flex justify-between flex-wrap space-y-5 md:space-y-0 mb-10">
-                        <div class="w-full md:w-8/12">
-                            <p class="text-slate-400 font-semibold text-md">Price from:</p>
-                            <p class="text-6xl font-bold text-sky-900">${frontmatter.price}<span class="text-xl font-thin text-slate-400">€ per person</span></p>
-                        </div>
-                        <img class="rounded-full h-20 w-20 object-cover" src={logo.src} alt="">
-                    </div>
-                    <div class="bokunWidget" data-src={frontmatter.calendar}></div>
-                </div>
-            </div>
+            <FormBokun 
+                client:idle 
+                urlCalendar={frontmatter.calendar} 
+                price={frontmatter.price} 
+            />
         </div>
     </section>
-    <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4" ></script>
+    <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"></script>
 </BaseLayout>
