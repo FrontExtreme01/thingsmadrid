@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // Importar CSS Module
 import styles from '../../styles/gallery.module.css';
 
-export default function SliderGallery({ images }: any) {
+export default function SliderGallery({ images, altTitle }: any) {
     return (
         <div className="relative mb-10">
             <Swiper
@@ -25,9 +25,9 @@ export default function SliderGallery({ images }: any) {
                 modules={[Pagination, Autoplay]}
                 className={`mySwiper ${styles.sliderGallery}`}
             >
-                {images.map((image: { src: string, alt: string }, index: number) => (
+                {images.map((image: { src: string }, index: number) => (
                     <SwiperSlide key={index}>
-                        <img src={image.src} alt={image.alt} loading='lazy' decoding="async" width={1920} height={1080} className={styles.imgGallery} />
+                        <img src={image.src} alt={altTitle} loading={index == 0 ? 'eager': 'lazy'} fetchPriority={index== 0 ? 'high': 'auto'} decoding="async" width={1920} height={1080} className={styles.imgGallery} />
                     </SwiperSlide>
                 ))}
                 

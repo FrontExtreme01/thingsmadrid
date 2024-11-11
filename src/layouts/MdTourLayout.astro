@@ -20,7 +20,7 @@ const { frontmatter } = Astro.props;
                         </li>
                         <li>
                             <i class="fa-solid fa-star text-yellow-500"></i>
-                            <span class="font-bold">{frontmatter.stars} <span class="text-slate-400 font-thin">({frontmatter.reviews})</span></span>
+                            <span class="font-bold">{frontmatter.stars} <span class="text-slate-600 font-thin">({frontmatter.reviews})</span></span>
                         </li>
                     </ul>
                 </header>
@@ -112,8 +112,5 @@ const { frontmatter } = Astro.props;
             </div>
         </div>
     </section>
-    <script
-        is:inline
-        src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"
-        async></script>
+    <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4" ></script>
 </BaseLayout>
