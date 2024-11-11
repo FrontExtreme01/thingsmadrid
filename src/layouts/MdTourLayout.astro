@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import Map from "../components/tours/Map";
 import logo from "../../public/favicon.webp";
 const { frontmatter } = Astro.props;
 ---
-
 <BaseLayout>
     <section class="mx-7 md:mx-20 lg:mx-24 my-14">
         <div class="flex flex-wrap">
@@ -26,43 +26,83 @@ const { frontmatter } = Astro.props;
                 </header>
                 <slot />
                 <h3 class="text-4xl font-bold my-5">Characteristics</h3>
-                <div class="flex flex-wrap mb-20">
-                    <div class="w-full md:w-4/12 px-5">
-                        <ul class="space-y-7">
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-clock-rotate-left"></i>{frontmatter.duration}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-clock"></i>{frontmatter.schedule}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-calendar"></i>{frontmatter.availability}</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-4/12 px-5">   
-                        <ul class="space-y-7">
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-language"></i>{frontmatter.offered}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-sack-xmark"></i>{frontmatter.cancelation}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-location-dot"></i>{frontmatter.location}</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-4/12 px-5">   
-                        <ul class="space-y-7">
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-comments"></i>{frontmatter.reviews}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-exclamation"></i>{frontmatter.difficulty}</li>
-                            <li class="flex items-center"><i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-street-view"></i>{frontmatter.meetingPoint}</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="flex flex-wrap mb-20 space-y-7">
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-clock-rotate-left"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Duration</span>
+                            <p>{frontmatter.duration}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-clock"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Schedule</span>
+                            <p>{frontmatter.schedule}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-calendar"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Availability</span>
+                            <p>{frontmatter.availability}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-comments"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Reviews</span>
+                            <p>{frontmatter.reviews}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-exclamation"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Difficulty</span>
+                            <p>{frontmatter.difficulty}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-street-view"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Meeting Points</span>
+                            <p>{frontmatter.meetingPoint}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-language"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Offered in</span>
+                            <p>{frontmatter.offered}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-sack-xmark"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Cancelation</span>
+                            <p>{frontmatter.cancelation}</p>
+                        </div>
+                    </li>
+                    <li class="w-full md:w-4/12 flex items-center">
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-mobile-screen"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold">Ticket</span>
+                            <p>Mobile Ticket</p>
+                        </div>
+                    </li>
+                </ul>
 
                 <h3 class="text-4xl font-bold my-5">Location</h3>
                 <div class="w-full h-96">
-                    <iframe class="w-full h-full rounded-2xl" src={frontmatter.mapFrame} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <Map client:visible url={frontmatter.mapFrame} />
                 </div>
             </div>
             <!-- Form -->
-
-            
             <div class="w-full lg:w-4/12">
-                <div class="w-full h-full p-10 shadow-md rounded-2xl">
+                <div class="w-full p-10 shadow-md rounded-2xl">
                     <div class="flex justify-between flex-wrap space-y-5 md:space-y-0 mb-10">
                         <div class="w-full md:w-8/12">
-                            <p class="text-slate-400 font-semibold text-md">Price</p>
+                            <p class="text-slate-400 font-semibold text-md">Price from:</p>
                             <p class="text-6xl font-bold text-sky-900">${frontmatter.price}<span class="text-xl font-thin text-slate-400">€ per person</span></p>
                         </div>
                         <img class="rounded-full h-20 w-20 object-cover" src={logo.src} alt="">
@@ -73,7 +113,7 @@ const { frontmatter } = Astro.props;
         </div>
     </section>
     <script
-        type="text/javascript"
+        is:inline
         src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"
         async></script>
 </BaseLayout>
