@@ -5,7 +5,7 @@ const { tour } = Astro.props;
 <article class="w-full lg:w-3/12 md:w-6/12 px-5 py-5">
     <div class="box">
         <div class="boxImg">
-            <span class="starsTour"><i class="fa-solid fa-star"></i>{tour.data.stars}</span>
+            <span class="starsTour"><i class="at-star"></i>{tour.data.stars}</span>
             {tour.data.featured != "" ? (<span class="featured">{tour.data.featured}</span>) : ""}
             <a aria-label="go to activity details" href={`/tours/${tour.slug}/`}>
                 <img width="650" height="450" loading="lazy" src={tour.data.image.url} class="w-full h-full object-cover" alt={tour.data.image.alt}>
@@ -16,7 +16,7 @@ const { tour } = Astro.props;
             <p>{tour.data.description}</p>
             <div class="flex justify-around gap-5 mb-5 mt-5">
                 <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-comments" style="color: #004a7c;"></i> 
+                    <i class="at-dots-comment" style="color: #004a7c;"></i> 
                     <span class="text-sm">{tour.data.reviews} reviews</span>
                 </div>
                 <div class="flex items-center gap-2">

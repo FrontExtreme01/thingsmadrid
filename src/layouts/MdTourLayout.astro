@@ -15,11 +15,11 @@ const { frontmatter } = Astro.props;
                     </h1>
                     <ul class="flex gap-5 w-full my-6 text-base md:text-lg">
                         <li>
-                            <i class="fa-solid fa-location-dot text-sky-900"></i>
+                            <i class="at-pin-destination text-sky-900"></i>
                             <span>{frontmatter.location}</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-star text-yellow-500"></i>
+                            <i class="at-star text-yellow-500"></i>
                             <span class="font-bold">{frontmatter.stars} <span class="text-slate-600 font-thin">({frontmatter.reviews})</span></span>
                         </li>
                     </ul>
@@ -28,63 +28,63 @@ const { frontmatter } = Astro.props;
                 <h3 class="text-4xl font-bold my-5">Characteristics</h3>
                 <ul class="flex flex-wrap mb-20 space-y-7">
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-clock-rotate-left"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-timer"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Duration</span>
                             <p>{frontmatter.duration}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-clock"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-clock-time"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Schedule</span>
                             <p>{frontmatter.schedule}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-calendar"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-calendar-schedule"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Availability</span>
                             <p>{frontmatter.availability}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-regular fa-comments"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-dots-comment"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Reviews</span>
                             <p>{frontmatter.reviews}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-exclamation"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-low-thermometer"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Difficulty</span>
                             <p>{frontmatter.difficulty}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-street-view"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-house-pin-location"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Meeting Points</span>
                             <p>{frontmatter.meetingPoint}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-language"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-language-translation"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Offered in</span>
                             <p>{frontmatter.offered}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-sack-xmark"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-xmark-handshake"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Cancelation</span>
                             <p>{frontmatter.cancelation}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 fa-solid fa-mobile-screen"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-exclamation-mobile"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">Ticket</span>
                             <p>Mobile Ticket</p>

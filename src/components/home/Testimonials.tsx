@@ -40,7 +40,7 @@ export default function Testimonials({testimonials}:any) {
                     <SwiperSlide key={test.id} className={`${styles.testimonialSlide}`}>
                         <div className={`${styles.testimonialItem}`}>
                             <div className={`${styles.stars}`}>
-                                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
+                                <i className="at-star"></i><i className="at-star"></i><i className="at-star"></i><i className="at-star"></i><i className="at-star"></i>
                             </div>
                             <p>{test.text}</p>
                             <div>
