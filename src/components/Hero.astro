@@ -1,10 +1,10 @@
 ---
-const { title, imgSrc } = Astro.props;
+const { title, imgSrc, gradientBg } = Astro.props;
 ---
 
 <section
     class="bg-sky-900 bg-cover bg-center"
-    style={`background: linear-gradient(rgba(0,74,124,0.5),rgba(0,74,124,0.5)), url(${imgSrc}) center; background-size: cover; background-repeat: no-repeat;`}
+    style={`background: linear-gradient(${gradientBg}), url(${imgSrc}) center; background-size: cover; background-repeat: no-repeat;`}
 >
     <div class="container mx-auto md:py-60 py-28">
         <h1 class="text-5xl italic font-extrabold text-center text-white">

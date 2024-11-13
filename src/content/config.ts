@@ -25,9 +25,50 @@ const toursCollection = defineCollection({
         meetingPoint: z.string(),
         difficulty: z.string(),
         mapFrame: z.string(),
+        keywords: z.string(),
+        testimonials: z.array(z.object({
+            user: z.string(),
+            review: z.string(),
+            image: z.object({
+                src: z.string(),
+                alt: z.string()
+            }),
+        })),
     })
 });
+
+const restaurantsCollection = defineCollection({
+    type: 'content',
+    schema: z.object({
+        title: z.string(),
+        featured: z.string(),
+        averageCost: z.string(),
+        stars: z.string(),
+        reviews: z.string(),
+        image: z.object({
+            url: z.string(),
+            alt: z.string()
+        }),
+        location: z.string(),
+        cuisine: z.string(),
+        dressCode: z.string(),
+        schedule: z.string(),
+        availability: z.string(),
+        mapFrame: z.string(),
+        keywords: z.string(),
+        testimonials: z.array(z.object({
+            user: z.string(),
+            review: z.string(),
+            image: z.object({
+                src: z.string(),
+                alt: z.string()
+            }),
+        })),
+    })
+});
+
 // Exporta un solo objeto `collections` con las colecciones registradas
 export const collections = {
     tours: toursCollection,
+    restaurants: restaurantsCollection
 };

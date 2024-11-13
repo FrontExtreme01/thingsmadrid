@@ -3,25 +3,25 @@ const { tour } = Astro.props;
 ---
 
 <article class="w-full lg:w-3/12 md:w-6/12 px-5 py-5">
-    <div class="box">
-        <div class="boxImg">
-            <span class="starsTour"><i class="at-star"></i>{tour.data.stars}</span>
-            {tour.data.featured != "" ? (<span class="featured">{tour.data.featured}</span>) : ""}
+    <div class="relative rounded-lg overflow-hidden bg-white shadow-lg border-slate-600">
+        <div class="relative p-2.5 w-1/2 float-left md:float-none md:w-full overflow-hidden">
+            <span class="absolute z-10 top-[14px] left-[14px] md:top-[18px] md:left-[18px] px-2.5 py-1 rounded-md text-sm bg-white font-bold shadow-lg"><i class="at-star text-sm text-amber-500"></i>{tour.data.stars}</span>
+            {tour.data.featured != "" && <span class="w-24 md:w-48 absolute top-[10px] right-[-25px] md:top-[25px] md:-right-[58px] z-10 rotate-45 text-sm font-bold pl-[0] pr-[0] py-px bg-amber-500 text-black text-center">{tour.data.featured}</span>}
             <a aria-label="go to activity details" href={`/tours/${tour.slug}/`}>
-                <img width="650" height="450" loading="lazy" src={tour.data.image.url} class="w-full h-full object-cover" alt={tour.data.image.alt}>
+                <img width="650" height="450" loading="lazy" src={tour.data.image.url} class="h-[160px] w-full md:h-full object-cover rounded-md cursor-pointer duration-200 hover:scale-110" alt={tour.data.image.alt}>
             </a>
         </div>
-        <div class="box2">
-            <h2 class="title-dinner">{tour.data.title}</h2>
-            <p>{tour.data.description}</p>
+        <div class="p-[20px] rounded-md duration-300 text-justify text-sm min-h-[280px]">
+            <h2 class="font-bold text-xl mb-4 text-center min-h-14">{tour.data.title}</h2>
+            <p class="min-h-[90px] md:h-auto">{tour.data.description}</p>
             <div class="flex justify-around gap-5 mb-5 mt-5">
                 <div class="flex items-center gap-2">
-                    <i class="at-dots-comment" style="color: #004a7c;"></i> 
+                    <i class="at-dots-comment text-sky-700"></i> 
                     <span class="text-sm">{tour.data.reviews} reviews</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="text-sm text-gray-500">From:</span>
-                    <strong class="text-2xl" style="color: #004a7c;">${tour.data.price} €</strong>
+                    <strong class="text-2xl text-sky-700">${tour.data.price} €</strong>
                 </div>
             </div>
         </div>

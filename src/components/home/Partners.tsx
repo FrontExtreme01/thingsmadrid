@@ -1,8 +1,28 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
-export default function Partners({ partners }: any) {
+import part1 from '../../img/partners/1-stripe-logo.webp';
+import part2 from '../../img/partners/2-expedia-logo.webp';
+import part3 from '../../img/partners/3-viator-logo.webp';
+import part4 from '../../img/partners/4-get-your-guide-logo.webp';
+import part5 from '../../img/partners/6-bokun-logo.webp';
+import part6 from '../../img/partners/amigo-tours-logo-partner.webp';
+import part7 from '../../img/partners/atletico-de-madrid-logo-partner.webp';
+import part8 from '../../img/partners/zuazo-gastroboutique-logo-partner.webp';
+
+const partners = [
+    { img: part1.src, alt: 'stripe' },
+    { img: part2.src, alt: 'expedia' },
+    { img: part3.src, alt: 'viator' },
+    { img: part4.src, alt: 'get your guide' },
+    { img: part5.src, alt: 'bokun' },
+    { img: part6.src, alt: 'amigo tours' },
+    { img: part7.src, alt: 'atletico de madrid' },
+    { img: part8.src, alt: 'zuazo gastroboutique' },
+]
+
+export default function Partners() {
     return (
         <div className="py-10 px-5 md:px-24 container mx-auto text-center" data-aos="zoom-in" data-aos-delay="500">
             <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Partners</h2>
@@ -36,9 +56,9 @@ export default function Partners({ partners }: any) {
                 modules={[Autoplay]}
                 className="mySwiper"
             >
-                {partners.map((part: any) => (
-                    <SwiperSlide key={part.id}>
-                        <img src={part.imagen.src} width="350" height="300" alt={part.title} decoding="async" loading="lazy" />
+                {partners.map((partner: any, index: number) => (
+                    <SwiperSlide key={index}>
+                        <img src={partner.img} alt={partner.alt} width="350" height="300" decoding="async" loading="lazy" />
                     </SwiperSlide>
                 ))}
             </Swiper>

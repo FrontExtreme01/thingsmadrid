@@ -1,0 +1,88 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Partners from "../../components/home/Partners";
+import Hero from "../../components/Hero.astro";
+import Card from "../../components/restaurants/Card.astro";
+
+const seo = {
+    title: "Restaurant Archive - Things to do in Madrid Tours Agency",
+    description: "Discover the best restaurants in Madrid. Explore the city with our expert guides and experience the best attractions and activities that Madrid has to offer.",
+};
+
+const allRestaurants = await getCollection("restaurants");
+
+---
+
+<BaseLayout seo={seo}>
+    <Hero
+        gradientBg="rgba(219, 82, 19, 0.5),rgba(219, 82, 19, 0.5)"
+        title="Restaurants in Madrid"
+        imgSrc="/assets/backgrounds/best-restaurants-in-madrid-tapas-in-spain-things-to-do-activities-what-to-eat.webp"
+    />
+    <section class="container mx-auto my-10">
+        <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
+            You deserve top-notch dining experiences, <strong
+                >The best Restaurants in Madrid</strong
+            > has plenty of options to offer. As one of the culinary capitals of
+            Europe, the city boasts an array of restaurants serving up a range of
+            cuisines from <strong
+                >traditional Spanish dishes to international delights</strong
+            >. For the <strong>best paella in Madrid</strong>, and for a taste
+            of the city’s history. Visit <strong
+                >the oldest restaurant in Madrid</strong
+            > and some other must-visit spots include the delicious vegetarian fare
+            or <strong>the best churros in town</strong>. Whether you’re looking
+            for a hearty breakfast, a romantic dinner, or a famous dining spot,
+            Madrid has something to satisfy every palate.
+        </p>
+        <div class="flex flex-wrap md:-mx-2 mx-3">
+            {allRestaurants.map((restaurant) => (
+                <Card restaurant={restaurant} />
+            ))}
+        </div>
+    </section>
+
+    <section class="container mx-auto my-10">
+        <div class="mx-10 lg:mx-auto">
+            <h2 class="text-4xl text-red-700">Best Tapas in Madrid</h2>
+            <p class="mb-7">
+                One of the most popular ways to eat in Madrid is by trying
+                different <strong>tapas dishes</strong>. Some great places to
+                try include <strong
+                    >Casa Labra, El Sur, and Juana la Loca</strong
+                >.
+            </p>
+
+            <h2 class="text-4xl text-red-700">
+                The oldest Restaurant in Madrid
+            </h2>
+            <p class="mb-7">
+                For <strong>traditional Spanish dishes</strong>, head to Casa
+                Mono, La Bola Taberna. On the other hand, <strong
+                    >Sobrino de Botín is the oldest restaurant</strong
+                > in the world according to Guinness World Records.
+            </p>
+
+            <h2 class="text-4xl text-red-700">Food Market Madrid</h2>
+            <p class="mb-7">
+                Madrid has several <strong>food markets</strong> where you can find
+                a variety of delicious food options. Some of the most popular markets
+                include <strong>Mercado de San Miguel</strong>, Mercado de San
+                Antón, and Platea Madrid.
+            </p>
+
+            <h3 class="text-3xl text-red-700">Fine dining in Madrid</h3>
+            <p class="mb-7">
+                For a more upscale dining experience, Madrid has several <strong
+                    >Michelin-starred restaurants</strong
+                >, visit them and live the red fury dinning experience. No
+                matter what taste of food or dining experience you’re looking
+                for, Madrid has something to offer. Don’t be afraid to explore
+                and try new things!
+            </p>
+        </div>
+    </section>
+
+    <Partners client:visible />
+</BaseLayout>

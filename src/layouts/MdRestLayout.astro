@@ -102,14 +102,8 @@ const seoMetaDatos = {
                 <h3 class="text-4xl font-bold my-5">Location</h3>
                 <Map client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title} />
             </div>
-            <!-- Form -->
-            <FormBokun 
-                client:idle 
-                urlCalendar={frontmatter.calendar} 
-                price={frontmatter.price} 
-            />
+            
             <Testimonials client:visible testimonials={frontmatter.testimonials} title="What our clients say" />
         </div>
     </section>
-    <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"></script>
 </BaseLayout>

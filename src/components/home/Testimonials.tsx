@@ -6,10 +6,10 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // Importar CSS Module
 import styles from '../../styles/testimonial.module.css';
 
-export default function Testimonials({testimonials}:any) {
+export default function Testimonials({ testimonials, title }: any) {
     return (
         <div className="relative pt-5 pb-20 px-5 md:px-24 container mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
-            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Customer Reviews</h2>
+            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">{title}</h2>
             <Swiper
                 pagination={{
                     el: "#containerBulletTestimonial",
@@ -28,7 +28,6 @@ export default function Testimonials({testimonials}:any) {
                         slidesPerView: 1,
                         spaceBetween: 40
                     },
-
                     1200: {
                         slidesPerView: 3,
                     }
@@ -36,15 +35,15 @@ export default function Testimonials({testimonials}:any) {
                 modules={[Pagination, Autoplay]}
                 className={`mySwiper ${styles.testimonialSwip}`}
             >
-                {testimonials.map((test:any) => (
-                    <SwiperSlide key={test.id} className={`${styles.testimonialSlide}`}>
+                {testimonials.map((test: any, index: number) => (
+                    <SwiperSlide key={index} className={`${styles.testimonialSlide}`}>
                         <div className={`${styles.testimonialItem}`}>
                             <div className={`${styles.stars}`}>
                                 <i className="at-star"></i><i className="at-star"></i><i className="at-star"></i><i className="at-star"></i><i className="at-star"></i>
                             </div>
-                            <p>{test.text}</p>
+                            <p>{test.review}</p>
                             <div>
-                                <img src={test.img.src} className={`${styles.testimonialImg}`} height="200" width="200" alt={test.user} loading="lazy" />
+                                <img src={test.image.src} className={`${styles.testimonialImg}`} height="200" width="200" alt={test.user} loading="lazy" />
                                 <h3>{test.user}</h3>
                             </div>
                         </div>

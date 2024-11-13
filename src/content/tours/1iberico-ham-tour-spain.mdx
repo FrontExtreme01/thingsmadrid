@@ -7,7 +7,7 @@ price: '30'
 stars: '5.0'
 reviews: '470 reviews'
 image:
-    url: '/tours/iberian-ham-and-wine-tasting-in-madrid.webp'
+    url: '/assets/covers/tours/iberian-ham-and-wine-tasting-in-madrid.webp'
     alt: 'cover iberian ham and wine tasting in madrid'
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806806?partialView=1'
 calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/806806'
@@ -19,12 +19,29 @@ availability: 'Every Day'
 cancelation: '24h before activity'
 meetingPoint: 'C. del Arenal, 17, 28013 Madrid, Spain. Meet your host at the Palomeque store'
 difficulty: 'Easy'
+keywords: 'iberico ham, wine tasting, madrid, spain, gastronomic tour'
 mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
+testimonials:
+  - user: 'John Doe'
+    review: 'This tour was amazing! The Iberico ham was delicious and the guide was very knowledgeable.'
+    image:
+        src: '/assets/testimonial/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp'
+        alt: 'John Doe'
+  - user: 'Jane Smith'
+    review: 'A fantastic experience! The wine pairing was perfect and the atmosphere was wonderful.'
+    image:
+        src: '/assets/testimonial/cenotes9.webp'
+        alt: 'Jane Smith'
+  - user: 'Alex Martinez'
+    review: 'I loved the tour! The ham was delicious and the guide was very friendly and informative.'
+    image:
+        src: '/assets/testimonial/tequilatasting1.webp'
+        alt: 'Alex Martinez'
 ---
 
 import SliderGallery from '../../components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/tours/iberian-ham/*.webp', { eager: true });
+export const images = import.meta.glob('../../img/galleries/iberian-ham/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

@@ -7,35 +7,18 @@ import Hero from "../../components/Hero.astro";
 
 const seo = {
     title: "Tours Archive - Things to do in Madrid Tours Agency",
+    description: "Discover the best tours in Madrid. Explore the city with our expert guides and experience the best attractions and activities that Madrid has to offer.",
 };
 
 const allTours = await getCollection("tours");
 
-import imgpar1 from "../../img/partners/1-stripe-logo.webp";
-import imgpar2 from "../../img/partners/2-expedia-logo.webp";
-import imgpar3 from "../../img/partners/3-viator-logo.webp";
-import imgpar4 from "../../img/partners/4-get-your-guide-logo.webp";
-import imgpar5 from "../../img/partners/6-bokun-logo.webp";
-import imgpar6 from "../../img/partners/amigo-tours-logo-partner.webp";
-import imgpar7 from "../../img/partners/atletico-de-madrid-logo-partner.webp";
-import imgpar8 from "../../img/partners/zuazo-gastroboutique-logo-partner.webp";
-
-const partners = [
-    { id: 1, imagen: imgpar1, title: "stripe" },
-    { id: 2, imagen: imgpar2, title: "expedia" },
-    { id: 3, imagen: imgpar3, title: "viator" },
-    { id: 4, imagen: imgpar4, title: "get your guide" },
-    { id: 5, imagen: imgpar5, title: "bokun" },
-    { id: 6, imagen: imgpar6, title: "amigo tours" },
-    { id: 7, imagen: imgpar7, title: "atletico de madrid" },
-    { id: 7, imagen: imgpar8, title: "zuazo gastroboutique" },
-];
 ---
 
 <BaseLayout seo={seo}>
     <Hero
+        gradientBg="rgba(0,74,124,0.5),rgba(0,74,124,0.5)"
         title="The Best Tours in Madrid"
-        imgSrc="/things-to-do-in-madrid-tours-and-activities.webp"
+        imgSrc="/assets/backgrounds/things-to-do-in-madrid-tours-and-activities.webp"
     />
     <section class="container mx-auto my-10">
         <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
@@ -49,13 +32,13 @@ const partners = [
             > are an excellent way to explore the city and get a glimpse into the
             local culture and history.
         </p>
-        <div class="flex flex-wrap md:-mx-2 mx-3">
+        <div class="flex flex-wrap md:-mx-4">
             {allTours.map((tour) => <Card tour={tour} />)}
         </div>
     </section>
 
-    <section class="container mx-auto my-10">
-        <div class="mx-10 lg:mx-auto">
+    <section class="container mx-auto mt-10">
+        <div class="mx-10 lg:mx-auto space-y-5">
             <h2 class="text-4xl text-red-700">Stadium Tours in Madrid</h2>
             <p class="mb-7">
                 A great way to experience the city’s rich sporting history. <strong
@@ -179,5 +162,5 @@ const partners = [
         </div>
     </section>
 
-    <Partners client:visible partners={partners} />
+    <Partners client:visible />
 </BaseLayout>
