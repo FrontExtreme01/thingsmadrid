@@ -27,9 +27,14 @@ const arrayTestimonials = [
     {image: imgtest3, user: "Peter Jones", review: "The tour was informative and well-organized, but it was a bit too long for my liking. I would have preferred a shorter tour that focused on the highlights." },
     {image: imgtest1, user: "Sarah Black", review: "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid." },
 ]
+
+const seoMetaDatos = {
+	keywords: "Madrid, tours, activities, experiences, travel, tourism, Spain",
+}
+
 ---
 
-<BaseLayout>
+<BaseLayout seo={seoMetaDatos}>
 	<SliderHome client:load slides={arraySlides} />
 	<Intro />
 	<Testimonials client:visible testimonials={arrayTestimonials} title="Our Customer Reviews" />

@@ -1,9 +1,15 @@
-/* SliderHome*/
+/*--------------------------------------------------------------
+# Gallery Tours & Restaurants
+--------------------------------------------------------------*/
 .sliderGallery {
     width: 100%;
     height: auto;
     background: #f4f4f4;
     border-radius: 20px;
+
+    &:hover .iconZoom {
+        opacity: 1;
+    }
 }
 
 .imgGallery {
@@ -12,7 +18,7 @@
     object-fit: cover;
 }
 
-.nextGall{
+.nextGall {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -27,7 +33,7 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    border: 1px solid #ffff;
+    border: 2px solid #ffff;
     cursor: pointer;
     transition: 400ms;
 
@@ -37,7 +43,7 @@
     }
 }
 
-.prevGall{
+.prevGall {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -52,7 +58,7 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    border: 1px solid #ffff;
+    border: 2px solid #ffff;
     cursor: pointer;
 
     &:hover {
@@ -61,17 +67,38 @@
     }
 }
 
-.disabled{
+.disabled {
     display: none;
 }
 
-@media (max-width: 640px) {
-    .nextGall{
-        width: 40px;
-        height: 40px;
-    }
+.iconZoom {
+    transition: 200ms;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid white;
+    color: white;
+    display: grid;
+    place-items: center;
 
-    .prevGall{
+    &:hover {
+        background: #f4f4f4;
+        color: black;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .nextGall,
+    .prevGall,
+    .iconZoom {
         width: 40px;
         height: 40px;
     }
