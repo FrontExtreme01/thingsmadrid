@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #444444;
 }
 
@@ -24,12 +24,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Gabriela", serif;
+    font-family: 'Gabriela', serif;
 }
 
 ul {
     list-style: none;
     padding: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------------------------------------------------

@@ -3,6 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import Map from "../components/tours/Map";
 import FormBokun from "../components/tours/FormBokun";
 import Testimonials from "../components/home/Testimonials";
+import ShareSM from "../components/tours/ShareSM";
 const { frontmatter } = Astro.props;
 
 const seoMetaDatos = {
@@ -11,27 +12,33 @@ const seoMetaDatos = {
     image: frontmatter.image.url,
     keywords: frontmatter.keywords,
 }
+
+const siteWebURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <BaseLayout seo={seoMetaDatos}>
     <section class="mx-7 md:mx-20 lg:mx-24 my-7 md:my-14">
         <div class="flex flex-wrap">
+            <!-- Header -->
+            <header class="flex flex-wrap w-full md:px-5 lg:px-10">
+                <h1 class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-900">
+                    {frontmatter.title}
+                </h1>
+                <div class="w-2/12 flex justify-center items-center">
+                    <ShareSM client:idle site={siteWebURL} />
+                </div>
+                <ul class="flex gap-5 w-full my-6 text-base md:text-lg">
+                    <li>
+                        <i class="at-pin-destination text-sky-900"></i>
+                        <span>{frontmatter.location}</span>
+                    </li>
+                    <li>
+                        <i class="at-star text-yellow-500"></i>
+                        <span class="font-bold">{frontmatter.stars} <span class="text-slate-600 font-thin">({frontmatter.reviews})</span></span>
+                    </li>
+                </ul>
+            </header>
             <!-- Details -->
-            <div class="w-full lg:w-8/12 md:px-5 lg:px-10">
-                <header class="w-full">
-                    <h1 class="text-3xl md:text-6xl font-bold italic text-sky-900">
-                        {frontmatter.title}
-                    </h1>
-                    <ul class="flex gap-5 w-full my-6 text-base md:text-lg">
-                        <li>
-                            <i class="at-pin-destination text-sky-900"></i>
-                            <span>{frontmatter.location}</span>
-                        </li>
-                        <li>
-                            <i class="at-star text-yellow-500"></i>
-                            <span class="font-bold">{frontmatter.stars} <span class="text-slate-600 font-thin">({frontmatter.reviews})</span></span>
-                        </li>
-                    </ul>
-                </header>
+            <div class="w-full lg:w-8/12 md:px-5 lg:px-10 mb-8">
                 <slot />
                 <h3 class="text-4xl font-bold my-5">Characteristics</h3>
                 <ul class="flex flex-wrap mb-20 space-y-7">
@@ -71,10 +78,10 @@ const seoMetaDatos = {
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-house-pin-location"></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-tag"></i>
                         <div class="flex flex-col">
-                            <span class="font-bold">Meeting Points</span>
-                            <p>{frontmatter.meetingPoint}</p>
+                            <span class="font-bold">Category</span>
+                            <p>{frontmatter.category}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
@@ -108,7 +115,7 @@ const seoMetaDatos = {
                 urlCalendar={frontmatter.calendar} 
                 price={frontmatter.price} 
             />
-            <Testimonials client:visible testimonials={frontmatter.testimonials} title="What our clients say" />
+            {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title="What our clients say" />): ''}
         </div>
     </section>
     <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"></script>

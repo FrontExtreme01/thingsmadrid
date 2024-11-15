@@ -1,33 +1,49 @@
 /* Gabriela - Para encabezados */
 @font-face {
     font-family: 'Gabriela';
-    src: url('../fonts/Gabriela/Gabriela-Regular.ttf') format('ttf');
+    src: url('../fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-/* Open Sans - Para el cuerpo del texto */
+/* Poppins - Para cuerpo */
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/static/OpenSans-Regular.ttf') format('ttf');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/static/OpenSans-Bold.ttf') format('ttf');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans/static/OpenSans-Italic.ttf') format('ttf');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
     font-display: swap;
 }

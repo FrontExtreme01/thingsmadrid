@@ -5,31 +5,59 @@ description: 'Come live the emotion of soccer in one of the most emblematic stad
 featured: ''
 price: '55'
 stars: '4.5'
-reviews: '3,590'
+reviews: '2,793 reviews'
 image:
     url: '/assets/covers/tours/real-madrid-stadium-tour.webp'
-    alt: 'El logotipo completo de Astro.'
+    alt: 'cover Real Madrid Guided Stadium & Museum Tour'
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/869044?partialView=1'
-calendar: ''
-location: ''
-duration: ''
-offered: ''
-schedule: ''
-availability: ''
-cancelation: ''
-meetingPoint: ''
-difficulty: ''
-mapFrame: ''
+category: 'Spectator sports'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/869044'
+location: 'Madrid, Spain'
+duration: '1 hour'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Every day'
+cancelation: '24h before activity'
+meetingPoint: 'Stadium Tower C *On match days, tours are available up to 5 hours before the start of the match*'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12144.017705699527!2d-3.688334!3d40.453039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses-419!2sus!4v1709564222583!5m2!1ses-419!2sus'
 keywords: 'real madrid, stadium, museum, tour, soccer, madrid, spain'
-testimonials:
-  - user: 'John Doe'
-    review: 'This tour was amazing! The Iberico ham was delicious and the guide was very knowledgeable.'
-    image:
-        src: '/assets/testimonial/john-doe.jpg'
-        alt: 'John Doe'
-  - user: 'Jane Smith'
-    review: 'A fantastic experience! The wine pairing was perfect and the atmosphere was wonderful.'
-    image:
-        src: '/assets/testimonial/jane-smith.jpg'
-        alt: 'Jane Smith'
+testimonials: []
 ---
+
+import SliderGallery from '../../components/tours/SliderGallery';
+
+export const images = import.meta.glob('../../img/galleries/atletico-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    altTitle={`galería de ${frontmatter.title}`}
+/>
+
+<h2 class="text-2xl md:text-4xl font-bold mb-5">About this tour</h2>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700" >The Impressive Santiago Bernabeu Stadium</h3>
+
+<p class="text-lg text-justify my-5"> Come live the emotion of soccer in one of the most emblematic stadiums in the world. 
+The <strong>Real Madrid Stadium tour</strong> is for you! With our visits to the <strong>Santiago Bernabeu Stadium</strong>. 
+First, you will have the opportunity to tour the facilities and discover the history and achievements of <strong>Real Madrid</strong>. 
+One of the most successful teams in the world. Our tour includes a panoramic view inside the stadium that will take your breath away. 
+You will be able to feel the emotion experienced on the playing field and enjoy a privileged view of the entire stadium. 
+<span class="text-sky-600 italic font-semibold">Read more</span> </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700" >Real Madrid Museum</h3>
+
+<p class="text-lg text-justify my-5">In addition, you will have access to the <strong>Real Madrid Museum</strong>. 
+Where you can learn about the rich history of the club, its legends, and its most outstanding achievements. 
+During the visit, you will also have the opportunity to see the model of the stadium. Where you will be able to appreciate every corner of the 
+<strong>Bernabeu Stadium</strong> in detail.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700">Santiago Bernabeu Stadium Photos</h3>
+
+<p class="text-lg text-justify my-5">And best of all, you will be able to <strong>take a photo</strong> with the players in our photomontage, 
+so that you can take home an unforgettable memory of your visit. Lastly, you cannot miss a visit to the official store, where you can purchase 
+<strong>official Real Madrid</strong> products. Here you will find jerseys, balls, scarves, and many items that will help you take the passion 
+of Real Madrid with you wherever others want you to go. Don’t miss the opportunity to live a unique experience at the Santiago Bernabeu Stadium Tour! 
+We assure you that it will be a visit that you will remember forever.</p>

@@ -16,6 +16,7 @@ const toursCollection = defineCollection({
         }),
         bokun: z.string(),
         calendar: z.string(),
+        category: z.string(),
         location: z.string(),
         duration: z.string(),
         offered: z.string(),
