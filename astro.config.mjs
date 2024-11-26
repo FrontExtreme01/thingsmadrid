@@ -6,7 +6,6 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://thingsmadrid.netlify.app',
-  trailingSlash: "never",
   integrations: [tailwind(), react(), mdx()],
   i18n: {
     defaultLocale: 'es',
