@@ -1,41 +1,17 @@
-/* Gabriela - Para encabezados */
+/* Judson - Para encabezados */
 @font-face {
-    font-family: 'Gabriela';
-    src: url('../fonts/Gabriela/Gabriela-Regular.woff2') format('woff2'), /* Primero el más eficiente */
-         url('../fonts/Gabriela/Gabriela-Regular.woff') format('woff'),
-         url('../fonts/Gabriela/Gabriela-Regular.ttf') format('truetype'); /* Último recurso */
+    font-family: "Judson";
+    src: url('../fonts/judson-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap; /* Asegura la carga rápida del texto */
+    font-display: swap;
 }
 
 /* Poppins - Para cuerpo */
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
-         url('../fonts/Poppins/Poppins-Regular.woff') format('woff'),
-         url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('../fonts/poppins-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
-         url('../fonts/Poppins/Poppins-Bold.woff') format('woff'),
-         url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins/Poppins-Italic.woff2') format('woff2'),
-         url('../fonts/Poppins/Poppins-Italic.woff') format('woff'),
-         url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
     font-display: swap;
 }
