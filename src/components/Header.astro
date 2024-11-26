@@ -1,28 +1,54 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../img/logos/logo-horizontal.webp";
+import logo from "@/img/logos/logo-horizontal.webp";
+import LanguageSelector from "./LanguageSelector.astro";
+
+import { getI18N } from "@/i18n"
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '@/i18n/utils';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const navigation = [
-  { title: "Tours", link: "/tours/" },
-  { title: "Restaurants", link: "/restaurants/" },
-  { title: "Blog", link: "/blog/" },
-  { title: "Contact", link: "/contact/" },
+  {
+    title: t("nav.tours"),
+    link: translatePath('/tours/'),
+  },
+  {
+    title: t("nav.rest"),
+    link: translatePath('/restaurantes/'),
+  },
+  { title: "blog", link: "https://thingstodoinmadrid.com/blog/" },
+  {
+    title: t("nav.contact"),
+    link: translatePath('/contacto/'),
+  },
 ];
 ---
 
 <header class="bg-white sticky top-0 z-20 shadow-md">
+  <!-- Desktop -->
   <nav
     class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
     aria-label="Global"
   >
     <div class="flex lg:flex-1">
-      <a href="/" aria-label="go to main" class="-m-1.5 p-1.5">
+      <a
+        href={translatePath('/')}
+        aria-label={i18n.ACCESSIBILITY.GO_TO_HOME}
+        class="-m-1.5 p-1.5"
+      >
         <span class="sr-only">Things to do in Madrid</span>
         <Image
           src={logo}
           alt="logo things to do in madrid"
           class="h-24 w-auto"
-          widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
+          widths={[240, 500, 720, logo.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
         />
       </a>
     </div>
@@ -32,19 +58,7 @@ const navigation = [
         class="ml-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile"
       >
         <span class="sr-only">Open main menu</span>
-        <svg
-          class="size-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-        </svg>
+        <i class="at-justify size-6"></i>
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
@@ -62,10 +76,13 @@ const navigation = [
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a
         href="tel:+34672246803"
-        aria-label="call us"
-        class="rounded-lg text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"
-        ><i class="at-call-arrow-up-right"></i> Call Now</a
+        aria-label={i18n.ACCESSIBILITY.CALL_US}
+        class="rounded-3xl text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"
       >
+        <i class="at-call-arrow-up-right"></i>
+        {i18n.ACCESSIBILITY.CALL_US}
+      </a>
+      <LanguageSelector />
     </div>
   </nav>
 
@@ -76,14 +93,21 @@ const navigation = [
     >
     </div>
     <div class="menuMobile z-[110]">
-      <span class="btnClose absolute top-5 right-2 z-[120] bg-red-700 transition duration-400 cursor-pointer hover:bg-red-600 text-white rounded-full w-9 h-9 grid place-items-center"><i class="at-xmark-circle"></i></span>
+      <span
+        class="btnClose absolute top-5 right-2 z-[120] bg-red-700 transition duration-400 cursor-pointer hover:bg-red-600 text-white rounded-full w-9 h-9 grid place-items-center"
+        ><i class="at-xmark-circle"></i></span
+      >
       <div class="bg-white h-full py-10 px-5">
-        <a href="/" aria-label="go to main">
+        <a
+          href={translatePath('/')}
+          aria-label={i18n.ACCESSIBILITY.GO_TO_HOME}
+        >
           <Image
             src={logo}
             alt="logo things to do in madrid"
             class="h-auto w-auto mb-5"
-            widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
+            widths={[240, 500, 720, logo.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}
           />
         </a>
         <div class="flex flex-col space-y-5">
@@ -98,6 +122,7 @@ const navigation = [
             ))
           }
         </div>
+        <LanguageSelector />
       </div>
     </div>
   </nav>

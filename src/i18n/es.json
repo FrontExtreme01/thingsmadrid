@@ -1,0 +1,258 @@
+{
+    "SEO": {
+        "HOME_PAGE": {
+            "KEYWORDS": "Madrid, España, tours, actividades, cosas que hacer, viajes, turismo, vacaciones, visitas turísticas, atracciones"
+        },
+        "TOUR_PAGE": {
+            "TITLE": "Tours y actividades en Madrid | Things to do in Madrid",
+            "DESCRIPTION": "Descubra las mejores actividades en Madrid. Explore la ciudad con nuestras guías expertas y experimente las mejores atracciones y actividades que Madrid tiene para ofrecer.",
+            "KEYWORDS": "Madrid, tours, actividades, experiencias, viajes, turismo, España"
+        },
+        "RESTAURANT_PAGE": {
+            "TITLE": "Los Mejores Restaurantes en Madrid | Things to do in Madrid",
+            "DESCRIPTION": "Descubre los mejores restaurantes en Madrid. Encuentra restaurantes en Madrid y disfruta de tu visita a España con Things to do in Madrid.",
+            "KEYWORDS": "Madrid, restaurantes, comida, gastronomía, restaurantes, España"
+        },
+        "CONTACT_PAGE": {
+            "TITLE": "Contáctenos | Things to do in Madrid",
+            "DESCRIPTION": "Contactános para obtener más información sobre nuestros tours y actividades en Madrid. Estamos aquí para ayudarte a planificar tu viaje y aprovechar al máximo tu visita a Madrid."
+        },
+        "ABOUT_PAGE": {
+            "TITLE": "Sobre Nosotros | Things to do in Madrid",
+            "DESCRIPTION": "Acerca de Things to do in Madrid, la agencia de viajes en línea para recorridos por Madrid. Además de restaurantes, clubes nocturnos y todas las atracciones."
+        },
+        "TERMS_PAGE": {
+            "TITLE": "Términos y Condiciones | Things to do in Madrid",
+            "DESCRIPTION": "Lea todos los términos y condiciones de Things to do in Madrid para el uso de los servicios turísticos, recursos y asistencia."
+        },
+        "PRIVACY_PAGE": {
+            "TITLE": "Aviso de privacidad | Things to do in Madrid",
+            "DESCRIPTION": "Things to do in Madrid se compromete a proteger la privacidad y la información personal de los visitantes y clientes de nuestro sitio web. Lea nuestro Aviso de privacidad para obtener más información."
+        }
+    },
+    "ACCESSIBILITY": {
+        "CALL_US": "Llámanos",
+        "GO_TO_HOME": "Ir a la página de inicio",
+        "GO_TO_FACEBOOK": "Visita nuestro Facebook",
+        "GO_TO_INSTAGRAM": "Visita nuestro Instagram",
+        "GO_TO_YOUTUBE": "Visita nuestro YouTube",
+        "GO_TO_TIKTOK": "Visita nuestro TikTok",
+        "GO_TO_MAPS": "Encuentranos en Google Maps"
+    },
+    "HOME_PAGE": {
+        "INTRO": {
+            "TITLE": "Descubre las mejores cosas que hacer en Madrid",
+            "DESCRIPTION": "Encuentre todas las actividades, maravillosos lugares para ir, giras en Madrid y diviértase durante su visita a España en una de las ciudades con el mejor La belleza arquitectónica, como el Palacio Real, la historia, la cultura, como el Museo Prado y las tradiciones que esperan sorprenderlo de día o de noche. Atrévete a disfrutar de la ciudad de Red Fury."
+        },
+        "TOURS_MADRID": {
+            "TITLE": "Tours y actividades en Madrid",
+            "DESCRIPTION": "La belleza de las calles y parques de Madrid te hará enamorarte de esta gran capital de España.Haga una gira en Madrid de sus magníficos monumentos Visite los centros culturales más importantes y visite los lugares más notables en la historia de la ciudad de Red Fury.Pide una visita guiada.",
+            "BUTTON": "Explora todos los tours"
+        },
+        "TESTIMONIALS": {
+            "TITLE": "Lo que dicen nuestros clientes",
+            "TESTIMONIAL_1": {
+                "TEXT": "¡La actividad fue perfecta! La guía estaba bien informada, amigable y atractiva.La actividad fue a buen ritmo e informativo. Definitivamente lo recomendaría a cualquiera que visite Madrid.",
+                "AUTHOR": "Susan Black"
+            },
+            "TESTIMONIAL_2": {
+                "TEXT": "¡La actividad fue una excelente manera de aprender sobre la historia y la cultura de Madrid. La guía estaba bien informada y entusiasta, y la actividad estaba bien organizada.",
+                "AUTHOR": "Susan Brown"
+            },
+            "TESTIMONIAL_3": {
+                "TEXT": "La actividad fue informativa y bien organizada, pero fue demasiado larga para mi gusto. Hubiera preferido una actividad más corta que se centre en los aspectos más destacados.",
+                "AUTHOR": "Peter Jones"
+            },
+            "TESTIMONIAL_4": {
+                "TEXT": "¡La actividad fue perfecta! La guía estaba bien informada, amigable y atractiva.La actividad fue a buen ritmo e informativo. Definitivamente lo recomendaría a cualquiera que visite Madrid.",
+                "AUTHOR": "Susan Black"
+            }
+        }
+    },
+    "TOUR_PAGE": {
+        "TITLE_BANNER": "Las Mejores Actividades en Madrid",
+        "DESCRIPTION": "Como una de las ciudades más vibrantes y animadas de Europa, Madrid es un Gran destino para cualquiera que busque experimentar algunos de los mejores atracciones y actividades que la ciudad tiene para ofrecer.Si eres Planificación de un viaje a Madrid y está interesado en descubrir Todas las cosas sorprendentes que esta ciudad tiene para ofrecer, entonces podrías Quiere considerar hacer un recorrido por la ciudad. Tours en Madrid son una excelente manera de explorar la ciudad y echar un vistazo al Cultura e historia local.",
+        "STADIUM_TOURS": {
+            "TITLE": "Visitas guiadas a los estadios de Madrid",
+            "DESCRIPTION": "Una forma estupenda de conocer la rica historia deportiva de la ciudad. El estadio Santiago Bernabéu, sede del Real Madrid, y Territorio Atleti, sede del Atlético de Madrid. Son los estadios más emblemáticos del mundo y una visita guiada a los mismos ofrece a los visitantes la oportunidad de ver detrás de escena y aprender sobre la historia del club. Adéntrate en los vestuarios, la sala de prensa y la sala de trofeos, donde los visitantes pueden ver algunos de los trofeos más prestigiosos del club. Si eres un aficionado al fútbol, una visita guiada a los estadios de Madrid es una actividad imprescindible."
+        },
+        "CULTURAL_ACTIVITIES": {
+            "TITLE": "Actividades culturales en Madrid",
+            "DESCRIPTION": "Madrid es una ciudad rica en cultura e historia, y hay innumerables actividades culturales para disfrutar. La ciudad cuenta con museos de clase mundial. Madrid es el hogar de numerosos centros culturales que albergan exposiciones, conciertos y representaciones teatrales durante todo el año."
+        },
+        "CITY_TOURS": {
+            "TITLE": "Recorridos por la ciudad en Madrid",
+            "DESCRIPTION": "Madrid y sus ciudades circundantes, considere un recorrido por la ciudad que incluya Toledo, Segovia y Ávila. Puedes explorar el impresionante Palacio Real de Madrid, maravillarte con la icónica Fuente de Cibeles y relajarte en el pintoresco Parque del Retiro. Consulta más lugares para visitar en Madrid y cerca de la ciudad."
+        },
+        "MUSEUMS": {
+            "TITLE": "Museos en Madrid",
+            "DESCRIPTION": "Madrid alberga algunos de los mejores museos de Europa. La ciudad tiene un rico patrimonio cultural y sus museos lo reflejan. Algunos de los museos más populares de Madrid incluyen el Museo del Prado, el Museo Reina Sofía y el Museo Thyssen-Bornemisza. Estos museos albergan algunas de las obras de arte más importantes del mundo, incluidas pinturas de artistas famosos como Velázquez, Goya, Picasso y Dalí. Si te interesa el arte y la cultura, una visita a los museos de Madrid es imprescindible."
+        },
+        "FLAMENCO_SHOW": {
+            "TITLE": "El mejor espectáculo de flamenco en Madrid",
+            "DESCRIPTION": "El flamenco es un baile tradicional muy popular en España, y Madrid es el hogar de algunos de los mejores espectáculos de flamenco del país. Si te interesa ver un espectáculo de flamenco, entonces quizás quieras echar un vistazo a algunos de los espectáculos en Corral de la Morería, Casa Patas o Cardamomo. Estos lugares ofrecen algunos de los mejores espectáculos de flamenco en Madrid, con música en vivo, cante y baile."
+        },
+        "TAPAS": {
+            "TITLE": "Las mejores tapas de Madrid",
+            "DESCRIPTION": "Las tapas son pequeños platos de comida que se suelen comer con una bebida. Madrid es famosa por sus bares de tapas, y hay muchos lugares geniales para probarlos. Algunos de los mejores bares de tapas de Madrid incluyen La Casa del Abuelo, El Sur y Casa Mono. Estos bares sirven una variedad de tapas, incluyendo clásicos como patatas bravas y tortilla de patatas, así como platos más modernos."
+        },
+        "CATHEDRAL": {
+            "TITLE": "Catedral de Madrid",
+            "DESCRIPTION": "La Catedral de Madrid, también conocida como la Catedral de la Almudena, es uno de los edificios religiosos más importantes de la ciudad. La catedral está situada en el corazón de Madrid, cerca del Palacio Real. Es un hermoso edificio, con una mezcla de diferentes estilos arquitectónicos, incluyendo el gótico y el barroco. Si te encanta la arquitectura y la historia, entonces una visita a la catedral es una visita obligada para ti."
+        },
+        "MARKET": {
+            "TITLE": "Mercado de Madrid",
+            "DESCRIPTION": "Si estás buscando una experiencia de compras única, entonces quizás quieras visitar algunos de los mercados de Madrid. Uno de los mercados más populares de la ciudad es el Mercado de San Miguel. Este histórico mercado cubierto es un paraíso para los amantes de la gastronomía, con puestos que venden de todo, desde marisco fresco hasta quesos gourmet. Otros mercados populares de Madrid son el Mercado de la Paz y el Mercado de San Antón."
+        },
+        "SHOPPING": {
+            "TITLE": "Ir de compras en Madrid",
+            "DESCRIPTION": "Madrid es un gran lugar para ir de compras. La ciudad cuenta con una amplia variedad de tiendas, desde boutiques de lujo hasta tiendas vintage. Algunas de las mejores zonas comerciales de Madrid son Gran Vía, Salamanca y Chueca. Estas zonas albergan algunas de las mejores tiendas de la ciudad, incluidas marcas de lujo como Louis Vuitton, Prada y Gucci. Si buscas algo más exclusivo, quizá quieras echar un vistazo a algunas de las tiendas vintage y de segunda mano del barrio de Malasaña."
+        }
+    },
+    "RESTAURANT_PAGE": {
+        "TITLE_BANNER": "Los Mejores Restaurantes en Madrid",
+        "DESCRIPTION": "Te mereces experiencias gastronómicas de primer nivel, y Los mejores restaurantes de Madrid tienen muchas opciones para ofrecerte. Como una de las capitales culinarias de Europa, la ciudad cuenta con una gran variedad de restaurantes que sirven una variedad de cocinas, desde platos tradicionales españoles hasta delicias internacionales. Para probar la mejor paella de Madrid y conocer la historia de la ciudad, visita el restaurante más antiguo de Madrid y otros lugares que debes visitar, como la deliciosa comida vegetariana o los mejores churros de la ciudad. Ya sea que busques un desayuno abundante, una cena romántica o un restaurante famoso, Madrid tiene algo para satisfacer todos los paladares.",
+        "BEST_TAPAS": {
+            "TITLE": "Las mejores tapas de Madrid",
+            "DESCRIPTION": "Una de las formas más populares de comer en Madrid es probando diferentes platos de tapas. Algunos lugares excelentes para probar incluyen Casa Labra, El Sur y Juana la Loca."
+        },
+        "OLDEST_RESTAURANT": {
+            "TITLE": "El restaurante más antiguo de Madrid",
+            "DESCRIPTION": "Para platos tradicionales españoles, dirígete a Casa Mono, La Bola Taberna. Por otro lado, Sobrino de Botín es el restaurante más antiguo del mundo según Guinness World Records."
+        },
+        "FOOD_MARKET": {
+            "TITLE": "Mercado de comida de Madrid",
+            "DESCRIPTION": "Madrid tiene varios mercados de comida donde puedes encontrar una variedad de deliciosas opciones de comida. Algunos de los mercados más populares son el Mercado de San Miguel, el Mercado de San Antón y Platea Madrid."
+        },
+        "FINE_DINING": {
+            "TITLE": "Restaurantes de lujo en Madrid",
+            "DESCRIPTION": "Para disfrutar de una experiencia gastronómica más exclusiva, Madrid cuenta con varios restaurantes con estrellas Michelin. Visítelos y viva la experiencia gastronómica de la furia roja."
+        }
+    },
+    "CONTACT_PAGE": {
+        "TITLE_BANNER": "Contáctenos",
+        "TITLE_FORM": "Envíenos un mensaje",
+        "DESCRIPTION": "¡Nos encantaría saber de ti! Si tienes alguna pregunta, consulta o comentario, no dudes en ponerte en contacto con nosotros. Nuestro equipo en ThingsToDoInMadrid.com está aquí para ayudarte y asegurarte de que tengas la mejor experiencia posible.",
+        "FORM": {
+            "BUTTON": "Enviar mensaje",
+            "LABELS": {
+                "NAME": "Nombre",
+                "PHONE": "Teléfono",
+                "EMAIL": "Correo electrónico",
+                "MESSAGE": "Mensaje"
+            },
+            "PLACEHOLDERS": {
+                "NAME": "Ingrese su nombre",
+                "PHONE": "Ingrese su teléfono",
+                "EMAIL": "Ingrese su correo electrónico",
+                "MESSAGE": "¡Envíenos su mensaje!"
+            }
+        }
+    },
+    "ABOUT_PAGE": {
+        "TITLE_BANNER": "Sobre Nosotros",
+        "DESCRIPTIONS": {
+            "TEXT_1": "Bienvenido a ThingsToDoInMadrid.com tu guía definitiva para explorar la vibrante ciudad de Madrid, España. Somos una agencia de viajes de primer nivel dedicada a brindarte experiencias inolvidables y ayudarte a descubrir lo mejor que Madrid tiene para ofrecer.",
+            "TEXT_2": "Madrid, una de las ciudades más encantadoras de Europa, rebosa de belleza arquitectónica, rica historia, cultura cautivadora y tradiciones vibrantes. Ya sea que la visites durante el día o la noche, hay innumerables actividades y lugares maravillosos que esperan sorprenderte.",
+            "TEXT_3": "Nuestra agencia se especializa en ofrecer una amplia gama de recorridos y actividades que se adaptan a todos los intereses y preferencias. Sumérgete en la belleza de las calles y parques de Madrid mientras te enamoras de los magníficos monumentos y centros culturales de la capital. Explora los lugares históricos de la ciudad y adéntrate en su fascinante pasado. Y cuando se ponga el sol, experimenta la vibrante vida nocturna por la que Madrid es famosa, desde clubes nocturnos de moda y lugares de música en vivo hasta opciones de entretenimiento únicas y exóticas.",
+            "TEXT_4": "En ThingsToDoInMadrid.com, entendemos que la comida es una parte integral de cualquier experiencia de viaje. Por eso, te recomendamos los mejores restaurantes de Madrid para que puedas saborear los sabores de la cocina tradicional local o disfrutar de exclusivos establecimientos gastronómicos que te garantizan una aventura culinaria inolvidable.",
+            "TEXT_5": "Nuestra agencia también ofrece tours especializados para satisfacer tus intereses específicos. Si eres un fanático del fútbol, ​​no pierdas la oportunidad de embarcarte en un recorrido por estadios emblemáticos como el Estadio Santiago Bernabéu, sede del Real Madrid, y Territorio Atleti, sede del Atlético de Madrid. Descubre los secretos detrás de escena, explora vestuarios y salas de trofeos y sumérgete en la rica historia deportiva de la ciudad.",
+            "TEXT_6": "Para los entusiastas de la cultura, organizamos actividades que te permiten empaparte de la vibrante escena artística de Madrid. Visita museos de clase mundial que albergan obras maestras de artistas reconocidos como Velázquez, Goya, Picasso y Dalí. Asiste a cautivadoras representaciones teatrales y sumérgete en el patrimonio cultural de la ciudad.",
+            "TEXT_7": "Si quieres explorar más allá de los límites de la ciudad, ofrecemos recorridos por la ciudad que incluyen visitas a ciudades cercanas como Toledo, Segovia y Ávila, donde podrás experimentar su encanto único y sus maravillas arquitectónicas.",
+            "TEXT_8": "En ThingsToDoInMadrid.com, nos esforzamos por hacer que tu visita a Madrid sea realmente excepcional. Nuestro equipo de guías expertos y expertos en viajes se dedica a brindarte el más alto nivel de servicio, asegurando que tu experiencia de recorrido sea perfecta, informativa y memorable.",
+            "TEXT_9": "Ya sea que estés planeando un viaje de negocios, unas vacaciones en familia o una escapada romántica, ThingsToDoInMadrid.com tiene todo lo que necesitas para hacer que tu tiempo en Madrid sea inolvidable. ¡Esperamos darte la bienvenida pronto y ayudarte a descubrir lo mejor de esta increíble ciudad!"
+        }
+    },
+    "TERMS_PAGE": {
+        "TITLE": "Términos y condiciones",
+        "TERMS_CONDITIONS": {
+            "TITLE": "1. Aceptación de términos y condiciones",
+            "DESCRIPTION": "Estos Términos y Condiciones (“T&C”) establecen un acuerdo legalmente vinculante entre el usuario (“tú” o “el cliente”) y Things to do in Madrid (“la empresa”) respecto a todas las actividades que se realicen en la ciudad de Madrid. Al utilizar nuestros servicios, aceptas cumplir con estos T&C en su totalidad. Si no estás de acuerdo con alguno de los términos, te rogamos que no utilices nuestros servicios."
+        },
+        "RESERVATIONS": {
+            "TITLE": "2. Reservas y Confirmaciones",
+            "DESCRIPTION_1": "2.1. Proceso de Reserva: Puedes realizar una reserva a través de nuestra página web o contactando con nuestro equipo de atención al cliente. Para completar la reserva, deberás proporcionar la información requerida y realizar el pago correspondiente.",
+            "DESCRIPTION_2": "2.2. Confirmación de Reserva: Una vez completado el proceso de reserva, te enviaremos una confirmación vía email, que incluirá los detalles de la actividad reservada y cualquier información adicional relevante. Es su responsabilidad revisar cuidadosamente la confirmación y notificarnos inmediatamente si hay algún error o discrepancia."
+        },
+        "CANCELLATIONS": {
+            "TITLE": "3. Cancelaciones y Reembolsos",
+            "DESCRIPTION_1": "3.1 Cancelación con 24 horas de antelación: Si desea cancelar su reserva, deberá notificarnos con al menos 24 horas de antelación a la fecha de la actividad programada. Si se cumple este plazo, tendrá derecho a un reembolso total del importe pagado.",
+            "DESCRIPTION_2": "3.2 Cancelaciones con menos de 24 horas de antelación: No se realizarán reembolsos por cancelaciones realizadas con menos de 24 horas de antelación a la actividad.",
+            "DESCRIPTION_3": "3.3 Modificación de la reserva: Si desea modificar la fecha, la hora o el tipo de actividad de su reserva, haremos todo lo posible por satisfacer su solicitud, sujeto a disponibilidad. Sin embargo, no podemos garantizar que se puedan realizar cambios y estarán sujetos a nuestras políticas de disponibilidad y cancelación.",
+            "DESCRIPTION_4": "3.4 No-shows: En caso de no asistir a la actividad sin previo aviso, no se realizarán reembolsos."
+        },
+        "MODIFICATIONS": {
+            "TITLE": "4. Modificaciones y Cancelaciones por Parte de Things to do in Madrid.",
+            "DESCRIPTION_1": "4.1 Modificaciones: En circunstancias excepcionales, Things to do in Madrid puede necesitar modificar la fecha, hora, ubicación u otros detalles de una actividad reservada. En caso de modificaciones, se lo notificaremos lo antes posible y le ofreceremos alternativas adecuadas. Si no está satisfecho con las alternativas propuestas, tendrá derecho a un reembolso completo del importe pagado.",
+            "DESCRIPTION_2": "4.2 Cancelaciones: En caso de que Things to do in Madrid se vea obligado a cancelar una actividad debido a circunstancias imprevistas o de fuerza mayor, se lo informaremos inmediatamente y le ofreceremos la opción de reprogramar la actividad o recibir un reembolso completo. Responsabilidades y exención de responsabilidad."
+        },
+        "RESPONSIBILITIES": {
+            "TITLE": "5. Responsabilidades del participante",
+            "DESCRIPTION": "Al participar en nuestras actividades, usted acepta seguir todas las instrucciones proporcionadas por nuestro personal. Usted es responsable de su propia seguridad y bienestar durante la actividad y debe informarnos de cualquier condición médica relevante. Tipo de cambio de moneda."
+        },
+        "CURRENCY": {
+            "TITLE": "6. Tipo de cambio de moneda",
+            "DESCRIPTION": "Si realiza el pago de nuestros servicios utilizando una moneda distinta a la moneda local (euro), el tipo de cambio aplicado será determinado por nuestro proveedor de servicios financieros. Tenga en cuenta que pueden aplicarse tarifas de conversión de moneda adicionales, que serán su responsabilidad. Exención de responsabilidad."
+        },
+        "DISCLAIMER": {
+            "TITLE": "7. Exención de responsabilidad",
+            "DESCRIPTION": "Things to do in Madrid actúa únicamente como intermediario entre los proveedores de actividades y los clientes. No asumimos ninguna responsabilidad por cualquier daño, pérdida, lesión, accidente, retraso o inconveniente que pueda experimentar mientras participa en actividades reservadas a través de nuestra plataforma. Todos los proveedores de actividades son responsables de garantizar la seguridad de sus servicios y cumplir con los requisitos legales aplicables. Protección de Datos Personales."
+        },
+        "DATA_PROTECTION": {
+            "TITLE": "8. Protección de Datos Personales",
+            "DESCRIPTION": "En Things to do in Madrid, nos comprometemos a proteger tu privacidad y tratar tus datos personales de acuerdo con nuestra Política de Privacidad. Al utilizar nuestros servicios, aceptas el uso de tus datos personales de acuerdo con esta política. Ley Aplicable y Jurisdicción."
+        },
+        "APPLICABLE_LAW": {
+            "TITLE": "9. Ley Aplicable",
+            "DESCRIPTION": "Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes de España."
+        },
+        "JURISDICTION": {
+            "TITLE": "10. Jurisdicción",
+            "DESCRIPTION": "Cualquier disputa o reclamación relacionada con estos Términos y Condiciones, incluida cualquier violación o incumplimiento, estará sujeta a la jurisdicción exclusiva de los tribunales de Madrid, con renuncia a cualquier otro fuero que pudiera corresponder."
+        },
+        "LAST_UPDATE": "Última actualización: Julio de 2023"
+    },
+    "PRIVACY_PAGE": {
+        "POLICY": {
+            "TITLE": "Aviso de privacidad",
+            "DESCRIPTION": "ThingstodoinMadrid.com se compromete a proteger la privacidad y la información personal de los visitantes y clientes de nuestro sitio web. Este Aviso de privacidad describe cómo recopilamos, usamos, divulgamos y protegemos los datos personales que obtenemos de las personas que interactúan con nuestro sitio web y utilizan nuestros servicios turísticos."
+        },
+        "INFORMATION_COLLECT": {
+            "TITLE": "Información que recopilamos",
+            "DESCRIPTION": "Podemos recopilar los siguientes tipos de información personal: Nombre, datos de contacto (dirección de correo electrónico, número de teléfono, dirección) e información de pago cuando reserva un tour con nosotros. Información que proporciona cuando se comunica con nosotros a través de nuestro sitio web, correo electrónico u otros medios de contacto. Información de uso del sitio web, como direcciones IP, tipo de navegador, páginas de referencia y tiempos de acceso, recopilada a través de cookies y tecnologías similares."
+        },
+        "USE_INFORMATION": {
+            "TITLE": "Uso de información personal",
+            "DESCRIPTION": "Usamos la información personal recopilada para los siguientes fines: Para proporcionar los servicios turísticos que ha reservado y comunicarnos con usted con respecto a su reserva. Para responder a sus consultas y brindarle atención al cliente. Para enviarle comunicaciones de marketing y ofertas promocionales si ha brindado su consentimiento. Para mejorar nuestro sitio web, nuestros servicios y la experiencia del cliente."
+        },
+        "DISCLOSURE_INFORMATION": {
+            "TITLE": "Divulgación de información personal",
+            "DESCRIPTION": "Podemos compartir información personal con las siguientes partes: Nuestros proveedores de servicios de confianza que nos ayudan a brindar nuestros recorridos y servicios relacionados. Autoridades legales y regulatorias cuando lo requiera la ley o para proteger nuestros derechos e intereses."
+        },
+        "DATA_SECURITY": {
+            "TITLE": "Seguridad de los datos",
+            "DESCRIPTION": "Implementamos medidas técnicas y organizativas apropiadas para salvaguardar la información personal que recopilamos y protegerla contra el acceso no autorizado, la pérdida o el uso indebido."
+        },
+        "DATA_RETENTION": {
+            "TITLE": "Retención de datos",
+            "DESCRIPTION": "Retenemos la información personal durante el tiempo que sea necesario para cumplir con los fines para los que se recopiló y para cumplir con las obligaciones legales."
+        },
+        "YOUR_RIGHTS": {
+            "TITLE": "Tus derechos",
+            "DESCRIPTION": "Tiene derecho a acceder, rectificar y eliminar su información personal. También puede solicitar la restricción del procesamiento y oponerse al procesamiento de sus datos con fines de marketing. Para ejercer estos derechos o para cualquier consulta relacionada con la privacidad, comuníquese con nosotros utilizando la información que se proporciona a continuación."
+        },
+        "UPDATES_PRIVACY": {
+            "TITLE": "Actualizaciones a nuestra aviso de privacidad",
+            "DESCRIPTION": "Podemos actualizar este Aviso de Privacidad de vez en cuando. La última versión se publicará en nuestro sitio web y se indicará la fecha de la última actualización."
+        },
+        "CONTACT_US": {
+            "TITLE": "Información de contacto",
+            "DESCRIPTION": "Si tiene alguna pregunta, inquietud o solicitud con respecto a este Aviso de Privacidad o nuestras prácticas de privacidad, comuníquese con nosotros a: ThingstodoinMadrid.com Cancun México, +52 998 300 0040, reservaciones@thingstodoinmadrid.com. Al utilizar nuestro sitio web y aprovechar nuestros servicios de tours, usted reconoce que ha leído y comprendido este Aviso de Privacidad y acepta la recopilación, el uso y la divulgación de su información personal como se describe en este documento."
+        },
+        "LAST_UPDATE": "Última actualización: Junio de 2023"
+    },
+    "PARTNERS": {
+        "TITLE": "Nuestros socios",
+        "DESCRIPTION": "Nuestra plataforma está respaldada por la tecnología y la fiabilidad de nuestros socios para ofrecerle el mejor servicio y garantías en la industria del turismo."
+    }
+}

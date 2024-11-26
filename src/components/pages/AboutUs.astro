@@ -1,0 +1,48 @@
+---
+import {userTest1, userTest2, userTest3} from "@/img/allImages";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getI18N } from "@/i18n";
+
+import Hero from "../Hero.astro";
+import Testimonials from "../home/Testimonials";
+import Partners from "../home/Partners";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const seoMetaDatos = {
+    title: i18n.SEO.ABOUT_PAGE.TITLE,
+    description: i18n.SEO.ABOUT_PAGE.DESCRIPTION,
+};
+
+const arrayTestimonials = [
+    {image: userTest1, user: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_1.AUTHOR, review: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_1.TEXT },
+    {image: userTest2, user: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_2.AUTHOR, review: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_2.TEXT },
+    {image: userTest3, user: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_3.AUTHOR, review: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_3.TEXT },
+    {image: userTest1, user: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_4.AUTHOR, review: i18n.HOME_PAGE.TESTIMONIALS.TESTIMONIAL_4.TEXT },
+]
+---
+
+<BaseLayout seo={seoMetaDatos}>
+    <Hero
+        gradientBg="rgba(0,74,124,0.0),rgba(0,74,124,0.0)"
+        title={i18n.ABOUT_PAGE.TITLE_BANNER}
+        imgSrc="/assets/backgrounds/things-to-do-in-madrid-contact-us.webp"
+    />
+
+    <section class="container mx-auto text-justify">
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_1}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_2}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_3}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_4}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_5}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_6}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_7}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_8}</p>
+        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_9}</p>
+    </section>
+    
+	<Testimonials client:visible testimonials={arrayTestimonials} title={i18n.HOME_PAGE.TESTIMONIALS.TITLE} />
+
+    <Partners client:visible title={i18n.PARTNERS.TITLE} description={i18n.PARTNERS.DESCRIPTION} />
+</BaseLayout>

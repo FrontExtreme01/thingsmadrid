@@ -1,59 +1,55 @@
 ---
 import { Image } from "astro:assets";
-import img1 from "../../img/home/verified-payment-methods-things-to-do-in-madrid.webp";
-import img2 from "../../img/home/service-advantages-what-to-do-in-madrid.webp";
-import img3 from "../../img/home/read-our-madrid-tours-travel-blog.webp";
-import img4 from "../../img/home/the-best-tours-in-madrid-things-to-do-activities-excursions.webp";
+import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import {paymentMeth, serviceAdvan, madridBlog, excursions} from "@/img/allImages";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+
+const translatePath = useTranslatedPath(lang);
+
 ---
 
 <section class="container mx-auto flex justify-center text-center my-16">
     <div class="w-4/5">
         <h1 class="text-4xl md:text-5xl text-sky-900 font-bold italic mb-10">
-            The Best Things to do in Madrid
+            {i18n.HOME_PAGE.INTRO.TITLE}
         </h1>
         <p class="text-zinc-600 text-lg md:text-xl">
-            Find all the activities, marvelous places to go, Tours in Madrid and
-            have fun during your visit to Spain in one of the cities with the
-            greatest architectural beauty, like the Royal Palace, history,
-            culture, like Prado Museum, and traditions that are waiting to amaze
-            you day or night. Dare to enjoy the city of red fury.
+            {i18n.HOME_PAGE.INTRO.DESCRIPTION}
         </p>
 
         <div class="columns-1 md:columns-3 mt-16 space-y-5">
-            <Image src={img1} alt="segure checkout" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img1.width}px`} />
-            <Image src={img2} alt="our advantages" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img2.width}px`}/>
-            <Image src={img3} alt="read our blog" widths={[240, 500, img4.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${img3.width}px`}/>
+            <Image src={paymentMeth} alt="segure checkout" widths={[240, 500, paymentMeth.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${paymentMeth.width}px`} />
+            <Image src={serviceAdvan} alt="our advantages" widths={[240, 500, serviceAdvan.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${serviceAdvan.width}px`}/>
+            <Image src={madridBlog} alt="read our blog" widths={[240, 500, madridBlog.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${madridBlog.width}px`}/>
         </div>
     </div>
 </section>
 
-<section
-    class="bg-[url('/assets/backgrounds/madrid-best-tours-background.webp')] bg-no-repeat bg-center bg-cover"
->
+<section class="bg-[url('/assets/backgrounds/madrid-best-tours-background.webp')] bg-no-repeat bg-center bg-cover">
     <div class="container mx-auto px-10">
         <div class="flex flex-col md:flex-row py-8 items-center">
             <div class="text-center md:text-left basis-full md:basis-1/2" data-aos="fade-down" data-aos-delay="300">
                 <h2 class="text-4xl md:text-5xl text-white italic">
-                    Tours And Activities In Madrid
+                    {i18n.HOME_PAGE.TOURS_MADRID.TITLE}
                 </h2>
                 <p class="text-justify text-white text-lg md:text-xl mt-8 mb-16">
-                    The beauty of the streets and parks of Madrid will make you
-                    fall in love with this great capital of Spain. Take a tour
-                    in Madrid of its magnificent monuments visit the most
-                    important cultural centers and visit the most notable places
-                    in the history of the city of red fury. Ask for a Guided
-                    Tour.
+                    {i18n.HOME_PAGE.TOURS_MADRID.DESCRIPTION}
                 </p>
                 <a
-                    class="flex flex-wrap items-center justify-center mx-auto md:mx-0 w-fit text-base sm:text-xl md:text-2xl font-extrabold uppercase rounded transition duration-300 py-4 px-10 group bg-white text-red-800 hover:bg-amber-400 hover:text-white"
-                    href="/tours"
+                    class="flex flex-wrap items-center justify-center mx-auto md:mx-0 w-fit text-base sm:text-xl md:text-2xl font-extrabold uppercase rounded-2xl transition duration-300 py-4 px-10 group bg-white text-red-800 hover:bg-amber-400 hover:text-white"
+                    href={translatePath('/tours/')}
                 >
-                    Tours in Madrid <i class="at-arrow-right ml-3 transition duration-300 group-hover:translate-x-4"></i>
+                    {i18n.HOME_PAGE.TOURS_MADRID.BUTTON} <i class="at-arrow-right ml-3 transition duration-300 group-hover:translate-x-4"></i>
                 </a>
             </div>
             <div class="basis-full md:basis-1/2 mt-12 md:mt-auto" data-aos="fade-down" data-aos-delay="300">
-                <Image src={img4} alt="the best tours" class="mx-auto px-5" widths={[240, 603, img4.width]}
-                sizes={`(max-width: 360px) 240px, (max-width: 720px) 603px,  ${img4.width}px`} />
+                <Image src={excursions} alt="the best tours" class="mx-auto px-5" widths={[240, 603, excursions.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 603px,  ${excursions.width}px`} />
             </div>
         </div>
     </div>

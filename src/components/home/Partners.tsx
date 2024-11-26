@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-import part1 from '../../img/partners/1-stripe-logo.webp';
-import part2 from '../../img/partners/2-expedia-logo.webp';
-import part3 from '../../img/partners/3-viator-logo.webp';
-import part4 from '../../img/partners/4-get-your-guide-logo.webp';
-import part5 from '../../img/partners/6-bokun-logo.webp';
-import part6 from '../../img/partners/amigo-tours-logo-partner.webp';
-import part7 from '../../img/partners/atletico-de-madrid-logo-partner.webp';
-import part8 from '../../img/partners/zuazo-gastroboutique-logo-partner.webp';
+import part1 from '@/img/partners/1-stripe-logo.webp';
+import part2 from '@/img/partners/2-expedia-logo.webp';
+import part3 from '@/img/partners/3-viator-logo.webp';
+import part4 from '@/img/partners/4-get-your-guide-logo.webp';
+import part5 from '@/img/partners/6-bokun-logo.webp';
+import part6 from '@/img/partners/amigo-tours-logo-partner.webp';
+import part7 from '@/img/partners/atletico-de-madrid-logo-partner.webp';
+import part8 from '@/img/partners/zuazo-gastroboutique-logo-partner.webp';
 
 const partners = [
     { img: part1.src, alt: 'stripe' },
@@ -22,12 +22,13 @@ const partners = [
     { img: part8.src, alt: 'zuazo gastroboutique' },
 ]
 
-export default function Partners() {
+export default function Partners({ title, description }: any) {
+
     return (
         <div className="py-10 px-5 md:px-24 container mx-auto text-center" data-aos="zoom-in" data-aos-delay="500">
-            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">Our Partners</h2>
-            <p className="text-lg md:text-2xl mb-10">
-                Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry.
+            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">{title}</h2>
+            <p className="text-xl mb-10">
+                {description}
             </p>
             <Swiper
                 loop={true}

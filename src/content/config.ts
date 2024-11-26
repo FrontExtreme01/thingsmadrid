@@ -1,4 +1,3 @@
-// Importa las utilidades de `astro:content`
 import { z, defineCollection } from "astro:content";
 // Define un `type` y un `schema` para cada colección
 const toursCollection = defineCollection({

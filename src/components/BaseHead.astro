@@ -1,6 +1,6 @@
 ---
-import {seoSettings} from "../data/seoSettings";
-import '../styles/main.css';
+import {seoSettings} from "@/utils/seoSettings";
+import '@/styles/main.css';
 export interface Props {
 	namePage?: string;
 	title?: string;
@@ -13,6 +13,7 @@ export interface Props {
 const namePage = Astro.props.namePage || seoSettings.namePage;
 const title = Astro.props.title || seoSettings.title;
 const description = Astro.props.description || seoSettings.description;
+const keywords = Astro.props.keywords || "";
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
 const image = new URL(Astro.props.image || seoSettings.image, Astro.site);
 ---
@@ -28,7 +29,7 @@ const image = new URL(Astro.props.image || seoSettings.image, Astro.site);
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-<meta name="keywords" content={Astro.props.keywords || ""} />
+<meta name="keywords" content={keywords} />
 <link rel="canonical" href={canonicalURL} />
 <!-- Generator Astro -->
 <meta name="generator" content={Astro.generator} />

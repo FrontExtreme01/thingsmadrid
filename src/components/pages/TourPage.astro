@@ -1,0 +1,78 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Card from "../tours/Card.astro";
+import Partners from "../home/Partners";
+import Hero from "../Hero.astro";
+
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const allTours = await getCollection("tours");
+
+const seoMetaDatos = {
+    title: i18n.SEO.TOUR_PAGE.TITLE,
+    description: i18n.SEO.TOUR_PAGE.DESCRIPTION,
+    keywords: i18n.SEO.TOUR_PAGE.KEYWORDS,
+};
+---
+
+<BaseLayout seo={seoMetaDatos}>
+    <Hero
+        gradientBg="rgba(0,74,124,0.5),rgba(0,74,124,0.5)"
+        title={i18n.TOUR_PAGE.TITLE_BANNER}
+        imgSrc="/assets/backgrounds/things-to-do-in-madrid-tours-and-activities.webp"
+    />
+    <section class="container mx-auto my-10">
+        <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
+            {i18n.TOUR_PAGE.DESCRIPTION}
+        </p>
+        <div class="flex flex-wrap md:-mx-4">
+            {allTours.map((tour) => <Card tour={tour} />)}
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10">
+        <div class="mx-10 lg:mx-auto">
+            <h2 class="uppercase text-3xl text-red-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.STADIUM_TOURS.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.TOUR_PAGE.STADIUM_TOURS.DESCRIPTION}</p>
+            <h2 class="uppercase text-3xl text-red-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.CULTURAL_ACTIVITIES.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.TOUR_PAGE.CULTURAL_ACTIVITIES.DESCRIPTION}</p>
+            <h2 class="uppercase text-3xl text-red-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.CITY_TOURS.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.TOUR_PAGE.CITY_TOURS.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.MUSEUMS.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.MUSEUMS.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.FLAMENCO_SHOW.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.FLAMENCO_SHOW.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.TAPAS.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.TAPAS.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.CATHEDRAL.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.CATHEDRAL.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.MARKET.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.MARKET.DESCRIPTION}</p>
+            <h3 class="uppercase text-2xl text-sky-700 font-bold mt-10 mb-2">
+                {i18n.TOUR_PAGE.SHOPPING.TITLE}
+            </h3>
+            <p class="text-lg">{i18n.TOUR_PAGE.SHOPPING.DESCRIPTION}</p>
+        </div>
+    </section>
+
+    <Partners client:visible title={i18n.PARTNERS.TITLE} description={i18n.PARTNERS.DESCRIPTION} />
+</BaseLayout>

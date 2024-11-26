@@ -1,0 +1,56 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const seoMetaDatos = {
+    title: i18n.SEO.PRIVACY_PAGE.TITLE,
+    description: i18n.SEO.PRIVACY_PAGE.DESCRIPTION,
+};
+---
+
+<BaseLayout seo={seoMetaDatos}>
+    <section class="container mx-auto text-justify">
+        <h1 class="text-center uppercase text-4xl text-red-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.POLICY.TITLE}
+        </h1>
+        <p>{i18n.PRIVACY_PAGE.POLICY.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.INFORMATION_COLLECT.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.INFORMATION_COLLECT.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.USE_INFORMATION.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.USE_INFORMATION.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.DISCLOSURE_INFORMATION.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.DISCLOSURE_INFORMATION.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.DATA_SECURITY.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.DATA_SECURITY.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.DATA_RETENTION.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.DATA_RETENTION.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.YOUR_RIGHTS.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.YOUR_RIGHTS.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.UPDATES_PRIVACY.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.UPDATES_PRIVACY.DESCRIPTION}</p>
+        <h2 class="uppercase text-2xl text-sky-700 font-bold mt-8 mb-4">
+            {i18n.PRIVACY_PAGE.CONTACT_US.TITLE}
+        </h2>
+        <p>{i18n.PRIVACY_PAGE.CONTACT_US.DESCRIPTION}</p>
+        <p class="text-center font-bold text-lg text-amber-400 my-8">
+            {i18n.PRIVACY_PAGE.LAST_UPDATE}
+        </p>
+    </section>
+</BaseLayout>

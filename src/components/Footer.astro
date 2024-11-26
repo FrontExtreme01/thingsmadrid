@@ -1,56 +1,56 @@
 ---
+import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '@/i18n/utils';
 import Image from "astro/components/Image.astro"
-import logo from "../img/logos/logo-footer-thigns-to-do-in-madrid.webp"
+import logo from "@/img/logos/logo-footer-thigns-to-do-in-madrid.webp"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="bg-sky-900">
     <div class="container mx-auto text-center pt-20 pb-5">
         <div class="flex justify-center flex-wrap gap-7 sm:gap-14 mb-5">
-            <a  aria-label="go to the facebook"
+            <a  aria-label={i18n.ACCESSIBILITY.GO_TO_FACEBOOK}
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.facebook.com/thingstodoinmadrid"
-                ><i class="at-facebook"></i></a
-            >
-            <a aria-label="go to the instagram"
+                ><i class="at-facebook"></i></a>
+            <a aria-label={i18n.ACCESSIBILITY.GO_TO_INSTAGRAM}
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.instagram.com/thingstodoinmadrid/"
-                ><i class="at-instagram"></i></a
-            >
-            <a aria-label="go to the twitter"
+                ><i class="at-instagram"></i></a>
+            <a aria-label={i18n.ACCESSIBILITY.GO_TO_YOUTUBE}
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.youtube.com/@ThingsToDoInMadrid"
-                ><i class="at-youtube"></i></a
-            >
-            <a aria-label="go to the tiktok" 
+                ><i class="at-youtube"></i></a>
+            <a aria-label={i18n.ACCESSIBILITY.GO_TO_TIKTOK}
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.tiktok.com/@thingstodoinmadrid"
-                ><i class="at-tiktok"></i></a
-            >
-            <a aria-label="go to the google maps"
+                ><i class="at-tiktok"></i></a>
+            <a aria-label={i18n.ACCESSIBILITY.GO_TO_MAPS}
                 class="text-white font-bold hover:text-amber-400 text-4xl"
                 href="https://www.google.com/maps/place/Things+to+do+in+Madrid/@40.4359765,-3.6906525,17z/data=!4m6!3m5!1s0xd422985069773bf:0xe2ece3bdd86e7a12!8m2!3d40.4359765!4d-3.6906525!16s%2Fg%2F11v05x80p1?entry=ttu"
-                ><i class="at-pin-destination"></i></a
-            >
+                ><i class="at-pin-destination"></i></a>
         </div>
-        <a href="/">
+        <a href={translatePath('/')}>
             <Image src={logo} alt="things to do in madrid" class="mx-auto" widths={[240, 500, 720, logo.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px, (max-width: 1600px) 720px,  ${logo.width}px`}/>
-            </a
-        >
+        </a>
         <ul class="flex justify-center flex-wrap gap-5 sm:gap-14 text-white mt-10">
             <li>
-                <a class="hover:text-amber-400" href="/about">About Us</a>
+                <a class="hover:text-amber-400" href={translatePath('/nosotros/')}>{t("nav.aboutUs")}</a>
             </li>
             <li>
-                <a class="hover:text-amber-400" href="/terms">Terms of services</a>
+                <a class="hover:text-amber-400" href={translatePath('/terminos-de-servicio/')}>{t("nav.terms")}</a>
             </li>
             <li>
-                <a class="hover:text-amber-400" href="/privacy">Privacy Policy</a>
+                <a class="hover:text-amber-400" href={translatePath('/privacidad/')}>{t("nav.privacy")}</a>
             </li>
         </ul>
-        <p class="text-white mt-10 text-sm">
-            &copy; 2014 - 2022 <span class="font-bold"
-                >Things To Do In Madrid</span
-            >. All Rights Reserved
+        <p class="text-white mt-10 text-sm">&copy; 2014 - 2024 <span class="font-bold">Things To Do In Madrid</span>. {t("footer.copyrigth")}
         </p>
     </div>
 </footer>

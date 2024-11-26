@@ -1,0 +1,58 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Card from "../restaurants/Card.astro";
+import Hero from "../Hero.astro";
+import Partners from "../home/Partners";
+
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const allRestaurants = await getCollection("restaurants");
+
+const seoMetaDatos = {
+    title: i18n.SEO.RESTAURANT_PAGE.TITLE,
+    description: i18n.SEO.RESTAURANT_PAGE.DESCRIPTION,
+    keywords: i18n.SEO.RESTAURANT_PAGE.KEYWORDS,
+};
+---
+
+<BaseLayout seo={seoMetaDatos}>
+    <Hero
+        gradientBg="rgba(219, 82, 19, 0.5),rgba(219, 82, 19, 0.5)"
+        title={i18n.RESTAURANT_PAGE.TITLE_BANNER}
+        imgSrc="/assets/backgrounds/best-restaurants-in-madrid-tapas-in-spain-things-to-do-activities-what-to-eat.webp"
+    />
+    <section class="container mx-auto my-10">
+        <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
+            {i18n.RESTAURANT_PAGE.DESCRIPTION}
+        </p>
+        <div class="flex flex-wrap md:-mx-4">
+            {allRestaurants.map((rest) => <Card restaurant={rest} />)}
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10">
+        <div class="mx-10 lg:mx-auto">
+            <h2 class="uppercase text-3xl text-orange-500 font-bold mt-10 mb-2">
+                {i18n.RESTAURANT_PAGE.BEST_TAPAS.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.RESTAURANT_PAGE.BEST_TAPAS.DESCRIPTION}</p>
+            <h2 class="uppercase text-3xl text-orange-500 font-bold mt-10 mb-2">
+                {i18n.RESTAURANT_PAGE.OLDEST_RESTAURANT.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.RESTAURANT_PAGE.OLDEST_RESTAURANT.DESCRIPTION}</p>
+            <h2 class="uppercase text-3xl text-orange-500 font-bold mt-10 mb-2">
+                {i18n.RESTAURANT_PAGE.FOOD_MARKET.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.RESTAURANT_PAGE.FOOD_MARKET.DESCRIPTION}</p>
+            <h2 class="uppercase text-3xl text-orange-500 font-bold mt-10 mb-2">
+                {i18n.RESTAURANT_PAGE.FINE_DINING.TITLE}
+            </h2>
+            <p class="text-lg">{i18n.RESTAURANT_PAGE.FINE_DINING.DESCRIPTION}</p>
+        </div>
+    </section>
+
+    <Partners client:visible title={i18n.PARTNERS.TITLE} description={i18n.PARTNERS.DESCRIPTION} />
+</BaseLayout>

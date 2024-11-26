@@ -1,0 +1,258 @@
+{
+    "SEO": {
+        "HOME_PAGE": {
+            "KEYWORDS": "Madrid, Spain, tours, activities, things to do, travel, tourism, vacation, sightseeing, attractions"
+        },
+        "TOUR_PAGE": {
+            "TITLE": "Tours and Activities in Madrid | Things to do in Madrid",
+            "DESCRIPTION": "Discover the best things to do in Madrid. Explore the city with our expert guides and experience the best attractions and activities Madrid has to offer.",
+            "KEYWORDS": "Madrid, Spain, tours, activities, things to do, travel, tourism, vacation, sightseeing, attractions"
+        },
+        "RESTAURANT_PAGE": {
+            "TITLE": "The Best Restaurants in Madrid | Things to do in Madrid",
+            "DESCRIPTION": "Discover the best restaurants in Madrid. Find restaurants in Madrid and enjoy your visit to Spain with Things to do in Madrid.",
+            "KEYWORDS": "Madrid, restaurants, food, gastronomy, restaurants, Spain"
+        },
+        "CONTACT_PAGE": {
+            "TITLE": "Contact Us | Things to do in Madrid",
+            "DESCRIPTION": "Contact us for more information about our tours and activities in Madrid. We are here to help you plan your trip and make the most of your visit to Madrid."
+        },
+        "ABOUT_PAGE": {
+            "TITLE": "About Us | Things to do in Madrid",
+            "DESCRIPTION": "About Things to do in Madrid, the online travel agency for tours around Madrid. Plus restaurants, nightclubs and all the attractions."
+        },
+        "TERMS_PAGE": {
+            "TITLE": "Terms and Conditions | Things to do in Madrid",
+            "DESCRIPTION": "Please read all of Things to do in Madrid's terms and conditions for the use of tourist services, resources and assistance."
+        },
+        "PRIVACY_PAGE": {
+            "TITLE": "Privacy Policy | Things to do in Madrid",
+            "DESCRIPTION": "Things to do in Madrid is committed to protecting the privacy and personal information of our website visitors and customers. Please read our Privacy Notice for more information."
+        }
+    },
+    "ACCESSIBILITY": {
+        "CALL_US": "Call us",
+        "GO_TO_HOME": "Go to Home",
+        "GO_TO_FACEBOOK": "Visit our Facebook page",
+        "GO_TO_INSTAGRAM": "Visit our Instagram page",
+        "GO_TO_YOUTUBE": "Visit our YouTube channel",
+        "GO_TO_TIKTOK": "Visit our TikTok page",
+        "GO_TO_MAPS": "See our location on Google Maps"
+    },
+    "HOME_PAGE": {
+        "INTRO": {
+            "TITLE": "The best Things to do in Madrid",
+            "DESCRIPTION": "Find all the activities, marvelous places to go, Tours in Madrid and have fun during your visit to Spain in one of the cities with the greatest architectural beauty, like the Royal Palace, history, culture, like Prado Museum, and traditions that are waiting to amaze you day or night. Dare to enjoy the city of red fury."
+        },
+        "TOURS_MADRID": {
+            "TITLE": "Tours And Activities In Madrid",
+            "DESCRIPTION": "The beauty of the streets and parks of Madrid will make you fall in love with this great capital of Spain. Take a tour in Madrid of its magnificent monuments visit the most important cultural centers and visit the most notable places in the history of the city of red fury. Ask for a Guided Tour.",
+            "BUTTON": "Explore all tours"
+        },
+        "TESTIMONIALS": {
+            "TITLE": "What our customers say",
+            "TESTIMONIAL_1": {
+                "TEXT": "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid.",
+                "AUTHOR": "Susan Black"
+            },
+            "TESTIMONIAL_2": {
+                "TEXT": "The tour was a great way to learn about the history and culture of Madrid. The guide was knowledgeable and enthusiastic, and the tour was well-organized",
+                "AUTHOR": "Susan Brown"
+            },
+            "TESTIMONIAL_3": {
+                "TEXT": "The tour was informative and well-organized, but it was a bit too long for my liking. I would have preferred a shorter tour that focused on the highlights.",
+                "AUTHOR": "Peter Jones"
+            },
+            "TESTIMONIAL_4": {
+                "TEXT": "The tour was perfect! The guide was knowledgeable, friendly, and engaging. The tour was well-paced and informative. I would definitely recommend it to anyone visiting Madrid.",
+                "AUTHOR": "Susan Black"
+            }
+        }
+    },
+    "TOUR_PAGE": {
+        "TITLE_BANNER": "The Best Tours in Madrid",
+        "DESCRIPTION": "As one of the most vibrant and lively cities in Europe, Madrid is a great destination for anyone looking to experience some of the best attractions and activities that the city has to offer. If you are planning a trip to Madrid and are interested in discovering all of the amazing things that this city has to offer, then you might want to consider taking a tour of the city. Tours in Madrid are an excellent way to explore the city and get a glimpse into the local culture and history.",
+        "STADIUM_TOURS": {
+            "TITLE": "Stadium Tours in Madrid",
+            "DESCRIPTION": "A great way to experience the city’s rich sporting history. The Santiago Bernabeu Stadium, home to Real Madrid, and Territorio Atleti, home of Atletico de Madrid. Those are the most iconic stadiums in the world, and a tour of those stadiums offers visitors a chance to see behind the scenes and learn about the club’s history. Delve into the dressing rooms, the press room, and the trophy room, where visitors can see some of the club’s most prestigious trophies. If you are a football fan, then a stadium tour in Madrid is a must-do activity."
+        },
+        "CULTURAL_ACTIVITIES": {
+            "TITLE": "Culture Activities in Madrid",
+            "DESCRIPTION": " Madrid is a city rich in culture and history, and there are countless cultural activities to enjoy. The city boasts world-class museums. Madrid is home to numerous cultural centers that host exhibitions, concerts, and theater performances throughout the year."
+        },
+        "CITY_TOURS": {
+            "TITLE": "City Tours in Madrid",
+            "DESCRIPTION": " Madrid and its surrounding cities, consider a city tour that includes Toledo, Segovia, and Avila. You can explore the stunning Royal Palace of Madrid, marvel at the iconic Cibeles Fountain, and relax in the picturesque Retiro Park. Check out more places to visit in Madrid and near the city."
+        },
+        "MUSEUMS": {
+            "TITLE": "Museums in Madrid",
+            "DESCRIPTION": "Madrid is home to some of the best museums in Europe. The city has a rich cultural heritage, and its museums reflect this. Some of the most popular museums in Madrid include the Prado Museum, the Reina Sofia Museum, and the Thyssen-Bornemisza Museum. These museums are home to some of the most important works of art in the world, including paintings by famous artists such as Velazquez, Goya, Picasso, and Dali. If you are interested in art and culture, then a tour of Madrid’s museums is a must."
+        },
+        "FLAMENCO_SHOW": {
+            "TITLE": "Best Flamenco Show in Madrid",
+            "DESCRIPTION": "Flamenco is a traditional dance that is popular in Spain, and Madrid is home to some of the best flamenco shows in the country. If you are interested in seeing a flamenco show, then you might want to check out some of the shows at Corral de la Moreria, Casa Patas, or Cardamomo. These venues offer some of the best flamenco shows in Madrid, with live music, singing, and dancing."
+        },
+        "TAPAS": {
+            "TITLE": "Best Tapas in Madrid",
+            "DESCRIPTION": "The Tapas are small plates of food that are typically eaten with a drink. Madrid is famous for its tapas bars, and there are many great places to try them. Some of the best tapas bars in Madrid include La Casa del Abuelo, El Sur, and Casa Mono. These bars serve a variety of tapas, including classics like patatas bravas and tortilla de patatas, as well as more modern dishes."
+        },
+        "CATHEDRAL": {
+            "TITLE": "Cathedral in Madrid",
+            "DESCRIPTION": "The Cathedral of Madrid, also known as the Almudena Cathedral, is one of the most important religious buildings in the city. The cathedral is located in the heart of Madrid, near the Royal Palace. It is a beautiful building, with a mix of different architectural styles, including Gothic and Baroque. If you love architecture and history, then a visit to the cathedral is a must for you."
+        },
+        "MARKET": {
+            "TITLE": "Market in Madrid",
+            "DESCRIPTION": "If you are looking for a unique shopping experience, then you might want to check out some of the markets in Madrid. One of the most popular markets in the city is the Mercado de San Miguel. This historic covered market is a foodie’s paradise, with stalls selling everything from fresh seafood to gourmet cheeses. Other popular markets in Madrid include the Mercado de la Paz and the Mercado de San Anton."
+        },
+        "SHOPPING": {
+            "TITLE": "Shopping in Madrid",
+            "DESCRIPTION": "Madrid is a great place to go shopping. The city has a wide variety of stores, from high-end boutiques to vintage shops. Some of the best shopping areas in Madrid include Gran Via, Salamanca, and Chueca. These areas are home to some of the best stores in the city, including luxury brands like Louis Vuitton, Prada, and Gucci. If you are looking for something more unique, then you might want to check out some of the vintage and second-hand shops in the Malasaña neighborhood."
+        }
+    },
+    "RESTAURANT_PAGE": {
+        "TITLE_BANNER": "The Best Restaurants in Madrid",
+        "DESCRIPTION": "You deserve top-notch dining experiences, The best Restaurants in Madrid has plenty of options to offer. As one of the culinary capitals of Europe, the city boasts an array of restaurants serving up a range of cuisines from traditional Spanish dishes to international delights. For the best paella in Madrid, and for a taste of the city’s history. Visit the oldest restaurant in Madrid and some other must-visit spots include the delicious vegetarian fare or the best churros in town. Whether you’re looking for a hearty breakfast, a romantic dinner, or a famous dining spot, Madrid has something to satisfy every palate.",
+        "BEST_TAPAS": {
+            "TITLE": "Best Tapas in Madrid",
+            "DESCRIPTION": "One of the most popular ways to eat in Madrid is by trying different tapas dishes. Some great places to try include Casa Labra, El Sur, and Juana la Loca."
+        },
+        "OLDEST_RESTAURANT": {
+            "TITLE": "The oldest Restaurant in Madrid",
+            "DESCRIPTION": "For traditional Spanish dishes, head to Casa Mono, La Bola Taberna. On the other hand, Sobrino de Botín is the oldest restaurant in the world according to Guinness World Records."
+        },
+        "FOOD_MARKET": {
+            "TITLE": "Food Market Madrid",
+            "DESCRIPTION": "Madrid has several food markets where you can find a variety of delicious food options. Some of the most popular markets include Mercado de San Miguel, Mercado de San Antón, and Platea Madrid."
+        },
+        "FINE_DINING": {
+            "TITLE": "Fine dining in Madrid",
+            "DESCRIPTION": "For a more upscale dining experience, Madrid has several Michelin-starred restaurants, visit them and live the red fury dinning experience. No matter what taste of food or dining experience you’re looking for, Madrid has something to offer. Don’t be afraid to explore and try new things!"
+        }
+    },
+    "CONTACT_PAGE": {
+        "TITLE_BANNER": "Contact Us",
+        "TITLE_FORM": "Send Us a Message",
+        "DESCRIPTION": "We would love to hear from you! If you have any questions, inquiries, or feedback, please don’t hesitate to get in touch with us. Our team at ThingsToDoInMadrid.com is here to assist you and ensure you have the best possible experience.",
+        "FORM": {
+            "BUTTON": "Send Message",
+            "LABELS": {
+                "NAME": "Name",
+                "PHONE": "Phone",
+                "EMAIL": "Email",
+                "MESSAGE": "Message"
+            },
+            "PLACEHOLDERS": {
+                "NAME": "Enter your name",
+                "PHONE": "Enter your phone number",
+                "EMAIL": "Enter your email",
+                "MESSAGE": "Enter your message"
+            }
+        }
+    },
+    "ABOUT_PAGE": {
+        "TITLE_BANNER": "About Us",
+        "DESCRIPTIONS": {
+            "TEXT_1": "Welcome to ThingsToDoInMadrid.com, your ultimate guide to exploring the vibrant city of Madrid, Spain. We are a premier tours agency dedicated to providing you with unforgettable experiences and helping you discover the best that Madrid has to offer.",
+            "TEXT_2": "As one of the most enchanting cities in Europe, Madrid is brimming with architectural beauty, rich history, captivating culture, and vibrant traditions. Whether you’re visiting during the day or night, there are countless activities and marvelous places waiting to amaze you.",
+            "TEXT_3": "Our agency specializes in offering a wide range of tours and activities that cater to every interest and preference. Immerse yourself in the beauty of Madrid’s streets and parks as you fall in love with the capital’s magnificent monuments and cultural centers. Explore the city’s historical landmarks and delve into its fascinating past. And when the sun sets, experience the pulsating nightlife that Madrid is renowned for, from trendy nightclubs and live music venues to unique and exotic entertainment options.",
+            "TEXT_4": "At ThingsToDoInMadrid.com, we understand that food is an integral part of any travel experience. That’s why we provide recommendations for the best restaurants in Madrid, ensuring that you savor the flavors of traditional local cuisine or indulge in exclusive dining establishments that guarantee a memorable culinary adventure.",
+            "TEXT_5": "Our agency also offers specialized tours to cater to your specific interests. If you’re a football fan, don’t miss the opportunity to embark on a stadium tour of iconic venues like the Santiago Bernabeu Stadium, home to Real Madrid, and Territorio Atleti, home of Atletico de Madrid. Discover the behind-the-scenes secrets, explore dressing rooms and trophy rooms, and immerse yourself in the rich sporting history of the city.",
+            "TEXT_6": "For culture enthusiasts, we organize activities that allow you to soak up Madrid’s vibrant artistic scene. Visit world-class museums housing masterpieces by renowned artists such as Velazquez, Goya, Picasso, and Dali. Attend captivating theater performances and immerse yourself in the city’s cultural heritage.",
+            "TEXT_7": "If you want to explore beyond the city limits, we offer city tours that include visits to nearby cities like Toledo, Segovia, and Avila, where you can experience their unique charm and architectural wonders.",
+            "TEXT_8": "At ThingsToDoInMadrid.com, we strive to make your visit to Madrid truly exceptional. Our team of knowledgeable guides and travel experts is dedicated to providing you with the highest level of service, ensuring that your tour experience is seamless, informative, and memorable.",
+            "TEXT_9": "Come and join us as we unveil the secrets of Madrid, and let us create unforgettable memories that will last a lifetime. Book your tour with ThingsToDoInMadrid.com and embark on an extraordinary journey through the enchanting city of red fury."
+        }
+    },
+    "TERMS_PAGE": {
+        "TITLE": "Terms and Conditions",
+        "TERMS_CONDITIONS": {
+            "TITLE": "1. Acceptance of Terms and Conditions",
+            "DESCRIPTION": "These Terms and Conditions (“T&C”) establish a legally binding agreement between the user (“you” or “the customer”) and Things to do in Madrid (“the company”) regarding all activities carried out in the city of Madrid. By using our services, you agree to comply with these T&C in their entirety. If you do not agree with any of the terms, we ask that you do not use our services."
+        },
+        "RESERVATIONS": {
+            "TITLE": "2. Reservations and Confirmations",
+            "DESCRIPTION_1": "2.1. Booking Process: You can make a reservation through our website or by contacting our customer service team. To complete the booking, you must provide the required information and make the corresponding payment.",
+            "DESCRIPTION_2": "2.2. Booking Confirmation: Once the booking process is completed, we will send you a confirmation via email, which will include the details of the reserved activity and any relevant additional information. It is your responsibility to carefully review the confirmation and notify us immediately if there are any errors or discrepancies."
+        },
+        "CANCELLATIONS": {
+            "TITLE": "3. Refund and Cancellation Policy",
+            "DESCRIPTION_1": "3.1 24-Hour Cancellation: If you wish to cancel your reservation, you must notify us at least 24 hours in advance of the scheduled activity date. If this deadline is met, you will be entitled to a full refund of the amount paid.",
+            "DESCRIPTION_2": "3.2 Cancellations within 24 Hours: No refunds will be made for cancellations made within 24 hours prior to the activity.",
+            "DESCRIPTION_3": "3.3 Reservation Modification: If you wish to modify the date, time, or type of activity of your reservation, we will do our best to accommodate your request, subject to availability. However, we cannot guarantee that changes can be made and will be subject to our availability and cancellation policies.",
+            "DESCRIPTION_4": "3.4 No-shows: In case of failure to attend the activity without prior notice, no refunds will be issued."
+        },
+        "MODIFICATIONS": {
+            "TITLE": "4. Modifications and Cancellations by Things to do in Madrid.",
+            "DESCRIPTION_1": "4.1 Modifications: In exceptional circumstances, Things to do in Madrid may need to modify the date, time, location, or other details of a reserved activity. In case of modifications, we will notify you as soon as possible and offer you suitable alternatives. If you are not satisfied with the proposed alternatives, you will be entitled to a full refund of the amount paid.",
+            "DESCRIPTION_2": "4.2 Cancellations: In the event that Things to do in Madrid is compelled to cancel an activity due to unforeseen circumstances or force majeure, we will inform you immediately and offer you the option to reschedule the activity or receive a full refund. Responsibilities and Liability Waiver."
+        },
+        "RESPONSIBILITIES": {
+            "TITLE": "5. Participant’s Responsibility",
+            "DESCRIPTION": "By participating in our activities, you agree to follow all instructions provided by our staff. You are responsible for your own safety and well-being during the activity and must inform us of any relevant medical conditions. Currency Exchange Rate. "
+        },
+        "CURRENCY": {
+            "TITLE": "6. Currency Conversion",
+            "DESCRIPTION": "If you make payment for our services using a currency other than the local currency (euro), the exchange rate applied will be determined by our financial service provider. Please note that additional currency conversion fees may apply, which will be your responsibility. Liability Waiver."
+        },
+        "DISCLAIMER": {
+            "TITLE": "7. Disclaimer of Liability",
+            "DESCRIPTION": "Things to do in Madrid acts solely as an intermediary between activity providers and customers. We assume no liability for any damage, loss, injury, accident, delay, or inconvenience you may experience while participating in activities booked through our platform. All activity providers are responsible for ensuring the safety of their services and complying with applicable legal requirements. Protection of Personal Data."
+        },
+        "DATA_PROTECTION": {
+            "TITLE": "8. Privacy and Confidentiality",
+            "DESCRIPTION": "At Things to do in Madrid, we are committed to protecting your privacy and treating your personal data in accordance with our Privacy Policy. By using our services, you accept the use of your personal data in accordance with this policy. Applicable Law and Jurisdiction."
+        },
+        "APPLICABLE_LAW": {
+            "TITLE": "9. Applicable Law",
+            "DESCRIPTION": "These Terms and Conditions shall be governed and interpreted in accordance with the laws of Spain."
+        },
+        "JURISDICTION": {
+            "TITLE": "10. Jurisdiction",
+            "DESCRIPTION": "Any dispute or claim relating to these Terms and Conditions, including any violation or breach, shall be subject to the exclusive jurisdiction of the courts of Madrid, waiving any other venue that may correspond."
+        },
+        "LAST_UPDATE": "Last update: July 2023"
+    },
+    "PRIVACY_PAGE": {
+        "POLICY": {
+            "TITLE": "Privacy Notice",
+            "DESCRIPTION": " ThingstodoinMadrid.com is committed to protecting the privacy and personal information of our website visitors and customers. This Privacy Notice outlines how we collect, use, disclose, and protect the personal data we obtain from individuals who interact with our website and avail themselves of our tour services."
+        },
+        "INFORMATION_COLLECT": {
+            "TITLE": "Information We Collect",
+            "DESCRIPTION": "We may collect the following types of personal information: Name, contact details (email address, phone number, address), and payment information when you book a tour with us. Information you provide when you communicate with us through our website, email, or other means of contact. Website usage information such as IP addresses, browser type, referring pages, and access times, collected through cookies and similar technologies."
+        },
+        "USE_INFORMATION": {
+            "TITLE": "Use of Personal Information",
+            "DESCRIPTION": " We use the collected personal information for the following purposes: To provide the tour services you have booked and communicate with you regarding your reservation. To respond to your inquiries and provide customer support. To send you marketing communications and promotional offers if you have provided your consent. To improve our website, services, and customer experience."
+        },
+        "DISCLOSURE_INFORMATION": {
+            "TITLE": "Disclosure of Personal Information",
+            "DESCRIPTION": "We may share personal information with the following parties: Our trusted service providers who assist us in delivering our tours and related services. Legal and regulatory authorities when required by law or to protect our rights and interests."
+        },
+        "DATA_SECURITY": {
+            "TITLE": "Data Security",
+            "DESCRIPTION": "We implement appropriate technical and organizational measures to safeguard the personal information we collect and protect it against unauthorized access, loss, or misuse."
+        },
+        "DATA_RETENTION": {
+            "TITLE": "Data Retention",
+            "DESCRIPTION": "We retain personal information for as long as necessary to fulfill the purposes for which it was collected and to comply with legal obligations."
+        },
+        "YOUR_RIGHTS": {
+            "TITLE": "Your Rights",
+            "DESCRIPTION": "You have the right to access, rectify, and delete your personal information. You may also request the restriction of processing and object to the processing of your data for marketing purposes. To exercise these rights or for any privacy-related inquiries, please contact us using the information provided below."
+        },
+        "UPDATES_PRIVACY": {
+            "TITLE": "Updates to this Privacy Notice",
+            "DESCRIPTION": " We may update this Privacy Notice from time to time. The latest version will be posted on our website, and the date of the last update will be indicated."
+        },
+        "CONTACT_US": {
+            "TITLE": "Contact Information",
+            "DESCRIPTION": " If you have any questions, concerns, or requests regarding this Privacy Notice or our privacy practices, please contact us at: ThingstodoinMadrid.comCancun México, +52 998 300 0040, reservaciones@thingstodoinmadrid.com. By using our website and availing yourself of our tour services, you acknowledge that you have read and understood this Privacy Notice and consent to the collection, use, and disclosure of your personal information as described herein."
+        },
+        "LAST_UPDATE": "Last updated: June 2023"
+    },
+    "PARTNERS": {
+        "TITLE": "Our Partners",
+        "DESCRIPTION": "Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry."
+    }
+}

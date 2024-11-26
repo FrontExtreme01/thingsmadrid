@@ -26,9 +26,19 @@ export default function SliderHome({ slides }: any) {
                 modules={[Pagination, Autoplay]}
                 className={`mySwiper ${styles.sliderHome}`}
             >
-                {slides.map((slide: any) => (
-                    <SwiperSlide key={slide.id}>
-                        <img className={styles.imgSlider} width="1920" height="994" src={slide.img.src} alt={slide.title} loading={slide.carga} decoding="async" fetchPriority={slide.priority} srcSet={`${slide.img.src} 240w, ${slide.img.src} 600w, ${slide.img.src} 720w, ${slide.img.src} 840w, ${slide.img.src} 994w `} sizes={`(max-width: 360px) 240px, (max-width: 640px) 600px, (max-width: 768px) 720px, (max-width: 1024px) 840px,  ${slide.img.width}px`} />
+                {slides.map((slide: any, index: number) => (
+                    <SwiperSlide key={index}>
+                        <img
+                            className={styles.imgSlider}
+                            width="1920"
+                            height="994"
+                            src={slide.image.src}
+                            alt={slide.title}
+                            loading={index == 0 ? 'eager' : 'lazy'} 
+                            decoding='async' 
+                            srcSet={`${slide.image.src} 240w, ${slide.image.src} 600w, ${slide.image.src} 720w, ${slide.image.src} 840w, ${slide.image.src} 994w `}
+                            sizes={`(max-width: 360px) 240px, (max-width: 640px) 600px, (max-width: 768px) 720px, (max-width: 1024px) 840px,  ${slide.image.width}px`}
+                        />
                     </SwiperSlide>
                 ))}
             </Swiper>
