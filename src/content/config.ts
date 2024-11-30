@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { z, defineCollection, getCollection } from "astro:content";
 // Define un `type` y un `schema` para cada colección
 const toursCollection = defineCollection({
     type: 'content',
@@ -40,6 +40,7 @@ const toursCollection = defineCollection({
 const restaurantsCollection = defineCollection({
     type: 'content',
     schema: z.object({
+        lang: z.string().optional(),
         title: z.string(),
         featured: z.string(),
         averageCost: z.string(),
@@ -72,3 +73,15 @@ export const collections = {
     tours: toursCollection,
     restaurants: restaurantsCollection
 };
+
+export async function getAllRest() {
+    const restaurants = await getCollection('restaurants');
+
+    return restaurants.map((rest) => {
+        const rest_slug = rest.slug.split('/')[0];
+        return {
+            ...rest,
+            rest_slug
+        }
+    });
+}

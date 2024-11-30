@@ -1,7 +1,8 @@
 ---
 import Image from "astro/components/Image.astro";
 import imgOp from "@/img/opinions-and-reviews-from-trust-tripadvisor-foursquare-yelp-google-maps.webp";
-const { restaurant } = Astro.props;
+const { restaurant, lang } = Astro.props;
+const url = lang === 'es' ? `/restaurants/${restaurant.rest_slug}` : `/${lang}/restaurants/${restaurant.rest_slug}`;
 ---
 
 <article class="w-full lg:w-3/12 md:w-6/12 px-5 py-5">
@@ -9,7 +10,7 @@ const { restaurant } = Astro.props;
         <div class="relative p-2.5 w-1/2 float-left md:float-none md:w-full overflow-hidden">
             <span class="absolute z-10 top-[14px] left-[14px] md:top-[18px] md:left-[18px] px-2.5 py-1 rounded-md text-sm bg-white font-bold shadow-lg"><i class="at-star text-sm text-amber-500"></i>{restaurant.data.stars}</span>
             {restaurant.data.featured != "" && <span class="w-24 md:w-48 absolute top-[10px] right-[-25px] md:top-[25px] md:-right-[58px] z-10 rotate-45 text-sm font-bold pl-[0] pr-[0] py-px bg-amber-500 text-black text-center">{restaurant.data.featured}</span>}
-            <a aria-label="go to restaurant details" href={`/restaurantes/${restaurant.slug}`}>
+            <a aria-label="go to restaurant details" href={url}>
                 <img width="650" height="450" loading="lazy" src={restaurant.data.image.url} class="h-[160px] w-full md:h-full object-cover rounded-md cursor-pointer duration-200 hover:scale-110" alt={restaurant.data.image.alt}>
             </a>
         </div>
@@ -35,7 +36,7 @@ const { restaurant } = Astro.props;
         </div>
         
         <div class="flex justify-evenly mb-5">
-            <a aria-label="go to restaurant details" href={`/restaurantes/${restaurant.slug}`} class="btn-read">See all restaurant</a>
+            <a aria-label="go to restaurant details" href={url} class="btn-read">See all restaurant</a>
         </div>
     </div>
 </article>

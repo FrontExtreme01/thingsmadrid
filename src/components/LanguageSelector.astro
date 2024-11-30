@@ -1,6 +1,6 @@
 ---
 import { languages } from "../i18n/ui";
-import {getRouteFromUrl, useTranslatedPath,getLangFromUrl,} from "../i18n/utils";
+import {getRouteFromUrl, useTranslatedPath, getLangFromUrl} from "../i18n/utils";
 
 const route = getRouteFromUrl(Astro.url);
 const lang = getLangFromUrl(Astro.url);
@@ -22,6 +22,7 @@ const otherLocales = Object.values(languages).filter(
             aria-expanded="true"
             aria-haspopup="true"
         >
+            <i class="at-language-translation"></i>
             {currentLocaleData.name}
         </button>
         <ul
@@ -32,9 +33,12 @@ const otherLocales = Object.values(languages).filter(
                     <li class="py-[2px]">
                         <a
                             class="rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
-                            href={translatePath(`/${route ? route : ""}`,locale.code,)}
+                            href={translatePath(
+                                `/${route ? route : ""}`,
+                                locale.code,
+                            )}
                         >
-                            {locale.name}
+                            <i class="at-language-translation"></i> {locale.name}
                         </a>
                     </li>
                 ))

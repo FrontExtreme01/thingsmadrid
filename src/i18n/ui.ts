@@ -36,7 +36,7 @@ export const ui = {
 export const routes = {
     es: {
         tours: 'tours',
-        restaurantes: 'restaurantes',
+        restaurants: 'restaurants',
         contacto: 'contacto',
         nosotros: 'nosotros',
         'terminos-de-servicio': 'terminos-de-servicio',
@@ -44,7 +44,7 @@ export const routes = {
     },
     en: {
         tours: 'tours',
-        restaurantes: 'restaurants',
+        restaurants: 'restaurants',
         contacto: 'contact',
         nosotros: 'about-us',
         'terminos-de-servicio': 'terms-of-service',
