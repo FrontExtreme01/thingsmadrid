@@ -1,3 +1,8 @@
+// Logos
+import favicon from "../img/logos/favicon.webp";
+import logoWhite from "../img/logos/logo-footer-thigns-to-do-in-madrid.webp";
+import logoMain from "../img/logos/logo-horizontal.webp";
+
 // Imagenes del Home
 import slideHome1 from "../img/home/slider/amazonia-adventure-park-near-madrid-zipline.webp";
 import slideHome2 from "../img/home/slider/atletico-de-madrid-stadium-and-museum-tour.webp";
@@ -12,6 +17,8 @@ import paymentMeth from "../img/home/verified-payment-methods-things-to-do-in-ma
 import serviceAdvan from "../img/home/service-advantages-what-to-do-in-madrid.webp";
 import madridBlog from "../img/home/read-our-madrid-tours-travel-blog.webp";
 import excursions from "../img/home/the-best-tours-in-madrid-things-to-do-activities-excursions.webp";
+// Imagenes de Restaurantes
+import opinionsImg from "../img/opinions-and-reviews-from-trust-tripadvisor-foursquare-yelp-google-maps.webp";
 
 export {
     slideHome1,
@@ -24,5 +31,9 @@ export {
     paymentMeth,
     serviceAdvan,
     madridBlog,
-    excursions
+    excursions,
+    opinionsImg,
+    favicon,
+    logoWhite,
+    logoMain
 };

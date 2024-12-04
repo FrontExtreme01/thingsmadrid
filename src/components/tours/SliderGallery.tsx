@@ -3,10 +3,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
-import Fancybox from '../../utils/Fancybox';
+import Fancybox from '@/utils/Fancybox';
 
 // Importar CSS Module
-import styles from '../../styles/gallery.module.css';
+import styles from '@/styles/gallery.module.css';
 
 export default function SliderGallery({ images, altTitle }: any) {
     return (

@@ -107,6 +107,27 @@
         "SHOPPING": {
             "TITLE": "Shopping in Madrid",
             "DESCRIPTION": "Madrid is a great place to go shopping. The city has a wide variety of stores, from high-end boutiques to vintage shops. Some of the best shopping areas in Madrid include Gran Via, Salamanca, and Chueca. These areas are home to some of the best stores in the city, including luxury brands like Louis Vuitton, Prada, and Gucci. If you are looking for something more unique, then you might want to check out some of the vintage and second-hand shops in the Malasaña neighborhood."
+        },
+        "CARD": {
+            "FROM": "From",
+            "BUTTON_BOOK_NOW": "Book now",
+            "BUTTON_MORE": "See all tour"
+        },
+        "DETAIL_TOUR": {
+            "CHARACTERISTICS": "Characteristics",
+            "DURATION": "Duration",
+            "SCHEDULE": "Schedule",
+            "AVAILABILITY": "Availability",
+            "REVIEWS": "Reviews",
+            "DIFFICULTY": "Difficulty",
+            "CATEGORY": "Category",
+            "OFFERED_IN": "Offered in",
+            "CANCELATION": "Cancellation policy",
+            "TICKET_MOBILE": "Mobile ticket",
+            "TESTIMONIAL_TITLE": "What our customers say",
+            "LOCATION": "Location",
+            "PRICE_FROM": "Price from",
+            "PER_PERSON": "per person"
         }
     },
     "RESTAURANT_PAGE": {
@@ -127,6 +148,15 @@
         "FINE_DINING": {
             "TITLE": "Fine dining in Madrid",
             "DESCRIPTION": "For a more upscale dining experience, Madrid has several Michelin-starred restaurants, visit them and live the red fury dinning experience. No matter what taste of food or dining experience you’re looking for, Madrid has something to offer. Don’t be afraid to explore and try new things!"
+        },
+        "CARD": {
+            "COST": "Average cost",
+            "BUTTON_BOOK_NOW": "Book now",
+            "BUTTON_VIEW_MORE": "See all restaurant"
+        },
+        "DETAIL_RESTAURANT": {
+            "TESTIMONIAL_TITLE": "What our customers say",
+            "LOCATION": "Location"
         }
     },
     "CONTACT_PAGE": {
