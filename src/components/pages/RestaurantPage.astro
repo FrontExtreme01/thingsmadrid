@@ -12,7 +12,7 @@ const lang = getLangFromUrl(Astro.url);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const allRestaurants = await getAllRest();
+const allRestaurants = await getAllRest(lang);
 const filteredRestaurants = allRestaurants.filter(
     (rest) => rest.data.lang === lang,
 );

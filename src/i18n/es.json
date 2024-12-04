@@ -107,6 +107,27 @@
         "SHOPPING": {
             "TITLE": "Ir de compras en Madrid",
             "DESCRIPTION": "Madrid es un gran lugar para ir de compras. La ciudad cuenta con una amplia variedad de tiendas, desde boutiques de lujo hasta tiendas vintage. Algunas de las mejores zonas comerciales de Madrid son Gran Vía, Salamanca y Chueca. Estas zonas albergan algunas de las mejores tiendas de la ciudad, incluidas marcas de lujo como Louis Vuitton, Prada y Gucci. Si buscas algo más exclusivo, quizá quieras echar un vistazo a algunas de las tiendas vintage y de segunda mano del barrio de Malasaña."
+        },
+        "CARD": {
+            "FROM": "Desde",
+            "BUTTON_BOOK_NOW": "Reservar ahora",
+            "BUTTON_MORE": "Más detalles"
+        },
+        "DETAIL_TOUR": {
+            "CHARACTERISTICS": "Características",
+            "DURATION": "Duración",
+            "SCHEDULE": "Horario",
+            "AVAILABILITY": "Disponibilidad",
+            "REVIEWS": "Reseñas",
+            "DIFFICULTY": "Dificultad",
+            "CATEGORY": "Categoría",
+            "OFFERED_IN": "Ofrecido en",
+            "CANCELATION": "Política de cancelación",
+            "TICKET_MOBILE": "Entrada móvil",
+            "TESTIMONIAL_TITLE": "Lo que dicen nuestros clientes",
+            "LOCATION": "Ubicación",
+            "PRICE_FROM": "Precio desde",
+            "PER_PERSON": "por persona"
         }
     },
     "RESTAURANT_PAGE": {
@@ -127,6 +148,15 @@
         "FINE_DINING": {
             "TITLE": "Restaurantes de lujo en Madrid",
             "DESCRIPTION": "Para disfrutar de una experiencia gastronómica más exclusiva, Madrid cuenta con varios restaurantes con estrellas Michelin. Visítelos y viva la experiencia gastronómica de la furia roja."
+        },
+        "CARD": {
+            "COST": "Costo promedio",
+            "BUTTON_BOOK_NOW": "Reservar ahora",
+            "BUTTON_VIEW_MORE": "Más detalles"
+        },
+        "DETAIL_RESTAURANT": {
+            "TESTIMONIAL_TITLE": "Lo que dicen nuestros clientes",
+            "LOCATION": "Ubicación"
         }
     },
     "CONTACT_PAGE": {

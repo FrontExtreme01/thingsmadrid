@@ -1,4 +1,8 @@
 ---
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 const { tour } = Astro.props;
 ---
 
@@ -20,15 +24,15 @@ const { tour } = Astro.props;
                     <span class="text-sm">{tour.data.reviews}</span>
                 </div>
                 <div class="flex items-center gap-2">
-                    <span class="text-sm text-gray-500">From:</span>
+                    <span class="text-sm text-gray-500">{i18n.TOUR_PAGE.CARD.FROM}:</span>
                     <strong class="text-2xl text-sky-700">${tour.data.price} €</strong>
                 </div>
             </div>
         </div>
         
         <div class="flex justify-evenly mb-5">
-            <a aria-label="book now" href={tour.data.bokun} class="btn-buy" target="_blank">Book Now</a>
-            <a aria-label="go to activity details" href={`/tours/${tour.slug}`} class="btn-read">See all tour</a>
+            <a aria-label="book now" href={tour.data.bokun} class="btn-buy" target="_blank">{i18n.TOUR_PAGE.CARD.BUTTON_BOOK_NOW}</a>
+            <a aria-label="go to activity details" href={`/tours/${tour.slug}`} class="btn-read">{i18n.TOUR_PAGE.CARD.BUTTON_MORE}</a>
         </div>
     </div>
 </article>

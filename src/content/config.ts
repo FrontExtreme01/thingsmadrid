@@ -74,14 +74,13 @@ export const collections = {
     restaurants: restaurantsCollection
 };
 
-export async function getAllRest() {
+export async function getAllRest(lang: string) {
     const restaurants = await getCollection('restaurants');
-
-    return restaurants.map((rest) => {
-        const rest_slug = rest.slug.split('/')[0];
-        return {
-            ...rest,
-            rest_slug
-        }
-    });
+    return restaurants.filter((rest) => rest.data.lang === lang).map((rest) => {
+            const rest_slug = rest.slug.split('/')[0];
+            return {
+                ...rest,
+                rest_slug
+            };
+        });
 }

@@ -25,9 +25,9 @@ keywords: 'real madrid, stadium, museum, tour, soccer, madrid, spain'
 testimonials: []
 ---
 
-import SliderGallery from '../../components/tours/SliderGallery';
+import SliderGallery from '@/components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/galleries/atletico-madrid/*.webp', { eager: true });
+export const images = import.meta.glob('../../img/galleries/tours/atletico-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

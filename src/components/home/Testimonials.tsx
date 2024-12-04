@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 // Importar CSS Module
-import styles from '../../styles/testimonial.module.css';
+import styles from '@/styles/testimonial.module.css';
 
 export default function Testimonials({ testimonials, title }: any) {
     return (

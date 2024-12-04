@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 // Importar CSS Module
-import styles from '../../styles/slider.module.css';
+import styles from '@/styles/slider.module.css';
 
 export default function SliderHome({ slides }: any) {
     return (

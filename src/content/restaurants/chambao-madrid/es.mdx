@@ -17,3 +17,14 @@ keywords: 'chambao, restaurante, madrid, españa, steakhouse, casual, elegante'
 mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
 testimonials: []
 ---
+
+import SliderGallery from '@/components/tours/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/restaurants/chambao-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    altTitle={`galería de ${frontmatter.title}`}
+/>

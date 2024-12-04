@@ -3,8 +3,8 @@ import MdRestLayout from "@/layouts/MdRestLayout.astro";
 import { getAllRest } from "@/content/config";
 
 export async function getStaticPaths() {
-    const restaurantEntries = await getAllRest();
-    
+    const restaurantEntries = await getAllRest("es");
+
     const paths = restaurantEntries.map((entry) => {
         return {
             params: { lang: entry?.data.lang || "en", slug: entry.rest_slug },
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 const { lang, slug } = Astro.params;
-const  entry  = Astro.props;
+const entry = Astro.props;
 const { Content } = await entry.render();
 ---
 

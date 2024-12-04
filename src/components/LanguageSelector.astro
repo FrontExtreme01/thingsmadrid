@@ -1,6 +1,6 @@
 ---
-import { languages } from "../i18n/ui";
-import {getRouteFromUrl, useTranslatedPath, getLangFromUrl} from "../i18n/utils";
+import { languages } from "@/i18n/ui";
+import {getRouteFromUrl, useTranslatedPath, getLangFromUrl} from "@/i18n/utils";
 
 const route = getRouteFromUrl(Astro.url);
 const lang = getLangFromUrl(Astro.url);
@@ -12,9 +12,9 @@ const otherLocales = Object.values(languages).filter(
 );
 ---
 
-<div class="relative inline-block text-left">
+<div class="relative inline-block text-left md:mt-0 mt-5">
     <div
-        class="group text-white rounded-md text-xs font-semibold bg-black/30 hover:bg-black/70 transition-all"
+        class="group text-black rounded-3xl text-xs font-semibold bg-white hover:bg-sky-900 hover:text-white transition-all shadow-sm border border-black/10"
     >
         <button
             type="button"
@@ -32,11 +32,8 @@ const otherLocales = Object.values(languages).filter(
                 otherLocales.map((locale) => (
                     <li class="py-[2px]">
                         <a
-                            class="rounded-md bg-black/30 hover:bg-black/70 whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
-                            href={translatePath(
-                                `/${route ? route : ""}`,
-                                locale.code,
-                            )}
+                            class="rounded-3xl text-black bg-white hover:bg-sky-900 hover:text-white whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2 shadow-sm border border-black/10"
+                            href={translatePath(`/${route ? route : ""}`, locale.code)}
                         >
                             <i class="at-language-translation"></i> {locale.name}
                         </a>

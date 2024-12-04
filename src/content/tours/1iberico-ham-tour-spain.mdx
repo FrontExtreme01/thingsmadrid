@@ -40,9 +40,9 @@ testimonials:
         alt: 'Alex Martinez'
 ---
 
-import SliderGallery from '../../components/tours/SliderGallery';
+import SliderGallery from '@/components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/galleries/iberian-ham/*.webp', { eager: true });
+export const images = import.meta.glob('../../img/galleries/tours/iberian-ham/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

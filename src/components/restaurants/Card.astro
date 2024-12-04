@@ -1,8 +1,15 @@
 ---
+import { useTranslatedPath } from "@/i18n/utils";
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 import Image from "astro/components/Image.astro";
-import imgOp from "@/img/opinions-and-reviews-from-trust-tripadvisor-foursquare-yelp-google-maps.webp";
+import { opinionsImg } from "@/img/allImages";
+
 const { restaurant, lang } = Astro.props;
-const url = lang === 'es' ? `/restaurants/${restaurant.rest_slug}` : `/${lang}/restaurants/${restaurant.rest_slug}`;
+const translatePath = useTranslatedPath(lang);
+const url = translatePath(`/restaurants/${restaurant.rest_slug}/`);
 ---
 
 <article class="w-full lg:w-3/12 md:w-6/12 px-5 py-5">
@@ -28,15 +35,15 @@ const url = lang === 'es' ? `/restaurants/${restaurant.rest_slug}` : `/${lang}/r
                 </div>
             </div>
             <div class="flex items-center justify-center gap-2 mt-4">
-                <p class="text-base text-amber-500 font-bold"><span class="text-base text-slate-600">Average cost:</span> {restaurant.data.averageCost}</p>
+                <p class="text-base text-amber-500 font-bold"><span class="text-base text-slate-600">{i18n.RESTAURANT_PAGE.CARD.COST}:</span> {restaurant.data.averageCost}</p>
             </div>
             <div class="text-center mt-4">
-                <Image src={imgOp} alt="" height="40" class="mx-auto" />
+                <Image src={opinionsImg} alt="" height="40" class="mx-auto" />
             </div>
         </div>
         
         <div class="flex justify-evenly mb-5">
-            <a aria-label="go to restaurant details" href={url} class="btn-read">See all restaurant</a>
+            <a aria-label="go to restaurant details" href={url} class="btn-read">{i18n.RESTAURANT_PAGE.CARD.BUTTON_BOOK_NOW}</a>
         </div>
     </div>
 </article>
