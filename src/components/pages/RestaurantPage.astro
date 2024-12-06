@@ -35,7 +35,7 @@ const seoMetaDatos = {
             {i18n.RESTAURANT_PAGE.DESCRIPTION}
         </p>
         <div class="flex flex-wrap md:-mx-4">
-            {filteredRestaurants.map((rest) => <Card restaurant={rest} lang={lang} />)}
+            {allRestaurants.map((rest) => <Card restaurant={rest} lang={lang} />)}
         </div>
     </section>
 

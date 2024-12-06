@@ -29,7 +29,7 @@ export default function ShareSM({ site }: any) {
     return (
         <div className="relative" ref={popoverRef}>
             <div
-                className="rounded-full w-10 h-10 md:w-14 md:h-14 cursor-pointer bg-white border border-slate-100 shadow-md flex justify-center items-center duration-200 hover:bg-sky-700 group"
+                className="rounded-full w-10 h-10 md:w-14 md:h-14 cursor-pointer bg-white border border-slate-100 shadow-md flex justify-center items-center duration-200 hover:bg-sky-900 group"
                 onClick={togglePopover}
             >
                 <i className="group-hover:text-white at-share text-black text-base md:text-xl"></i>

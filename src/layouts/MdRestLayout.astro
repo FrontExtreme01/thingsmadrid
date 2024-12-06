@@ -20,39 +20,32 @@ const seoMetaDatos = {
 ---
 
 <BaseLayout seo={seoMetaDatos}>
-    <section class="mx-7 md:mx-20 lg:mx-24 my-14">
+    <section class="mx-7 md:mx-20 lg:mx-24 mt-8 mb-14">
         <div class="flex flex-wrap">
             <header class="flex flex-wrap w-full md:px-5 lg:px-10">
-                <h1
-                    class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-900"
-                >
+                <h1 class="w-10/12 text-4xl md:text-6xl font-bold italic text-sky-900">
                     {frontmatter.title}
                 </h1>
                 <div class="w-2/12 flex justify-center items-center">
                     <ShareSM client:idle site={siteWebURL} />
                 </div>
-                <ul class="flex gap-5 w-full my-6 text-base md:text-lg">
+                <ul class="flex gap-5 w-full my-6 text-sm md:text-lg">
                     <li>
                         <i class="at-pin-destination text-sky-900"></i>
                         <span>{frontmatter.location}</span>
                     </li>
                     <li>
                         <i class="at-star text-yellow-500"></i>
-                        <span class="font-bold"
-                            >{frontmatter.stars}
-                            <span class="text-slate-600 font-thin"
-                                >({frontmatter.reviews})</span
-                            ></span
-                        >
+                        <span class="font-bold">{frontmatter.stars}
+                            <span class="text-slate-600 font-thin">({frontmatter.reviews})</span>
+                        </span>
                     </li>
                 </ul>
             </header>
             <!-- Details -->
             <div class="w-full lg:w-8/12 md:px-5 lg:px-10 mb-8">
                 <slot />
-                <h3 class="text-4xl font-bold my-5">
-                    {i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.LOCATION}
-                </h3>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">{i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.LOCATION}</h2>
                 <Map
                     client:visible
                     url={frontmatter.mapFrame}

@@ -1,5 +1,5 @@
 ---
-slug: iberico-ham-tour-spain
+lang: 'en'
 title: 'Gourmet Iberico Ham Tour Spain'
 description: 'Discover the authentic taste of Spain with our Iberico ham Tour Spain'
 featured: 'New'
@@ -12,7 +12,7 @@ image:
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806806?partialView=1'
 calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/806806'
 category: 'Culinary'
-location: 'Madrid, España'
+location: 'Madrid, Spain'
 duration: '45 minutes'
 offered: 'English & Spanish'
 schedule: '11:00 am to 8:00 pm'
@@ -42,7 +42,7 @@ testimonials:
 
 import SliderGallery from '@/components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/galleries/tours/iberian-ham/*.webp', { eager: true });
+export const images = import.meta.glob('@/img/galleries/tours/iberian-ham/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

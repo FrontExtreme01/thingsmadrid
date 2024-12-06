@@ -6,6 +6,7 @@ import Testimonials from "../components/home/Testimonials";
 import ShareSM from "@/components/tours/ShareSM";
 
 import { getI18N } from "@/i18n";
+import BtnBookModal from "@/components/tours/BtnBookModal";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
@@ -118,5 +119,6 @@ const seoMetaDatos = {
             {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title={i18n.TOUR_PAGE.DETAIL_TOUR.TESTIMONIAL_TITLE} />): ''}
         </div>
     </section>
+    <BtnBookModal client:visible urlCalendar={frontmatter.calendar} titleAct={frontmatter.title} i18n={i18n}/>
     <script is:inline src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4"></script>
 </BaseLayout>

@@ -25,23 +25,16 @@ const navigation = [
   { title: "blog", link: "https://thingstodoinmadrid.com/blog/" },
   {
     title: t("nav.contact"),
-    link: translatePath('/contacto/'),
+    link: translatePath('/contact/'),
   },
 ];
 ---
 
 <header class="bg-white sticky top-0 z-20 shadow-md">
   <!-- Desktop -->
-  <nav
-    class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
-    aria-label="Global"
-  >
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a
-        href={translatePath('/')}
-        aria-label={i18n.ACCESSIBILITY.GO_TO_HOME}
-        class="-m-1.5 p-1.5"
-      >
+      <a href={translatePath('/')} aria-label={i18n.ACCESSIBILITY.GO_TO_HOME} class="-m-1.5 p-1.5">
         <span class="sr-only">Things to do in Madrid</span>
         <Image
           src={logo}
@@ -53,10 +46,7 @@ const navigation = [
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button
-        type="button"
-        class="ml-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile"
-      >
+      <button type="button" class="ml-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 navbarMobile">
         <span class="sr-only">Open main menu</span>
         <i class="at-justify size-6"></i>
       </button>
@@ -74,11 +64,7 @@ const navigation = [
       }
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-3">
-      <a
-        href="tel:+34672246803"
-        aria-label={i18n.ACCESSIBILITY.CALL_US}
-        class="rounded-3xl text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase"
-      >
+      <a href="tel:+34672246803" aria-label={i18n.ACCESSIBILITY.CALL_US} class="rounded-3xl text-base py-3 px-5 font-bold leading-6 bg-red-700 hover:bg-amber-400 text-white uppercase">
         <i class="at-call-arrow-up-right"></i>
         {i18n.ACCESSIBILITY.CALL_US}
       </a>
@@ -88,20 +74,13 @@ const navigation = [
 
   <!-- Mobile -->
   <nav class="flex flex-column relative">
-    <div
-      class="fixed top-0 left-0 bg-sky-900/[.50] w-full h-full z-[100] overlayMobile"
-    >
-    </div>
+    <div class="fixed top-0 left-0 bg-sky-900/[.50] w-full h-full z-[100] overlayMobile"></div>
     <div class="menuMobile z-[110]">
-      <span
-        class="btnClose absolute top-5 right-2 z-[120] bg-red-700 transition duration-400 cursor-pointer hover:bg-red-600 text-white rounded-full w-9 h-9 grid place-items-center"
-        ><i class="at-xmark-circle"></i></span
-      >
+      <span class="btnClose absolute top-5 right-2 z-[120] bg-red-700 transition duration-400 cursor-pointer hover:bg-red-600 text-white rounded-full w-9 h-9 grid place-items-center">
+        <i class="at-xmark-circle"></i>
+      </span>
       <div class="bg-white h-full py-10 px-5">
-        <a
-          href={translatePath('/')}
-          aria-label={i18n.ACCESSIBILITY.GO_TO_HOME}
-        >
+        <a href={translatePath('/')} aria-label={i18n.ACCESSIBILITY.GO_TO_HOME}>
           <Image
             src={logo}
             alt="logo things to do in madrid"

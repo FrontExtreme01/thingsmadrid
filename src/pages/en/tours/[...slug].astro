@@ -3,11 +3,11 @@ import MdTourLayout from "@/layouts/MdTourLayout.astro";
 import { getAllTours } from "@/content/config";
 
 export async function getStaticPaths() {
-    const toursEntries = await getAllTours("es");
+    const toursEntries = await getAllTours("en");
 
     const paths = toursEntries.map((entry) => {
         return {
-            params: { lang: entry?.data.lang || "es", slug: entry.tour_slug },
+            params: { lang: entry?.data.lang || "en", slug: entry.tour_slug },
             props: entry,
         };
     });

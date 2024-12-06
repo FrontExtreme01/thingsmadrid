@@ -3,6 +3,7 @@ import { z, defineCollection, getCollection } from "astro:content";
 const toursCollection = defineCollection({
     type: 'content',
     schema: z.object({
+        lang: z.string().optional(),
         title: z.string(),
         description: z.string(),
         featured: z.string(),
@@ -74,6 +75,8 @@ export const collections = {
     restaurants: restaurantsCollection
 };
 
+
+// Funcion para obtener todos los restaurantes
 export async function getAllRest(lang: string) {
     const restaurants = await getCollection('restaurants');
     return restaurants.filter((rest) => rest.data.lang === lang).map((rest) => {
@@ -81,6 +84,17 @@ export async function getAllRest(lang: string) {
             return {
                 ...rest,
                 rest_slug
+            };
+        });
+}
+// Funcion para obtener todos los tours
+export async function getAllTours(lang: string) {
+    const tours = await getCollection('tours');
+    return tours.filter((tour) => tour.data.lang === lang).map((tour) => {
+            const tour_slug = tour.slug.split('/')[0];
+            return {
+                ...tour,
+                tour_slug
             };
         });
 }
