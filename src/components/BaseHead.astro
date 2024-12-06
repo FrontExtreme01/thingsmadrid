@@ -7,6 +7,7 @@ export interface Props {
 	description?: string;
 	keywords?: string;
 	image?: string;
+	language?: string;
 }
 
 const namePage = Astro.props.namePage || seoSettings.namePage;
@@ -15,6 +16,8 @@ const description = Astro.props.description || seoSettings.description;
 const keywords = Astro.props.keywords || "";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const image = new URL(Astro.props.image || seoSettings.image, Astro.site);
+
+const ogLocale = Astro.props.language === "es" ? "es_ES" : "en_US";
 ---
 
 <meta charset="utf-8" />
@@ -30,6 +33,7 @@ const image = new URL(Astro.props.image || seoSettings.image, Astro.site);
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
 <link rel="canonical" href={canonicalURL} />
+<meta property="og:locale" content={ogLocale} />
 <!-- Generator Astro -->
 <meta name="generator" content={Astro.generator} />
 <!-- Open Graph / Facebook -->
@@ -45,3 +49,5 @@ const image = new URL(Astro.props.image || seoSettings.image, Astro.site);
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
