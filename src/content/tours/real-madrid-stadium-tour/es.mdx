@@ -1,0 +1,62 @@
+---
+lang: 'es'
+title: 'Visita guiada al estadio y museo del Real Madrid'
+description: 'Ven a vivir la emoción del fútbol en uno de los estadios más emblemáticos del mundo El Real Madrid'
+featured: ''
+price: '55'
+stars: '4.5'
+reviews: '2,793 reseñas'
+image:
+    url: '/assets/covers/tours/real-madrid-stadium-tour.webp'
+    alt: 'portada de visita guiada al estadio y al museo del Real Madrid'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/869044?partialView=1'
+category: 'Deportes para espectadores'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/869044'
+location: 'Madrid, España'
+duration: '1 hora'
+offered: 'Ingles & Español'
+schedule: 'XXX'
+availability: 'Every day'
+cancelation: '24h before activity'
+meetingPoint: 'Torre C del Estadio *Los días de partido, los tours están disponibles hasta 5 horas antes del inicio del partido*'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12144.017705699527!2d-3.688334!3d40.453039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses-419!2sus!4v1709564222583!5m2!1ses-419!2sus'
+keywords: 'Real Madrid, estadio, museo, actividades en españa, fútbol, Madrid, España'
+testimonials: []
+---
+
+import SliderGallery from '@/components/tours/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    altTitle={`galería de ${frontmatter.title}`}
+/>
+
+<h2 class="text-2xl md:text-4xl font-bold mb-5">Acerca del tour</h2>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700" >El Impresionante Estadio Santiago Bernabéu</h3>
+
+<p class="text-lg text-justify my-5">Ven a vivir la emoción del fútbol en uno de los estadios más emblemáticos del mundo.
+¡El <strong>Tour por el Estadio del Real Madrid</strong> es para ti! Con nuestras visitas al <strong>Estadio Santiago Bernabéu</strong>.
+En primer lugar, tendrás la oportunidad de recorrer las instalaciones y descubrir la historia y los logros del <strong>Real Madrid</strong>.
+Uno de los equipos más laureados del mundo. Nuestro tour incluye una vista panorámica dentro del estadio que te dejará sin aliento. 
+Podrás sentir la emoción que se vive sobre el terreno de juego y disfrutar de una vista privilegiada de todo el estadio.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700">Museo del Real Madrid</h3>
+
+<p class="text-lg text-justify my-5">Además, tendrás acceso al <strong>Museo del Real Madrid</strong>.
+Donde podrás conocer la rica historia del club, sus leyendas y sus logros más destacados.
+Durante la visita, también tendrás la oportunidad de ver la maqueta del estadio. Donde podrás apreciar con todo detalle cada rincón del
+<strong>Estadio Bernabéu</strong>.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-700">Fotos Estadio Santiago Bernabéu</h3>
+
+<p class="text-lg text-justify my-5">Y lo mejor de todo es que podrás <strong>hacerte una foto</strong> con los jugadores en nuestro fotomontaje,
+para que te lleves a casa un recuerdo inolvidable de tu visita. Por último, no puedes dejar de visitar la tienda oficial, donde podrás adquirir
+productos oficiales del Real Madrid. Aquí encontrarás camisetas, balones, bufandas y muchos artículos que te ayudarán a llevar contigo la pasión
+del Real Madrid allá donde otros quieran que vayas. ¡No pierdas la oportunidad de vivir una experiencia única en el Tour Estadio Santiago Bernabéu!
+Te aseguramos que será una visita que recordarás para siempre.</p>

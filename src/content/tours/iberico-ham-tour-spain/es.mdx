@@ -1,0 +1,67 @@
+---
+lang: 'es'
+title: 'Tour Gourmet del Jamón Ibérico de España'
+description: 'Descubra el auténtico sabor de España con nuestro Tour del Jamón Ibérico España'
+featured: 'Nuevo'
+price: '30'
+stars: '5.0'
+reviews: '470 reseñas'
+image:
+    url: '/assets/covers/tours/iberian-ham-and-wine-tasting-in-madrid.webp'
+    alt: 'portada del jamón ibérico y degustación de vinos en Madrid'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806806?partialView=1'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/806806'
+category: 'Culinaria'
+location: 'Madrid, España'
+duration: '45 minutos'
+offered: 'Ingles & Español'
+schedule: '11:00 am a 8:00 pm'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'C. del Arenal, 17, 28013 Madrid, España. Reúnete con tu anfitrión en la tienda Palomeque'
+difficulty: 'Fácil'
+keywords: 'cata de vinos, jamón ibérico, madrid, españa, ruta gastronómica'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
+testimonials:
+  - user: 'John Doe'
+    review: 'This tour was amazing! The Iberico ham was delicious and the guide was very knowledgeable.'
+    image:
+        src: '/assets/testimonial/alex-martinez-jane-smith-cenotes-cancun-adventure-tour-experience-opinion.webp'
+        alt: 'John Doe'
+  - user: 'Jane Smith'
+    review: 'A fantastic experience! The wine pairing was perfect and the atmosphere was wonderful.'
+    image:
+        src: '/assets/testimonial/cenotes9.webp'
+        alt: 'Jane Smith'
+  - user: 'Alex Martinez'
+    review: 'I loved the tour! The ham was delicious and the guide was very friendly and informative.'
+    image:
+        src: '/assets/testimonial/tequilatasting1.webp'
+        alt: 'Alex Martinez'
+---
+
+import SliderGallery from '@/components/tours/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/iberian-ham/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    altTitle={`galería de ${frontmatter.title}`}
+/>
+
+<h2 class="text-2xl md:text-4xl font-bold">Acerca del tour</h2>
+
+<p class="text-lg text-justify my-5">Vive un viaje culinario en el corazón de Madrid con un tour gastronómico
+que te sumergirá en los sabores de España. En un encantador edificio histórico, emprende un viaje para descubrir
+los sabores más auténticos. Tu experto anfitrión te guiará a través del Tour del Jamón Ibérico de España, el jamón
+curado de renombre mundial, y los deliciosos chorizos, lomos y salchichón. Aprende sobre el proceso de producción 
+tradicional del Tour del Jamón Ibérico de España y su sorprendente ingrediente secreto: la bellota. Disfruta de las 
+profundas sutilezas del aceite de oliva orgánico producido en el lugar y de los vinos seleccionados por expertos que 
+complementan cada plato.</p>
+
+<p class="text-lg text-justify my-5">En 1873, se fundó la icónica tienda de imágenes religiosas “Palomeque”. Ha servido
+productos a personajes que van desde el Papa Pío IX hasta nuestros días y a las principales casas reales europeas. Combina un
+espacio protegido por Patrimonio Nacional con líneas modernas que crean un ambiente único. Un lugar íntimo para degustar y
+disfrutar de los mejores y más selectos productos gastronómicos españoles.</p>

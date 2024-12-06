@@ -126,6 +126,8 @@
             "TICKET_MOBILE": "Entrada móvil",
             "TESTIMONIAL_TITLE": "Lo que dicen nuestros clientes",
             "LOCATION": "Ubicación",
+            "TEXT_MODAL": "Complete los datos de su reserva.",
+            "BTN_BOOK_NOW": "Reservar ahora",
             "PRICE_FROM": "Precio desde",
             "PER_PERSON": "por persona"
         }

@@ -1,5 +1,5 @@
 ---
-slug: amazonia-adventure
+lang: 'en'
 title: 'Amazonia Adventure'
 description: 'Conquer thrilling circuits, zip lines, and more! An adrenaline-fueled escapade awaits in Cercedilla'
 featured: ''
@@ -37,7 +37,7 @@ testimonials:
 
 import SliderGallery from '@/components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/galleries/tours/amazonia-adventure/*.webp', { eager: true });
+export const images = import.meta.glob('@/img/galleries/tours/amazonia-adventure/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

@@ -1,5 +1,5 @@
 ---
-slug: real-madrid-stadium-tour
+lang: 'en'
 title: 'Real Madrid Guided Stadium & Museum Tour'
 description: 'Come live the emotion of soccer in one of the most emblematic stadiums in the world The Real Madrid'
 featured: ''
@@ -27,7 +27,7 @@ testimonials: []
 
 import SliderGallery from '@/components/tours/SliderGallery';
 
-export const images = import.meta.glob('../../img/galleries/tours/atletico-madrid/*.webp', { eager: true });
+export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 <SliderGallery 

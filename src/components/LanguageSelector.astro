@@ -1,8 +1,7 @@
 ---
 import { languages } from "@/i18n/ui";
-import {getRouteFromUrl, useTranslatedPath, getLangFromUrl} from "@/i18n/utils";
+import {useTranslatedPath, getLangFromUrl} from "@/i18n/utils";
 
-const route = getRouteFromUrl(Astro.url);
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 
@@ -10,12 +9,13 @@ const currentLocaleData = languages[lang];
 const otherLocales = Object.values(languages).filter(
     (locale) => locale.code !== lang,
 );
+
+// Se Elimina el prefijo del idioma de la ruta actual si existe
+const currentPath = Astro.url.pathname.replace(new RegExp(`^/${lang}`), '');
 ---
 
 <div class="relative inline-block text-left md:mt-0 mt-5">
-    <div
-        class="group text-black rounded-3xl text-xs font-semibold bg-white hover:bg-sky-900 hover:text-white transition-all shadow-sm border border-black/10"
-    >
+    <div class="group text-black rounded-3xl text-xs font-semibold bg-white hover:bg-sky-900 hover:text-white transition-all shadow-sm border border-black/10">
         <button
             type="button"
             class="inline-flex justify-start items-center w-full gap-x-2 px-3 py-2"
@@ -25,16 +25,12 @@ const otherLocales = Object.values(languages).filter(
             <i class="at-language-translation"></i>
             {currentLocaleData.name}
         </button>
-        <ul
-            class="group-hover:block group-hover:animate-fade-down group-hover:animate-duration-200 hidden pt-0.5 absolute w-full"
-        >
+        <ul class="group-hover:block group-hover:animate-fade-down group-hover:animate-duration-200 hidden pt-0.5 absolute w-full">
             {
                 otherLocales.map((locale) => (
                     <li class="py-[2px]">
-                        <a
-                            class="rounded-3xl text-black bg-white hover:bg-sky-900 hover:text-white whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2 shadow-sm border border-black/10"
-                            href={translatePath(`/${route ? route : ""}`, locale.code)}
-                        >
+                        <a class="rounded-3xl text-black bg-white hover:bg-sky-900 hover:text-white whitespace-no-wrap inline-flex justify-start items-center w-full gap-x-2 px-3 py-2 shadow-sm border border-black/10"
+                            href={translatePath(currentPath, locale.code)}>
                             <i class="at-language-translation"></i> {locale.name}
                         </a>
                     </li>

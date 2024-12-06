@@ -32,22 +32,3 @@ export const ui = {
         'footer.copyrigth': 'All rights reserved',
     },
 } as const;
-
-export const routes = {
-    es: {
-        tours: 'tours',
-        restaurants: 'restaurants',
-        contacto: 'contacto',
-        nosotros: 'nosotros',
-        'terminos-de-servicio': 'terminos-de-servicio',
-        privacidad: 'privacidad',
-    },
-    en: {
-        tours: 'tours',
-        restaurants: 'restaurants',
-        contacto: 'contact',
-        nosotros: 'about-us',
-        'terminos-de-servicio': 'terms-of-service',
-        privacidad: 'privacy-policy',
-    },
-};

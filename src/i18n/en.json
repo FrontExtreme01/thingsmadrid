@@ -126,6 +126,8 @@
             "TICKET_MOBILE": "Mobile ticket",
             "TESTIMONIAL_TITLE": "What our customers say",
             "LOCATION": "Location",
+            "TEXT_MODAL": "Complete your booking details.",
+            "BTN_BOOK_NOW": "Book now",
             "PRICE_FROM": "Price from",
             "PER_PERSON": "per person"
         }
