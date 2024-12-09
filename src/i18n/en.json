@@ -1,6 +1,7 @@
 {
     "SEO": {
         "HOME_PAGE": {
+            "DESCRIPTION": "Find all the activities, marvelous places to go, Tours in Madrid and have great fun during your visit to Spain",
             "KEYWORDS": "Madrid, Spain, tours, activities, things to do, travel, tourism, vacation, sightseeing, attractions"
         },
         "TOUR_PAGE": {
@@ -37,7 +38,14 @@
         "GO_TO_INSTAGRAM": "Visit our Instagram page",
         "GO_TO_YOUTUBE": "Visit our YouTube channel",
         "GO_TO_TIKTOK": "Visit our TikTok page",
-        "GO_TO_MAPS": "See our location on Google Maps"
+        "GO_TO_MAPS": "See our location on Google Maps",
+        "GO_TO_WHATSAPP": "Chat with us on WhatsApp",
+        "IMG": {
+            "EXCURSIONS": "Excursions in Madrid",
+            "PAYMENT_METHODS": "Secure payment methods",
+            "ADVANTAGES": "Advantages of booking with us",
+            "BLOG": "Visit our blog"
+        }
     },
     "HOME_PAGE": {
         "INTRO": {
@@ -111,7 +119,7 @@
         "CARD": {
             "FROM": "From",
             "BUTTON_BOOK_NOW": "Book now",
-            "BUTTON_MORE": "See all tour"
+            "BUTTON_MORE": "More details"
         },
         "DETAIL_TOUR": {
             "CHARACTERISTICS": "Characteristics",
@@ -154,7 +162,7 @@
         "CARD": {
             "COST": "Average cost",
             "BUTTON_BOOK_NOW": "Book now",
-            "BUTTON_VIEW_MORE": "See all restaurant"
+            "BUTTON_VIEW_MORE": "More details"
         },
         "DETAIL_RESTAURANT": {
             "TESTIMONIAL_TITLE": "What our customers say",
