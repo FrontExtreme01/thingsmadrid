@@ -42,8 +42,8 @@ const url = translatePath(`/restaurants/${restaurant.rest_slug}/`);
             </div>
         </div>
         
-        <div class="flex justify-evenly mb-5">
-            <a aria-label="go to restaurant details" href={url} class="btn-read">{i18n.RESTAURANT_PAGE.CARD.BUTTON_BOOK_NOW}</a>
+        <div class="flex justify-evenly gap-2 mb-5 lg:px-5">
+            <a aria-label="go to restaurant details" href={url} class="text-center bg-slate-200 hover:bg-slate-100 text-black font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline">{i18n.RESTAURANT_PAGE.CARD.BUTTON_BOOK_NOW}</a>
         </div>
     </div>
 </article>

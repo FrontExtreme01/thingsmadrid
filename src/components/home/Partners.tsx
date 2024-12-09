@@ -12,14 +12,14 @@ import part7 from '@/img/partners/atletico-de-madrid-logo-partner.webp';
 import part8 from '@/img/partners/zuazo-gastroboutique-logo-partner.webp';
 
 const partners = [
-    { img: part1.src, alt: 'stripe' },
-    { img: part2.src, alt: 'expedia' },
-    { img: part3.src, alt: 'viator' },
-    { img: part4.src, alt: 'get your guide' },
-    { img: part5.src, alt: 'bokun' },
-    { img: part6.src, alt: 'amigo tours' },
-    { img: part7.src, alt: 'atletico de madrid' },
-    { img: part8.src, alt: 'zuazo gastroboutique' },
+    { img: part1.src, alt: 'logo stripe' },
+    { img: part2.src, alt: 'logo expedia' },
+    { img: part3.src, alt: 'logo viator' },
+    { img: part4.src, alt: 'logo get your guide' },
+    { img: part5.src, alt: 'logo bokun' },
+    { img: part6.src, alt: 'logo amigo tours' },
+    { img: part7.src, alt: 'logo atletico de madrid' },
+    { img: part8.src, alt: 'logo zuazo gastroboutique' },
 ]
 
 export default function Partners({ title, description }: any) {

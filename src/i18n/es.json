@@ -1,6 +1,7 @@
 {
     "SEO": {
         "HOME_PAGE": {
+            "DESCRIPTION": "Encuentra todas las actividades, lugares maravillosos para visitar, Tours en Madrid y diviértete a lo grande durante tu visita a España.",
             "KEYWORDS": "Madrid, España, tours, actividades, cosas que hacer, viajes, turismo, vacaciones, visitas turísticas, atracciones"
         },
         "TOUR_PAGE": {
@@ -37,7 +38,14 @@
         "GO_TO_INSTAGRAM": "Visita nuestro Instagram",
         "GO_TO_YOUTUBE": "Visita nuestro YouTube",
         "GO_TO_TIKTOK": "Visita nuestro TikTok",
-        "GO_TO_MAPS": "Encuentranos en Google Maps"
+        "GO_TO_MAPS": "Encuentranos en Google Maps",
+        "GO_TO_WHATSAPP": "Chatea con nosotros en WhatsApp",
+        "IMG": {
+            "EXCURSIONS": "Excursiones en Madrid",
+            "PAYMENT_METHODS": "Seguridad en los pagos",
+            "ADVANTAGES": "Ventajas de reservar con nosotros",
+            "BLOG": "Visita nuestro blog"
+        }
     },
     "HOME_PAGE": {
         "INTRO": {
@@ -110,7 +118,7 @@
         },
         "CARD": {
             "FROM": "Desde",
-            "BUTTON_BOOK_NOW": "Reservar ahora",
+            "BUTTON_BOOK_NOW": "Reservar",
             "BUTTON_MORE": "Más detalles"
         },
         "DETAIL_TOUR": {
@@ -153,7 +161,7 @@
         },
         "CARD": {
             "COST": "Costo promedio",
-            "BUTTON_BOOK_NOW": "Reservar ahora",
+            "BUTTON_BOOK_NOW": "Reservar",
             "BUTTON_VIEW_MORE": "Más detalles"
         },
         "DETAIL_RESTAURANT": {

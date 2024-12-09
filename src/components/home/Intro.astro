@@ -2,15 +2,16 @@
 import { Image } from "astro:assets";
 import { getI18N } from "@/i18n";
 import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
-import {paymentMeth, serviceAdvan, madridBlog, excursions} from "@/img/allImages";
+import {getImgFromLang, excursions} from "@/img/allImages";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
+const imgLang = getImgFromLang(currentLocale)
+
 const lang = getLangFromUrl(Astro.url);
 
 const translatePath = useTranslatedPath(lang);
-
 ---
 
 <section class="container mx-auto flex justify-center text-center my-16">
@@ -23,9 +24,9 @@ const translatePath = useTranslatedPath(lang);
         </p>
 
         <div class="columns-1 md:columns-3 mt-16 space-y-5">
-            <Image src={paymentMeth} alt="segure checkout" widths={[240, 500, paymentMeth.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${paymentMeth.width}px`} />
-            <Image src={serviceAdvan} alt="our advantages" widths={[240, 500, serviceAdvan.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${serviceAdvan.width}px`}/>
-            <Image src={madridBlog} alt="read our blog" widths={[240, 500, madridBlog.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${madridBlog.width}px`}/>
+            <Image src={imgLang.paymentMeth} alt={i18n.ACCESSIBILITY.IMG.PAYMENT_METHODS} widths={[240, 500, imgLang.paymentMeth.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${imgLang.paymentMeth.width}px`} />
+            <Image src={imgLang.serviceAdvan} alt={i18n.ACCESSIBILITY.IMG.ADVANTAGES} widths={[240, 500, imgLang.serviceAdvan.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${imgLang.serviceAdvan.width}px`}/>
+            <Image src={imgLang.madridBlog} alt={i18n.ACCESSIBILITY.IMG.BLOG} widths={[240, 500, imgLang.madridBlog.width]} sizes={`(max-width: 360px) 240px, (max-width: 720px) 500px,  ${imgLang.madridBlog.width}px`}/>
         </div>
     </div>
 </section>
@@ -48,7 +49,7 @@ const translatePath = useTranslatedPath(lang);
                 </a>
             </div>
             <div class="basis-full md:basis-1/2 mt-12 md:mt-auto" data-aos="fade-down" data-aos-delay="300">
-                <Image src={excursions} alt="the best tours" class="mx-auto px-5" widths={[240, 603, excursions.width]}
+                <Image src={excursions} alt={i18n.ACCESSIBILITY.IMG.EXCURSIONS} class="mx-auto px-5" widths={[240, 603, excursions.width]}
                 sizes={`(max-width: 360px) 240px, (max-width: 720px) 603px,  ${excursions.width}px`} />
             </div>
         </div>

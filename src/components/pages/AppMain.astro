@@ -5,16 +5,18 @@ import SliderHome from "../home/SliderHome";
 import Intro from "../home/Intro.astro";
 import Testimonials from "../home/Testimonials";
 import Partners from "../home/Partners";
-import {slideHome1, slideHome2, slideHome3, slideHome4, userTest1, userTest2, userTest3} from "@/img/allImages";
+import {getImgFromLang, userTest1, userTest2, userTest3} from "@/img/allImages";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
+const imgLang = getImgFromLang(currentLocale)
+
 const arraySlides = [
-	{image: slideHome1, title: "amazonia adventure" },
-	{image: slideHome2, title: "atletico madrid"},
-	{image: slideHome3, title: "chambao restaurant"},
-	{image: slideHome4, title: "iberian ham"},
+	{image: imgLang.slideHome1, title: "amazonia adventure" },
+	{image: imgLang.slideHome2, title: "atletico madrid"},
+	{image: imgLang.slideHome3, title: "chambao restaurant"},
+	{image: imgLang.slideHome4, title: "iberian ham"},
 ];
 
 const arrayTestimonials = [
@@ -25,9 +27,10 @@ const arrayTestimonials = [
 ]
 
 const seoMetaDatos = {
+	description: i18n.SEO.HOME_PAGE.DESCRIPTION,
     keywords: i18n.SEO.HOME_PAGE.KEYWORDS,
 }
----
+---	
 
 <BaseLayout seo={seoMetaDatos}>
 	<SliderHome client:load slides={arraySlides} />

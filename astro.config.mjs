@@ -6,10 +6,11 @@ import mdx from '@astrojs/mdx';
 
 import sitemap from '@astrojs/sitemap';
 
+import partytown from '@astrojs/partytown';
+
 export default defineConfig({
   site: 'https://thingsmadrid.netlify.app',
-  integrations: [tailwind(), react(), mdx(),
-  sitemap({
+  integrations: [tailwind(), react(), mdx(), sitemap({
     i18n: {
       defaultLocale: 'es',
       locales: {
@@ -17,6 +18,11 @@ export default defineConfig({
         es: 'es-ES',
       }
     }
+  }),
+  partytown({
+    config: {
+      forward: ["dataLayer.push"],
+    },
   })
   ],
   i18n: {
