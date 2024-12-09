@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 
 export default function BtnBookModal({ urlCalendar, i18n, titleAct }: any) {
+    const LazyLoadBokunScript = lazy(() => import('@/utils/LoadBokunScript'));
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleModal = () => {
@@ -14,6 +16,9 @@ export default function BtnBookModal({ urlCalendar, i18n, titleAct }: any) {
             </button>
             {isOpen && (
                 <>
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <LazyLoadBokunScript />
+                    </Suspense>
                     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-all z-[5000]" onClick={toggleModal}></div>
                     <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[5001] bg-white w-5/6 overflow-y-scroll h-5/6 p-7 rounded shadow-lg">
                         <h2 className="text-xl mb-4 font-bold">{titleAct}</h2>
