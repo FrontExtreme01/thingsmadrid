@@ -23,10 +23,15 @@ import SliderGallery from '@/components/tours/SliderGallery';
 export const images = import.meta.glob('@/img/galleries/restaurants/chambao-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
+export const accessibility = {
+    altImg: `restaurant image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
 <SliderGallery 
     client:load 
     images={arrayImages} 
-    altTitle={`galería de ${frontmatter.title}`}
+    accessibility={accessibility}
 />
 
 <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700">The Best Mexican Food in Madrid</h2>

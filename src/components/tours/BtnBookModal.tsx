@@ -6,7 +6,7 @@ export default function BtnBookModal({ urlCalendar, i18n, titleAct }: any) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleModal = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(true);
     };
 
     return (

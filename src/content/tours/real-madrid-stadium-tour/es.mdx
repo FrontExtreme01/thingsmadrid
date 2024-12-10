@@ -17,7 +17,7 @@ duration: '1 hora'
 offered: 'Ingles & Español'
 schedule: 'XXX'
 availability: 'Every day'
-cancelation: '24h before activity'
+cancelation: '24h Antes de la actividad'
 meetingPoint: 'Torre C del Estadio *Los días de partido, los tours están disponibles hasta 5 horas antes del inicio del partido*'
 difficulty: 'Easy'
 mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12144.017705699527!2d-3.688334!3d40.453039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses-419!2sus!4v1709564222583!5m2!1ses-419!2sus'
@@ -30,10 +30,15 @@ import SliderGallery from '@/components/tours/SliderGallery';
 export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "Abrir galería de imágenes",
+};
+
 <SliderGallery 
     client:load 
     images={arrayImages} 
-    altTitle={`galería de ${frontmatter.title}`}
+    accessibility={accessibility}
 />
 
 <h2 class="text-2xl md:text-4xl font-bold mb-5">Acerca del tour</h2>
