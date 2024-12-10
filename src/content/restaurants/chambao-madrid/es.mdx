@@ -23,8 +23,13 @@ import SliderGallery from '@/components/tours/SliderGallery';
 export const images = import.meta.glob('@/img/galleries/restaurants/chambao-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
+export const accessibility = {
+    altImg: `imagen del restaurante ${frontmatter.title}`,
+    ariaLabelGallery: "Abrir galería de imágenes",
+};
+
 <SliderGallery 
     client:load 
     images={arrayImages} 
-    altTitle={`galería de ${frontmatter.title}`}
+    accessibility={accessibility}
 />

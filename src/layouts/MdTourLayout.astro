@@ -26,9 +26,7 @@ const seoMetaDatos = {
         <div class="flex flex-wrap">
             <!-- Header -->
             <header class="flex flex-wrap w-full md:px-5 lg:px-10">
-                <h1
-                    class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-900"
-                >
+                <h1 class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-900">
                     {frontmatter.title}
                 </h1>
                 <div class="w-2/12 flex justify-center items-center">
@@ -41,12 +39,12 @@ const seoMetaDatos = {
                     </li>
                     <li>
                         <i class="at-star text-yellow-500"></i>
-                        <span class="font-bold"
-                            >{frontmatter.stars}
-                            <span class="text-slate-600 font-thin"
-                                >({frontmatter.reviews})</span
-                            ></span
-                        >
+                        <span class="font-bold">
+                            {frontmatter.stars}
+                            <span class="text-slate-600 font-thin">
+                                ({frontmatter.reviews})
+                            </span>
+                        </span>
                     </li>
                 </ul>
             </header>
@@ -60,9 +58,9 @@ const seoMetaDatos = {
                             class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-timer"
                         ></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.DURATION}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.TOUR_PAGE.DETAIL_TOUR.DURATION}
+                            </span>
                             <p>{frontmatter.duration}</p>
                         </div>
                     </li>
@@ -71,9 +69,9 @@ const seoMetaDatos = {
                             class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-clock-time"
                         ></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.SCHEDULE}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.TOUR_PAGE.DETAIL_TOUR.SCHEDULE}
+                            </span>
                             <p>{frontmatter.schedule}</p>
                         </div>
                     </li>
@@ -82,9 +80,9 @@ const seoMetaDatos = {
                             class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-calendar-schedule"
                         ></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.AVAILABILITY}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.TOUR_PAGE.DETAIL_TOUR.AVAILABILITY}
+                            </span>
                             <p>{frontmatter.availability}</p>
                         </div>
                     </li>
@@ -93,9 +91,9 @@ const seoMetaDatos = {
                             class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-dots-comment"
                         ></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.REVIEWS}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.TOUR_PAGE.DETAIL_TOUR.REVIEWS}
+                            </span>
                             <p>{frontmatter.reviews}</p>
                         </div>
                     </li>
@@ -167,17 +165,13 @@ const seoMetaDatos = {
                 />
             </div>
             <!-- Form -->
-            <FormBokun client:idle price={frontmatter.price} i18n={i18n} />
-            {
-                frontmatter.testimonials != 0 ? (
+            <FormBokun client:visible urlCalendar={frontmatter.calendar} price={frontmatter.price} i18n={i18n} />
+            {frontmatter.testimonials != 0 ? (
                     <Testimonials
                         client:visible
                         testimonials={frontmatter.testimonials}
                         title={i18n.TOUR_PAGE.DETAIL_TOUR.TESTIMONIAL_TITLE}
-                    />
-                ) : (
-                    ""
-                )
+                    />) : ("")
             }
         </div>
     </section>
