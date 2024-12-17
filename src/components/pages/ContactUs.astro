@@ -3,9 +3,12 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getI18N } from "@/i18n";
 import Hero from "../Hero.astro";
 import { actions } from "astro:actions";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
 
 const seoMetaDatos = {
     title: i18n.SEO.CONTACT_PAGE.TITLE,
@@ -29,10 +32,81 @@ const seoMetaDatos = {
                 <p class="text-lg text-left mb-6">
                     {i18n.CONTACT_PAGE.DESCRIPTION}
                 </p>
-                <form method="post" action={actions.send}>
-                    <label for="email">Email</label>
-                    <input id="email" required type="email" name="email" />
-                    <button>Send email</button>
+                <form
+                    action={actions.sendEmail}
+                    method="POST"
+                    class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-left flex flex-wrap"
+                >
+                    <input type="hidden" name="lang" value={lang} />
+                    <div class="w-full mb-6 px-2">
+                        <label
+                            class="block text-gray-700 text-sm font-bold mb-2"
+                            for="name"
+                        >
+                            {i18n.CONTACT_PAGE.FORM.LABELS.NAME}
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="name"
+                            name="fullname"
+                            type="text"
+                            placeholder={i18n.CONTACT_PAGE.FORM.PLACEHOLDERS
+                                .NAME}
+                        />
+                    </div>
+                    <div class="w-full md:w-1/2 mb-6 px-2">
+                        <label
+                            class="block text-gray-700 text-sm font-bold mb-2"
+                            for="phone"
+                        >
+                            {i18n.CONTACT_PAGE.FORM.LABELS.PHONE}
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="phone"
+                            name="phone"
+                            type="text"
+                            placeholder={i18n.CONTACT_PAGE.FORM.PLACEHOLDERS
+                                .PHONE}
+                        />
+                    </div>
+                    <div class="w-full md:w-1/2 mb-6 px-2">
+                        <label
+                            class="block text-gray-700 text-sm font-bold mb-2"
+                            for="email"
+                        >
+                            {i18n.CONTACT_PAGE.FORM.LABELS.EMAIL}
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder={i18n.CONTACT_PAGE.FORM.PLACEHOLDERS
+                                .EMAIL}
+                        />
+                    </div>
+                    <div class="w-full mb-10 px-2">
+                        <label
+                            class="block text-gray-700 text-sm font-bold mb-2"
+                            for="message"
+                        >
+                            {i18n.CONTACT_PAGE.FORM.LABELS.MESSAGE}
+                        </label>
+                        <textarea
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="message"
+                            name="message"
+                            placeholder={i18n.CONTACT_PAGE.FORM.PLACEHOLDERS
+                                .MESSAGE}></textarea>
+                    </div>
+                    <div class="mx-auto flex items-center justify-between">
+                        <button
+                            class="bg-amber-400 hover:bg-amber-500 text-white font-bold py-3 px-10 rounded-lg focus:outline-none focus:shadow-outline"
+                        >
+                            {i18n.CONTACT_PAGE.FORM.BUTTON}
+                        </button>
+                    </div>
                 </form>
             </div>
             <div class="w-full md:w-1/2 px-4">
