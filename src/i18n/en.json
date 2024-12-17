@@ -291,6 +291,14 @@
         },
         "LAST_UPDATE": "Last updated: June 2023"
     },
+    "THANKS_PAGE": {
+        "TITLE": "Thank you for your message",
+        "DESCRIPTION": "We have received your message and will get back to you as soon as possible. If you have any urgent questions or need immediate assistance, please do not hesitate to call us at {NUMBER}. Thank you for choosing Things to do in Madrid!"
+    },
+    "ERROR_EMAIL_PAGE": {
+        "TITLE": "Oops! Something went wrong",
+        "DESCRIPTION": "We're sorry, but it looks like there was a problem sending your message. Please try again later or contact us directly at {NUMBER}. Thank you for your understanding!"
+    },
     "PARTNERS": {
         "TITLE": "Our Partners",
         "DESCRIPTION": "Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry."
