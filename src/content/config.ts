@@ -69,7 +69,6 @@ const restaurantsCollection = defineCollection({
     })
 });
 
-// Exporta un solo objeto `collections` con las colecciones registradas
 export const collections = {
     tours: toursCollection,
     restaurants: restaurantsCollection

@@ -1,0 +1,25 @@
+---
+import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const lang = getLangFromUrl(Astro.url);
+const translatedPath = useTranslatedPath(lang);
+---
+
+<BaseLayout>
+    <section class="container mx-auto flex justify-center text-center my-5 lg:my-32">
+        <div class="w-full md:w-3/5 my-20 px-6">
+            <i class="at-info-circle text-8xl font-bold text-amber-500 bg-slate-50 rounded-full p-10 shadow"></i>
+            <h1 class="mt-20 text-3xl sm:text-5xl font-bold">
+                {i18n.ERROR_EMAIL_PAGE.TITLE}
+            </h1>
+            <p class="text-xl mt-8 mb-14">{i18n.ERROR_EMAIL_PAGE.DESCRIPTION}</p>
+            <a
+                class="block w-fit mx-auto bg-amber-400 hover:bg-amber-500 text-white font-bold py-5 px-10 rounded-lg focus:outline-none focus:shadow-outline"
+                href={translatedPath("/")}>{i18n.ACCESSIBILITY.GO_TO_HOME}</a>
+        </div>
+    </section>
+</BaseLayout>
