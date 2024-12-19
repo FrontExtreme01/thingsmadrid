@@ -1,0 +1,176 @@
+---
+const { lang, fullName, adults, childrens, dateReservation, nameReservation, imgReservation, priceReservation } = Astro.props;
+---
+
+<!doctype html>
+<html dir="ltr" lang={lang}>
+
+<head>
+    <link rel="preload" as="image" href="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/logo-formail.png" />
+    <link rel="preload" as="image" href="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/background/cover-email.jpg" />
+    <link rel="preload" as="image" href=`https://thingsmadrid.netlify.app/${imgReservation}` />
+    <link rel="preload" as="image" href="https://react-email-demo-hich02t6q-resend.vercel.app/static/yelp-footer.png" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <!--$-->
+</head>
+<div style="display:none;overflow:hidden;line-height:1px;opacity:0;max-height:0;max-width:0">
+    Things to do in madrid
+    <div>
+        ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏
+    </div>
+</div>
+
+<body style='background-color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif'>
+    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:37.5em">
+        <tbody>
+            <tr style="width:100%">
+                <td>
+                    <!-- Header -->
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding:30px 20px 10px 20px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/logo-formail.png"
+                                        style="display:block;outline:none;border:none;text-decoration:none;height:90px; margin: 0 auto" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border:1px solid rgb(0,0,0, 0.1);border-radius:3px;overflow:hidden">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!-- Banner -->
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody style="width:100%">
+                                            <tr style="width:100%">
+                                                <img src="https://thingstodoinmadrid.jhonnycanul.pro/assets/img/background/cover-email.jpg"
+                                                    style="display:block;outline:none;border:none;text-decoration:none;max-width:100%"
+                                                    width="620" />
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Content -->
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding:20px;padding-bottom:0">
+                                        <tbody style="width:100%">
+                                            <tr style="width:100%">
+                                                <td data-id="__react-email-column">
+                                                    <h1 style="font-size:32px;font-weight:bold;text-align:center">
+                                                        { lang === 'es' ? 'Hola' : 'Hello' } { fullName },
+                                                    </h1>
+                                                    <h2 style="font-size:26px;font-weight:bold;text-align:center">
+                                                        { lang === 'es' ? 'Gracias por reservar con nosotros' : 'Thank you for booking with us' }
+                                                    </h2>
+                                                    <p style="font-size:16px;line-height:24px;margin:16px 0">
+                                                        { lang === 'es' ? 'Hemos recibido tu reservación y nos pondremos en contacto contigo para el seguimiento del mismo. Si tienes alguna pregunta urgente o necesitas asistencia inmediata, no dudes en llamarnos al NUMBER. ¡Gracias por elegir Things to do in Madrid!' : 'We have received your reservation and will contact you for follow-up. If you have an urgent question or need immediate assistance, please do not hesitate to call us at NUMBER. Thank you for choosing Things to do in Madrid!' }
+                                                    </p>
+                                                    <p
+                                                        style="font-size:14px;line-height:24px;margin:16px 0;color:rgb(0,0,0, 0.5);margin-top:-5px">
+                                                        {lang === 'es' ? '*Este correo electrónico es solo para fines informativos, no es necesario que respondas a este mensaje.*' : '*This email is for informational purposes only, you do not need to respond to this message.*' }
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Reservation -->
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:30px 0 15px 0;height:30px">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size:16px;line-height:24px;margin:0;background:#f4f4f4;padding-left:10px;font-weight:500">
+                                                        { lang === 'es' ? 'Resumen de la Reservación' : 'Reservation Summary' }
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody style="width:100%">
+                                                            <tr style="width:100%">
+                                                                <td data-id="__react-email-column" style="width:64px">
+                                                                    <img alt="cover reservation" height="120" style="display:block;outline:none;border:1px solid rgba(128,128,128,0.2);text-decoration:none;margin:0 0 0 20px;border-radius:14px"
+                                                                        src=`https://thingsmadrid.netlify.app/${imgReservation}`
+                                                                    />
+                                                                </td>
+                                                                <td data-id="__react-email-column" style="padding-left:22px">
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">
+                                                                        { nameReservation }
+                                                                    </p>
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;color:rgb(102,102,102);padding:0">
+                                                                        { lang === 'es' ? 'Adultos' : 'Adults' }: { adults } | { lang === 'es' ? 'Niños' : 'Children' }: { childrens }
+                                                                    </p>
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;color:rgb(102,102,102);padding:0">
+                                                                        { lang === 'es' ? 'Fecha de Reservación' : 'Reservation Date' }: { dateReservation }
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr
+                                        style="width:100%;border:none;border-top:1px solid #eaeaea;margin:30px 0 0 0"
+                                    />
+                                    <!-- Total -->
+                                    {priceReservation && priceReservation != "none" && (
+                                        <table align="right" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                        >
+                                                            <tbody style="width:100%">
+                                                                <tr style="width:100%">
+                                                                    <td align="right" data-id="__react-email-column" style="display:table-cell">
+                                                                        <p style="font-size:10px;line-height:24px;margin:0;color:rgb(102,102,102);font-weight:600;padding:0px 30px 0px 0px;text-align:right">
+                                                                            TOTAL
+                                                                        </p>
+                                                                    </td>
+                                                                    <td data-id="__react-email-column" style="height:48px;border-left:1px solid;border-color:rgb(238,238,238)"></td>
+                                                                    <td data-id="__react-email-column" style="display:table-cell;width:90px">
+                                                                        <p style="font-size:16px;line-height:24px;margin:0px 20px 0px 0px;font-weight:600;white-space:nowrap;text-align:right">
+                                                                            ${priceReservation}
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    )}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Footer -->
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="padding:45px 0 0 0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://react-email-demo-hich02t6q-resend.vercel.app/static/yelp-footer.png"
+                                        style="display:block;outline:none;border:none;text-decoration:none;max-width:100%"
+                                        width="620" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size:12px;line-height:24px;margin:16px 0;text-align:center;color:rgb(0,0,0, 0.7)">
+                        © 2025 | Things To Do In Madrid. | www.thingstodoinmadrid.com
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--/$-->
+</body>
+
+</html>

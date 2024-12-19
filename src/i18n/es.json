@@ -302,5 +302,24 @@
     "PARTNERS": {
         "TITLE": "Nuestros socios",
         "DESCRIPTION": "Nuestra plataforma está respaldada por la tecnología y la fiabilidad de nuestros socios para ofrecerle el mejor servicio y garantías en la industria del turismo."
+    },
+    "FORM_RESERVATION": {
+        "TITLE": "Realiza tu Reservación",
+        "BUTTON_SEND": "Realizar reserva",
+        "BUTTON_PROCESS": "Procesando...",
+        "LABELS": {
+            "FULLNAME": "Nombre Completo",
+            "PHONE": "Teléfono",
+            "EMAIL": "Correo",
+            "ADULTS": "Adultos",
+            "CHILDRENS": "Niños",
+            "DATE": "Fecha"
+        },
+        "PLACEHOLDERS": {
+            "FULLNAME": "Ingrese su nombre completo",
+            "PHONE": "Ingrese su número de teléfono",
+            "EMAIL": "Ingrese su correo electrónico",
+            "DATE": "Seleccione la fecha de la reserva"
+        }
     }
 }

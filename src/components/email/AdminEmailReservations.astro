@@ -1,5 +1,5 @@
 ---
-const { fullName, message, email, phone, date } = Astro.props;
+const { fullName, phone, email, nameReservation, adults, childrens, dateReservation, imgReservation, date, priceReservation} = Astro.props;
 ---
 
 <!doctype html>
@@ -64,16 +64,90 @@ const { fullName, message, email, phone, date } = Astro.props;
                                                     <p style="font-size:16px;line-height:24px;margin:16px 0;margin-top:-5px">
                                                         <b>Número Telefónico:</b> {phone}
                                                     </p>
-                                                    <p style="font-size:16px;line-height:24px;margin:16px 0;margin-top:-5px"> 
-                                                        <b>Mensaje:</b> <br> {message} 
+                                                    <p style="font-size:14px;line-height:24px;margin:16px 0;color:rgb(0,0,0, 0.5);margin-top:-5px">
+                                                        *Este mensaje fue enviado aproximadamente el {date}*
                                                     </p>
                                                     <p style="font-size:14px;line-height:24px;margin:16px 0;color:rgb(0,0,0, 0.5);margin-top:-5px">
-                                                        *Este mensaje fue enviado el {date} *
+                                                        *La fecha y hora puede variar dependiendo de la configuración de la zona horaria del usuario.*
                                                     </p>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <!-- Reservation -->
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:30px 0 15px 0;height:30px">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size:16px;line-height:24px;margin:0;background:#f4f4f4;padding-left:10px;font-weight:500">
+                                                        Resumen de la Reservación
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody style="width:100%">
+                                                            <tr style="width:100%">
+                                                                <td data-id="__react-email-column" style="width:64px">
+                                                                    <img alt="cover reservation" height="120" style="display:block;outline:none;border:1px solid rgba(128,128,128,0.2);text-decoration:none;margin:0 0 0 20px;border-radius:14px"
+                                                                        src=`https://thingsmadrid.netlify.app/${imgReservation}`
+                                                                    />
+                                                                </td>
+                                                                <td data-id="__react-email-column" style="padding-left:22px">
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">
+                                                                        { nameReservation }
+                                                                    </p>
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;color:rgb(102,102,102);padding:0">
+                                                                        Adultos: { adults } | Niños { childrens }
+                                                                    </p>
+                                                                    <p style="font-size:12px;line-height:1.4;margin:0;color:rgb(102,102,102);padding:0">
+                                                                        Fecha para la Reservación: { dateReservation }
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr
+                                        style="width:100%;border:none;border-top:1px solid #eaeaea;margin:30px 0 0 0"
+                                    />
+                                    <!-- Total -->
+                                    {priceReservation && priceReservation != "none" && (
+                                        <table align="right" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                        >
+                                                            <tbody style="width:100%">
+                                                                <tr style="width:100%">
+                                                                    <td align="right" data-id="__react-email-column" style="display:table-cell">
+                                                                        <p style="font-size:10px;line-height:24px;margin:0;color:rgb(102,102,102);font-weight:600;padding:0px 30px 0px 0px;text-align:right">
+                                                                            TOTAL
+                                                                        </p>
+                                                                    </td>
+                                                                    <td data-id="__react-email-column" style="height:48px;border-left:1px solid;border-color:rgb(238,238,238)"></td>
+                                                                    <td data-id="__react-email-column" style="display:table-cell;width:90px">
+                                                                        <p style="font-size:16px;line-height:24px;margin:0px 20px 0px 0px;font-weight:600;white-space:nowrap;text-align:right">
+                                                                            ${priceReservation}
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    )}
                                 </td>
                             </tr>
                         </tbody>

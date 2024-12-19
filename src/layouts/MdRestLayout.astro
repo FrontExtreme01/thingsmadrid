@@ -4,9 +4,12 @@ import Map from "@/components/tours/Map";
 import Testimonials from "@/components/home/Testimonials";
 import ShareSM from "@/components/tours/ShareSM";
 
+import { getLangFromUrl } from "@/i18n/utils";
 import { getI18N } from "@/i18n";
+import FormBooking from "@/components/email/FormBooking";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+const lang = getLangFromUrl(Astro.url);
 
 const { frontmatter } = Astro.props;
 const siteWebURL = new URL(Astro.url.pathname, Astro.site);
@@ -17,6 +20,15 @@ const seoMetaDatos = {
     image: frontmatter.image.url,
     keywords: frontmatter.keywords,
 };
+
+const dataForm = {
+    i18n: i18n.FORM_RESERVATION,
+    lang: lang,
+    titleCard: frontmatter.title,
+    reviews: frontmatter.reviews,
+    stars: frontmatter.stars,
+    image: frontmatter.image,
+}
 ---
 
 <BaseLayout seo={seoMetaDatos}>
@@ -46,12 +58,10 @@ const seoMetaDatos = {
             <div class="w-full lg:w-8/12 md:px-5 lg:px-10 mb-8">
                 <slot />
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">{i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.LOCATION}</h2>
-                <Map
-                    client:visible
-                    url={frontmatter.mapFrame}
-                    titleAct={frontmatter.title}
+                <Map client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title}
                 />
             </div>
+            <FormBooking client:visible dataForm={dataForm} />
             {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title={i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.TESTIMONIAL_TITLE}/> ) : ("") }
         </div>
     </section>

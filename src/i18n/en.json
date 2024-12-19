@@ -302,5 +302,24 @@
     "PARTNERS": {
         "TITLE": "Our Partners",
         "DESCRIPTION": "Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry."
+    },
+    "FORM_RESERVATION": {
+        "TITLE": "Make your reservation",
+        "BUTTON_SEND": "Book now",
+        "BUTTON_PROCESS": "Processing...",
+        "LABELS": {
+            "FULLNAME": "Full name",
+            "PHONE": "Phone",
+            "EMAIL": "Email",
+            "ADULTS": "Adults",
+            "CHILDRENS": "Childrens",
+            "DATE": "Date"
+        },
+        "PLACEHOLDERS": {
+            "FULLNAME": "Enter your full name",
+            "PHONE": "Enter your phone number",
+            "EMAIL": "Enter your email",
+            "DATE": "Select the date"
+        }
     }
 }

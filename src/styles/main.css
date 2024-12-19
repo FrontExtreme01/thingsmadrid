@@ -63,3 +63,7 @@ p {
 .expanded {
     left: 150px;
 }
+
+.w-full-important {
+    width: 100% !important;
+}
