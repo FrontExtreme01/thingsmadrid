@@ -12,20 +12,21 @@ image:
 bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/806807?partialView=1'
 calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/806807'
 category: ''
-location: ''
-duration: ''
-offered: ''
+location: 'Madrid, Spain'
+duration: '3 hours'
+offered: 'English & Spanish'
 schedule: ''
-availability: ''
-cancelation: ''
-meetingPoint: ''
-difficulty: ''
-mapFrame: 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d230620.94095579832!2d-3.9923745102185086!3d40.58299904377427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!3m2!1d40.4167754!2d-3.7037902!4m5!1s0xd416cd458681317%3A0xc00f311e958ba12e!2sAVENTURA%20AMAZONIA%20CERCEDILLA.%20Parque%20de%20multiaventura%20y%20tirolinas%20para%20ni%C3%B1os%20y%20adultos.%20Despedidas%2C%20Cumples%20y%20Teambuilding.%2C%20Parque%20Recreativo%20de%20las%20Berceas%20Carretera%20de%20las%20Dehesas%20M-966%2C%20Km%203%2C9%2C%2028470%20Cercedilla%2C%20Madrid%2C%20Espa%C3%B1a!3m2!1d40.7700195!2d-4.066684899999999!5e0!3m2!1ses!2smx!4v1698335631607!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d230620.94095579832!2d-3.9923745102185086!3d40.58299904377427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!3m2!1d40.4167754!2d-3.7037902!4m5!1s0xd416cd458681317%3A0xc00f311e958ba12e!2sAVENTURA%20AMAZONIA%20CERCEDILLA.%20Parque%20de%20multiaventura%20y%20tirolinas%20para%20ni%C3%B1os%20y%20adultos.%20Despedidas%2C%20Cumples%20y%20Teambuilding.%2C%20Parque%20Recreativo%20de%20las%20Berceas%20Carretera%20de%20las%20Dehesas%20M-966%2C%20Km%203%2C9%2C%2028470%20Cercedilla%2C%20Madrid%2C%20Espa%C3%B1a!3m2!1d40.7700195!2d-4.066684899999999!5e0!3m2!1ses!2smx!4v1698335631607!5m2!1ses!2smx'
+availability: 'Friday to Sunday'
+cancelation: '24h before activity'
+meetingPoint: 'At the Park Entrance. *You can get there by A-6 Road or Colmenar Road*'
+difficulty: 'Medium'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.545821412561!2d-4.066685!3d40.77002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd416cd458681317%3A0xc00f311e958ba12e!2sAVENTURA%20AMAZONIA%20CERCEDILLA.%20Parque%20de%20multiaventura%20y%20tirolinas%20para%20ni%C3%B1os%20y%20adultos.%20Despedidas%2C%20Cumples%20y%20Teambuilding.!5e0!3m2!1ses-419!2sus!4v1709561765578!5m2!1ses-419!2sus'
 keywords: 'amazonia, adventure, cercedilla, madrid, spain'
 testimonials: []
 ---
 
-import SliderGallery from '@/components/tours/SliderGallery';
+import SliderGallery from '@/components/detail-content/SliderGallery';
+import MapFrame from '@/components/detail-content/MapFrame';
 
 export const images = import.meta.glob('@/img/galleries/tours/amazonia-adventure/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
@@ -41,4 +42,59 @@ export const accessibility = {
     accessibility={accessibility}
 />
 
-<h2 class="text-2xl md:text-4xl font-bold mb-5">About this tour</h2>
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700">Amazonia Adventure in Cercerdilla Madrid</h2>
+
+<p class="text-lg text-justify my-5">Your Passport to Excitement Dive into an adrenaline-fueled and fun-filled experience with our thrilling 
+multi-adventure circuits at <strong>Amazonia Adventure Cercedilla</strong>. Here, you’ll find 7 circuits loaded with challenges, games, and excitement, 
+all suspended among the trees. Each of these circuits is designed to provide you with a dose of excitement tailored to your skill level, allowing you to
+choose the intensity of your own adventure. In total, the park houses 114 games and 33 zip lines, offering you a unique experience in the heart of nature. </p>
+
+<h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">A World of High-Flying Challenges</h3>
+
+<p class="text-lg text-justify my-5">At Aventura Amazonia CERCEDILLA, we’ve created an experience suitable for adventurers of all ages, as long as they are 
+at least 6 years old and measure over 1.15 meters in height. No prior experience or special skills are required. Fun is guaranteed for everyone!</p>
+
+<h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">3 Hours of Pure Adventure Amazonia</h3>
+
+<p class="text-lg text-justify my-5">During this time, you can explore as many circuits as you like. The choice is yours: switch between circuits as often 
+as you want or revisit your favorites. Each circuit lasts 30 to 45 minutes, so you’ll have plenty of time to immerse yourself in exciting challenges and 
+make the most of your experience. </p>
+
+<h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">A Safe Start</h3>
+
+<p class="text-lg text-justify my-5">Your safety is our top priority, so at the beginning of your adventure, you will receive all the necessary equipment 
+to enjoy the experience with peace of mind. We will provide you with a harness, carabiners, and a pulley for the zip lines. You will also start your journey 
+with an initiation circuit. In this circuit, our expert monitors will teach you the basic safety rules of the park and show you how to handle the equipment 
+correctly. You will also have the opportunity to practice in the circuit under the guidance of our monitors, which will give you the confidence needed to 
+venture into the subsequent challenges. </p>
+
+<p class="text-lg text-justify my-5">Our multi-adventure circuits are the perfect place to enjoy an exciting day in nature. Various games and challenges 
+ensure that each round is different and thrilling. From zip lines that cross the forest canopy to hanging bridges and adventure nets, you’ll find challenges 
+that will test your skills and make you feel like a true adventurer.</p>
+
+<p class="text-lg text-justify my-5">So, what are you waiting for? Aventura Amazonia CERCEDILLA is where fun and excitement come together to offer you a 
+unique experience. Gather your friends and family and get ready to push your limits on the multi-adventure circuits. Adventure awaits you in the heights!</p>
+
+<ul class="md:ml-10 text-lg text-justify space-y-4">
+    <li><strong>Adult:</strong> <em>16 years and older</em></li>
+    <li><strong>Junior:</strong> <em>From 1.35 meters tall and up to 15 years old (inclusive)</em></li>
+    <li><strong>Child:</strong> <em>From 6 years of age, a minimum height of 1.15 meters and the maximum height of 1.34 meters</em></li>
+</ul>
+
+<p class="text-lg text-justify my-5">The price includes equipment rental, the initiation course, access to adventure circuits, and insurance 
+coverage (Liability and Accidents).</p>
+
+<p class="text-lg text-justify my-5"><strong>Location and How to Get There</strong></p>
+
+<p class="text-lg text-justify my-5">The park is located in the Recreational Area of Las Berceas (Cercedilla), in the Fuenfría Valley. </p>
+
+<MapFrame client:visible url="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d230620.94095579832!2d-3.9923745102185086!3d40.58299904377427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!3m2!1d40.4167754!2d-3.7037902!4m5!1s0xd416cd458681317%3A0xc00f311e958ba12e!2sAVENTURA%20AMAZONIA%20CERCEDILLA.%20Parque%20de%20multiaventura%20y%20tirolinas%20para%20ni%C3%B1os%20y%20adultos.%20Despedidas%2C%20Cumples%20y%20Teambuilding.%2C%20Parque%20Recreativo%20de%20las%20Berceas%20Carretera%20de%20las%20Dehesas%20M-966%2C%20Km%203%2C9%2C%2028470%20Cercedilla%2C%20Madrid%2C%20Espa%C3%B1a!3m2!1d40.7700195!2d-4.066684899999999!5e0!3m2!1ses!2smx!4v1698335631607!5m2!1ses!2smx" titleAct="Amazonia Adventure" textMap="See traced route" />
+
+<p class="text-lg text-justify my-5"><strong>By A-6 Road:</strong> Once you’re on the A-6, you can take various exits. The quickest is to take Exit 
+47 towards M-600, heading towards Guadarrama. Then, at the 3rd roundabout, turn left. Drive through the town of Guadarrama, and turn right towards 
+M-622/Cercedilla. Continue for 7.4 km on M-622. When you reach the Cercedilla train station, continue straight on the Ctra. de las Dehesas. We are 
+at kilometer 3.9, past the Casa Cirilo restaurant.</p>
+
+<p class="text-lg text-justify my-5"><strong>BY COLMENAR:</strong> Take the Colmenar Viejo highway and continue on the M-607 Road until you reach 
+the Cercedilla exit and take the M-622 Road. Before reaching the Cercedilla Renfe station (200m), turn right onto Ctra. de las Dehesas. We are at 
+kilometer 3.9, past the Casa Cirilo restaurant.</p>

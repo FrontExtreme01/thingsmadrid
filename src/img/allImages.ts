@@ -21,14 +21,14 @@ import userTest2 from '@/img/testimonial/cenotes9.webp';
 import userTest3 from '@/img/testimonial/tequilatasting1.webp';
 
 // Imagenes extra Banners en Inglés
-import paymentMethEn from "@/img/home/verified-payment-methods-things-to-do-in-madrid.webp";
-import serviceAdvanEn from "@/img/home/service-advantages-what-to-do-in-madrid.webp";
-import madridBlogEN from "@/img/home/read-our-madrid-tours-travel-blog.webp";
+import paymentMethEn from "@/img/home/highlights/en/verified-payment-methods-things-to-do-in-madrid.webp";
+import serviceAdvanEn from "@/img/home/highlights/en/service-advantages-what-to-do-in-madrid.webp";
+import madridBlogEN from "@/img/home/highlights/en/read-our-madrid-tours-travel-blog.webp";
 
 //Imagenes extra Banners en Español
-import paymentMethEs from "@/img/home/verified-payment-methods-things-to-do-in-madrid.webp";
-import serviceAdvanEs from "@/img/home/verified-payment-methods-things-to-do-in-madrid.webp";;
-import madridBlogEs from "@/img/home/verified-payment-methods-things-to-do-in-madrid.webp";
+import paymentMethEs from "@/img/home/highlights/es/pagos-seguros.webp";
+import serviceAdvanEs from "@/img/home/highlights/es/nuestras-ventajas.webp";
+import madridBlogEs from "@/img/home/highlights/es/lee-nuestro.blog.webp";
 
 import excursions from "@/img/home/the-best-tours-in-madrid-things-to-do-activities-excursions.webp";
 // Imagenes de Restaurantes

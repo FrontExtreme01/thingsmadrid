@@ -1,14 +1,17 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import Map from "../components/tours/Map";
-import FormBokun from "../components/tours/FormBokun";
-import Testimonials from "../components/home/Testimonials";
-import ShareSM from "@/components/tours/ShareSM";
+import MapFrame from "@/components/detail-content/MapFrame";
+import Testimonials from "@/components/home/Testimonials";
+import ShareSM from "@/components/detail-content/ShareSM";
+import FormBookingDesktop from "@/components/detail-content/FormBookingDesktop";
+import FormBookingMobile from "@/components/detail-content/FormBookingMobile";
 
+import { getLangFromUrl } from "@/i18n/utils";
 import { getI18N } from "@/i18n";
-import BtnBookModal from "@/components/tours/BtnBookModal";
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+const lang = getLangFromUrl(Astro.url);
 
 const { frontmatter } = Astro.props;
 const siteWebURL = new URL(Astro.url.pathname, Astro.site);
@@ -19,6 +22,16 @@ const seoMetaDatos = {
     image: frontmatter.image.url,
     keywords: frontmatter.keywords,
 };
+
+const dataForm = {
+    i18n: i18n.DETAILS_CONTENT.FORM_RESERVATION,
+    lang: lang,
+    price: frontmatter.price,
+    titleCard: frontmatter.title,
+    reviews: frontmatter.reviews,
+    stars: frontmatter.stars,
+    image: frontmatter.image,
+}
 ---
 
 <BaseLayout seo={seoMetaDatos}>
@@ -26,15 +39,15 @@ const seoMetaDatos = {
         <div class="flex flex-wrap">
             <!-- Header -->
             <header class="flex flex-wrap w-full md:px-5 lg:px-10">
-                <h1 class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-900">
+                <h1 class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-800">
                     {frontmatter.title}
                 </h1>
                 <div class="w-2/12 flex justify-center items-center">
                     <ShareSM client:idle site={siteWebURL} />
                 </div>
-                <ul class="flex gap-5 w-full my-6 text-base md:text-lg">
+                <ul class="flex gap-5 w-full my-6 text-sm md:text-lg">
                     <li>
-                        <i class="at-pin-destination text-sky-900"></i>
+                        <i class="at-pin-destination text-sky-800"></i>
                         <span>{frontmatter.location}</span>
                     </li>
                     <li>
@@ -48,137 +61,105 @@ const seoMetaDatos = {
                     </li>
                 </ul>
             </header>
-            <!-- Details -->
+            <!-- Content -->
             <div class="w-full lg:w-8/12 md:px-5 lg:px-10 mb-8">
                 <slot />
-                <h3 class="text-4xl font-bold my-5"></h3>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">{i18n.DETAILS_CONTENT.GENERAL.CHARACTERISTICS}</h3>
                 <ul class="flex flex-wrap mb-20 space-y-7">
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-timer"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-timer"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">
-                                {i18n.TOUR_PAGE.DETAIL_TOUR.DURATION}
+                                {i18n.DETAILS_CONTENT.GENERAL.DURATION}
                             </span>
                             <p>{frontmatter.duration}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-clock-time"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-clock-time"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">
-                                {i18n.TOUR_PAGE.DETAIL_TOUR.SCHEDULE}
+                                {i18n.DETAILS_CONTENT.GENERAL.SCHEDULE}
                             </span>
                             <p>{frontmatter.schedule}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-calendar-schedule"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-calendar-schedule"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">
-                                {i18n.TOUR_PAGE.DETAIL_TOUR.AVAILABILITY}
+                                {i18n.DETAILS_CONTENT.GENERAL.AVAILABILITY}
                             </span>
                             <p>{frontmatter.availability}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-dots-comment"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-dots-comment"></i>
                         <div class="flex flex-col">
                             <span class="font-bold">
-                                {i18n.TOUR_PAGE.DETAIL_TOUR.REVIEWS}
+                                {i18n.DETAILS_CONTENT.GENERAL.REVIEWS}
                             </span>
                             <p>{frontmatter.reviews}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-low-thermometer"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-low-thermometer"></i>
                         <div class="flex flex-col">
                             <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.DIFFICULTY}</span
+                                >{i18n.DETAILS_CONTENT.GENERAL.DIFFICULTY}</span
                             >
                             <p>{frontmatter.difficulty}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-tag"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-tag"></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.CATEGORY}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.DETAILS_CONTENT.GENERAL.CATEGORY}
+                            </span>
                             <p>{frontmatter.category}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-language-translation"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-language-translation"></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.OFFERED_IN}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.DETAILS_CONTENT.GENERAL.OFFERED_IN}
+                            </span>
                             <p>{frontmatter.offered}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-xmark-handshake"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-xmark-handshake"></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{i18n.TOUR_PAGE.DETAIL_TOUR.CANCELATION}</span
-                            >
+                            <span class="font-bold">
+                                {i18n.DETAILS_CONTENT.GENERAL.CANCELATION}
+                            </span>
                             <p>{frontmatter.cancelation}</p>
                         </div>
                     </li>
                     <li class="w-full md:w-4/12 flex items-center">
-                        <i
-                            class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-exclamation-mobile"
-                        ></i>
+                        <i class="bg-slate-100 text-black text-xl w-14 h-14 rounded-full flex justify-center items-center mr-2 at-exclamation-mobile"></i>
                         <div class="flex flex-col">
-                            <span class="font-bold"
-                                >{
-                                    i18n.TOUR_PAGE.DETAIL_TOUR.TICKET_MOBILE
-                                }</span
-                            >
-                            <p>Mobile Ticket</p>
+                            <span class="font-bold">
+                                {i18n.DETAILS_CONTENT.GENERAL.TICKET_MOBILE}
+                            </span>
+                            <p>{i18n.DETAILS_CONTENT.GENERAL.TICKET_MOBILE}</p>
                         </div>
                     </li>
                 </ul>
-                <h3 class="text-4xl font-bold my-5">
-                    {i18n.TOUR_PAGE.DETAIL_TOUR.LOCATION}
+
+                <!-- Mapa -->
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">
+                    {i18n.DETAILS_CONTENT.GENERAL.TITLE_LOCATION}
                 </h3>
-                <Map
-                    client:visible
-                    url={frontmatter.mapFrame}
-                    titleAct={frontmatter.title}
-                />
+                <MapFrame client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title} textMap={i18n.DETAILS_CONTENT.GENERAL.TITLE_MAP_FRAME} />
             </div>
-            <!-- Form -->
-            <FormBokun client:visible urlCalendar={frontmatter.calendar} price={frontmatter.price} i18n={i18n} />
-            {frontmatter.testimonials != 0 ? (
-                    <Testimonials
-                        client:visible
-                        testimonials={frontmatter.testimonials}
-                        title={i18n.TOUR_PAGE.DETAIL_TOUR.TESTIMONIAL_TITLE}
-                    />) : ("")
-            }
+            <!-- Form Sidebar -->
+            <FormBookingDesktop client:visible dataForm={dataForm} />
+            {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title={i18n.DETAILS_CONTENT.GENERAL.TITLE_TESTIMONIAL} />) : ("")}
         </div>
+        <!-- Form Mobile -->
+        <FormBookingMobile client:visible dataForm={dataForm} />
     </section>
-    <BtnBookModal
-        client:visible
-        urlCalendar={frontmatter.calendar}
-        titleAct={frontmatter.title}
-        i18n={i18n}
-    />
 </BaseLayout>

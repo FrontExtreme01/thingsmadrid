@@ -26,7 +26,7 @@ export default function Partners({ title, description }: any) {
 
     return (
         <div className="py-10 px-5 md:px-24 container mx-auto text-center" data-aos="zoom-in" data-aos-delay="500">
-            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">{title}</h2>
+            <h2 className="my-16 text-4xl text-sky-800 font-bold italic">{title}</h2>
             <p className="text-xl mb-10">
                 {description}
             </p>

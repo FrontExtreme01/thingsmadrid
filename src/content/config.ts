@@ -43,6 +43,7 @@ const restaurantsCollection = defineCollection({
     schema: z.object({
         lang: z.string().optional(),
         title: z.string(),
+        description: z.string(),
         featured: z.string(),
         averageCost: z.string(),
         stars: z.string(),

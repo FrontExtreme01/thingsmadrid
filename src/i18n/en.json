@@ -120,24 +120,6 @@
             "FROM": "From",
             "BUTTON_BOOK_NOW": "Book now",
             "BUTTON_MORE": "More details"
-        },
-        "DETAIL_TOUR": {
-            "CHARACTERISTICS": "Characteristics",
-            "DURATION": "Duration",
-            "SCHEDULE": "Schedule",
-            "AVAILABILITY": "Availability",
-            "REVIEWS": "Reviews",
-            "DIFFICULTY": "Difficulty",
-            "CATEGORY": "Category",
-            "OFFERED_IN": "Offered in",
-            "CANCELATION": "Cancellation policy",
-            "TICKET_MOBILE": "Mobile ticket",
-            "TESTIMONIAL_TITLE": "What our customers say",
-            "LOCATION": "Location",
-            "TEXT_MODAL": "Complete your booking details.",
-            "BTN_BOOK_NOW": "Book now",
-            "PRICE_FROM": "Price from",
-            "PER_PERSON": "per person"
         }
     },
     "RESTAURANT_PAGE": {
@@ -163,10 +145,6 @@
             "COST": "Average cost",
             "BUTTON_BOOK_NOW": "Book now",
             "BUTTON_VIEW_MORE": "More details"
-        },
-        "DETAIL_RESTAURANT": {
-            "TESTIMONIAL_TITLE": "What our customers say",
-            "LOCATION": "Location"
         }
     },
     "CONTACT_PAGE": {
@@ -303,23 +281,44 @@
         "TITLE": "Our Partners",
         "DESCRIPTION": "Our platform is supported by the technology and reliability of our partners to offer you the best service and guarantees in the tourism industry."
     },
-    "FORM_RESERVATION": {
-        "TITLE": "Make your reservation",
-        "BUTTON_SEND": "Book now",
-        "BUTTON_PROCESS": "Processing...",
-        "LABELS": {
-            "FULLNAME": "Full name",
-            "PHONE": "Phone",
-            "EMAIL": "Email",
-            "ADULTS": "Adults",
-            "CHILDRENS": "Childrens",
-            "DATE": "Date"
+    "DETAILS_CONTENT": {
+        "GENERAL": {
+            "CHARACTERISTICS": "Characteristics",
+            "DURATION": "Duration",
+            "SCHEDULE": "Schedule",
+            "AVAILABILITY": "Availability",
+            "REVIEWS": "Reviews",
+            "DIFFICULTY": "Difficulty",
+            "CATEGORY": "Category",
+            "OFFERED_IN": "Offered in",
+            "CANCELATION": "Cancellation policy",
+            "TICKET_MOBILE": "Mobile ticket",
+            "TITLE_TESTIMONIAL": "What our customers say",
+            "TITLE_LOCATION": "Location",
+            "TITLE_MAP_FRAME": "See location on map",
+            "PRICE_FROM": "Price from",
+            "PER_PERSON": "per person"
         },
-        "PLACEHOLDERS": {
-            "FULLNAME": "Enter your full name",
-            "PHONE": "Enter your phone number",
-            "EMAIL": "Enter your email",
-            "DATE": "Select the date"
+        "FORM_RESERVATION": {
+            "TITLE": "Make your reservation",
+            "DESCRIPTION": "Complete the form for make your reservation.",
+            "BUTTON_MODAL": "Book now",
+            "BUTTON_SEND": "Make reservation",
+            "BUTTON_PROCESS": "Processing...",
+            "LABELS": {
+                "FULLNAME": "Full name",
+                "PHONE": "Phone",
+                "EMAIL": "Email",
+                "ADULTS": "Adults",
+                "CHILDRENS": "Childrens",
+                "DATE": "Date"
+            },
+            "PLACEHOLDERS": {
+                "FULLNAME": "Enter your full name",
+                "PHONE": "Enter your phone number",
+                "EMAIL": "Enter your email",
+                "DATE": "Select the date"
+            }
         }
     }
 }

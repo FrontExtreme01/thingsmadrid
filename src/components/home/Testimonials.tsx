@@ -9,7 +9,7 @@ import styles from '@/styles/testimonial.module.css';
 export default function Testimonials({ testimonials, title }: any) {
     return (
         <div className="relative pt-5 pb-20 px-5 md:px-24 container mx-auto text-center" data-aos="fade-up" data-aos-delay="400">
-            <h2 className="my-16 text-4xl text-sky-900 font-bold italic">{title}</h2>
+            <h2 className="my-16 text-4xl text-sky-800 font-bold italic">{title}</h2>
             <Swiper
                 pagination={{
                     el: "#containerBulletTestimonial",

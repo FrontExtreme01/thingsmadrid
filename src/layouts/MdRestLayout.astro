@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import Map from "@/components/tours/Map";
+import MapFrame from "@/components/detail-content/MapFrame";
 import Testimonials from "@/components/home/Testimonials";
-import ShareSM from "@/components/tours/ShareSM";
+import ShareSM from "@/components/detail-content/ShareSM";
+import FormBookingDesktop from "@/components/detail-content/FormBookingDesktop";
+import FormBookingMobile from "@/components/detail-content/FormBookingMobile";
 
 import { getLangFromUrl } from "@/i18n/utils";
 import { getI18N } from "@/i18n";
-import FormBooking from "@/components/email/FormBooking";
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const lang = getLangFromUrl(Astro.url);
@@ -22,8 +24,9 @@ const seoMetaDatos = {
 };
 
 const dataForm = {
-    i18n: i18n.FORM_RESERVATION,
+    i18n: i18n.DETAILS_CONTENT.FORM_RESERVATION,
     lang: lang,
+    price: '0',
     titleCard: frontmatter.title,
     reviews: frontmatter.reviews,
     stars: frontmatter.stars,
@@ -34,8 +37,9 @@ const dataForm = {
 <BaseLayout seo={seoMetaDatos}>
     <section class="mx-7 md:mx-20 lg:mx-24 mt-8 mb-14">
         <div class="flex flex-wrap">
+            <!-- Header -->
             <header class="flex flex-wrap w-full md:px-5 lg:px-10">
-                <h1 class="w-10/12 text-4xl md:text-6xl font-bold italic text-sky-900">
+                <h1 class="w-10/12 text-3xl md:text-6xl font-bold italic text-sky-800">
                     {frontmatter.title}
                 </h1>
                 <div class="w-2/12 flex justify-center items-center">
@@ -43,7 +47,7 @@ const dataForm = {
                 </div>
                 <ul class="flex gap-5 w-full my-6 text-sm md:text-lg">
                     <li>
-                        <i class="at-pin-destination text-sky-900"></i>
+                        <i class="at-pin-destination text-sky-800"></i>
                         <span>{frontmatter.location}</span>
                     </li>
                     <li>
@@ -54,15 +58,17 @@ const dataForm = {
                     </li>
                 </ul>
             </header>
-            <!-- Details -->
+            <!-- Content -->
             <div class="w-full lg:w-8/12 md:px-5 lg:px-10 mb-8">
                 <slot />
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">{i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.LOCATION}</h2>
-                <Map client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title}
-                />
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-700 mt-10">{i18n.DETAILS_CONTENT.GENERAL.TITLE_LOCATION}</h2>
+                <MapFrame client:visible url={frontmatter.mapFrame} titleAct={frontmatter.title} textMap={i18n.DETAILS_CONTENT.GENERAL.TITLE_MAP_FRAME} />
             </div>
-            <FormBooking client:visible dataForm={dataForm} />
-            {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title={i18n.RESTAURANT_PAGE.DETAIL_RESTAURANT.TESTIMONIAL_TITLE}/> ) : ("") }
+            <!-- FormSidebar -->
+            <FormBookingDesktop client:visible dataForm={dataForm} />
+            {frontmatter.testimonials != 0 ? ( <Testimonials client:visible testimonials={frontmatter.testimonials} title={i18n.DETAILS_CONTENT.GENERAL.TITLE_TESTIMONIAL}/> ) : ("") }
         </div>
+        <!-- Form Mobile -->
+        <FormBookingMobile client:visible dataForm={dataForm} />
     </section>
 </BaseLayout>
