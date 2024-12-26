@@ -1,0 +1,85 @@
+---
+lang: 'en'
+status: 1
+title: 'Royal Monastery Of Escorial And Basilica Of The Valley Of The Fallen'
+description: 'Marvel at the Royal Monastery of El Escorial, a World Heritage Site by UNESCO. See the Hapsburg’s Palace.'
+featured: 'New'
+price: '65'
+stars: '4.6'
+reviews: '752 reviews'
+image:
+    url: '/assets/covers/tours/Real-Monasterio-de-El-Escorial-y-Basilica-del-Valle-de-los-Caidos.webp'
+    alt: 'cover of Royal Monastery tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846160?partialView=1'
+category: 'Cultural and theme tours, Sightseeing'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846160'
+location: 'Madrid, Spain'
+duration: '5 hours & 30 minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Tuesday, Thursday, Saturday & Sunday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/el-escorial-y-basilica/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Check in at our office in central Madrid 15 minutes in advance of your tour. 
+Leave the city aboard one of our comfortable air-conditioned coaches.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Entrance to the Royal Monastery of El Escorial</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrance to the Valley of the Fallen and the Basilica </li>
+            <li><i class="at-check-circle text-green-500"></i> Air conditioned motor coach</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual Official guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Individual radio-guided system</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please note this is a walking tour on arrival at the site. Wear appropriate attire.</li>
+            <li><i class="at-info-circle text-sky-500"></i> The duration of the tour includes transportation.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Please note the Royal Monastery of El Escorial and the Valley of the Fallen visitors are requested to respect the following statement: photography and filming are not permitted inside the exhibitions. </li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Enjoy your visit through the Royal Monastery of El Escorial, an architectural ensemble declared World 
+Heritage Site by UNESCO. Built in the 16th century, it is a symbol of the power of the government at the time. Accompanied by your guide, you 
+will discover the most important areas of the monument. Of Renaissance style, you will marvel at the building symmetry as you walk along the 
+site visiting the Habsburg’s Palace, the Chapter House, the Basilica and the remarkable library.</p>
+
+<p class="text-lg text-justify my-5"> Board your bus again for a short drive to the Valley of the Fallen. The site is located 9km away from 
+El Escorial, in Sierra de Guadarrama. You will be able to see it from far away thanks to the monumental cross built above the site. The 
+monument is an underground church built into the mountain. The same is topped by the World’s Largest Cross, which can be seen from miles away.</p>

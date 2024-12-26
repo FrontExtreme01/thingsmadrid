@@ -1,0 +1,78 @@
+---
+lang: 'en'
+status: 1
+title: 'Guided Tour Of The Reina Sofía Museum with Preferential Access'
+description: 'Visit the main gallery of modern and contemporary art in Madrid, the Reina Sofia Museum. Enjoy quick access.'
+featured: 'New'
+price: '30'
+stars: '5.0'
+reviews: '672 reviews'
+image:
+    url: '/assets/covers/tours/reina-sofia-museum-tour.webp'
+    alt: 'cover of Guided tour of the Reina Sofia Museum'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846143?partialView=1'
+category: 'Museums, Exhibitions'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846143'
+location: 'Madrid, Spain'
+duration: '1 hour & 30 minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Friday & Saturday'
+cancelation: '24h before activity'
+meetingPoint: 'Ronda de Atocha 2, 28012 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.0541600037914!2d-3.6975320241230105!3d40.40765095619213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262f25b99b79%3A0x32e0e8d87d897475!2sRda.%20de%20Atocha%2C%202%2C%20Centro%2C%2028012%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709580218462!5m2!1ses-419!2smx'
+keywords: 'modern art, reina sofia museum, contemporary museums in madrid, spain, museums'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/museo-reina-sofia/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Enjoy a guided tour of the highlights the greatest contemporary art museum in Madrid has. 
+Meet your guide and avoid the long queues. Get to know the backstories of all the paintings you'll see.</p>
+
+<p class="text-lg text-justify my-5"> The Museum's permanent collection contains works from the 1900's to the present day. Today, 
+it has more than 21.000 different artworks. Visit both the Sabatini and Nouvel buildings, the two parts the museum divides into. 
+Learn about the museum's history and discover why it was created. See the Guernica rough sketches and compare them to the final 
+work, exhibited in the Museum.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Admission to the Museo Nacional Centro de Arte Reina Sofía.</li>
+            <li><i class="at-check-circle text-green-500"></i> Monolingual tour.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please bear in mind this is a walking tour.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Important information: photography and filming are not permitted inside the exhibitions.</li>
+        </ul>
+    </div>
+</div>

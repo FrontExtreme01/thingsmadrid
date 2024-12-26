@@ -1,0 +1,87 @@
+---
+lang: 'en'
+status: 1
+title: 'Paella & Sangria Madrid Food Tour'
+description: 'Discover a unique culinary experience with this paella and sangria workshop right Central Madrid.'
+featured: 'New'
+price: '49'
+stars: '4.5'
+reviews: '998 reviews'
+image:
+    url: '/assets/covers/tours/paella-and-sangria-madrid-food-tour.webp'
+    alt: 'cover of the Paella & Sangria Madrid Food Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/840699?partialView=1'
+category: 'Culinary, Group friendly'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/840699'
+location: 'Madrid, Spain'
+duration: '2 hours & 30 minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Thursday, Friday, Saturday & Sunday'
+cancelation: '24h before activity'
+meetingPoint: 'C. de la Montera, 24, Centro, 28013 Madrid, Spain *This activity ends back at the meeting point.'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5638825787346!2d-3.7019337!3d40.4185112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228874e3b73cd%3A0x6c38be460aef2a75!2sC.%20de%20la%20Montera%2C%2024%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1710250006339!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/paella-sangria-madrid-food-tour/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Discover a unique culinary experience with this paella and sangria workshop right Central Madrid. All accompanied with 
+the famous drink, sangría. Take home recipes to use at home.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Alcoholic Beverages</li>
+            <li><i class="at-check-circle text-green-500"></i> Cooking materials</li>
+            <li><i class="at-check-circle text-green-500"></i> Dinner</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Aditional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Not wheelchair accessible</li>
+            <li><i class="at-info-circle text-sky-500"></i> Stroller accessible</li>
+            <li><i class="at-info-circle text-sky-500"></i> Near public transportation</li>
+            <li><i class="at-info-circle text-sky-500"></i> Infant seats available</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Learn how to prepare iconic Spanish paella and to craft an authentic and refreshing sangria with a 
+local chef at a venue that is conveniently-located in central Madrid.  Be greeted by your instructor at the door and head in for your hands-on 
+experience. Have all the necessary materials and ingredients provided for you.</p>
+
+<p class="text-lg text-justify my-5"> We will start with the preparation of tasty sangria to achieve a balanced and refreshing taste, 
+with all the best ingredients. Hear about the history of paella and be introduced to  the basic ingredients of paella. Find out how each 
+ingredient contributes to the flavor and final texture of the dish.</p>
+
+<p class="text-lg text-justify my-5"> We will discover the secrets to prepare an authentic Spanish paella in a step-by-step way before 
+cooking with a traditional paella pan.  Enjoy the paella and sangria you have prepared together in a festive and cozy atmosphere.</p>
+
+<p class="text-lg text-justify my-5"> Receive detailed recipes so you can recreate these dishes at home and surprise your friends and family.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Meeting Point</h3>
+
+<p class="text-lg text-justify my-5"> C. de la Montera, 24, Centro, 28013 Madrid, Spain</p>

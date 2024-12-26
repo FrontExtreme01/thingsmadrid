@@ -1,0 +1,87 @@
+---
+lang: 'es'
+status: 1
+title: 'Paella y sangría Madrid Food Tour'
+description: 'Descubra una experiencia culinaria única con este taller de paella y sangría a la derecha Madrid.'
+featured: 'Nuevo'
+price: '47'
+stars: '4.5'
+reviews: '998 reseñas'
+image:
+    url: '/assets/covers/tours/paella-and-sangria-madrid-food-tour.webp'
+    alt: 'portada del tour Paella y sangría'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/840699?partialView=1'
+category: 'Gastronomía, Apto para grupos'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/840699'
+location: 'Madrid, España'
+duration: '2 horas & 30 minutos'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Jueves, viernes, Sábados y Domingos'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'C. de la Montera, 24, Centro, 28013 Madrid, España *Esta actividad termina en el punto de reunión.'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5638825787346!2d-3.7019337!3d40.4185112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228874e3b73cd%3A0x6c38be460aef2a75!2sC.%20de%20la%20Montera%2C%2024%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1710250006339!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/paella-sangria-madrid-food-tour/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<p class="text-lg text-justify my-5"> >Descubre una experiencia culinaria única con este taller de paella y sangría en pleno centro de Madrid. 
+Todo ello acompañado de la famosa bebida, la sangría. Llévate a casa las recetas para utilizarlas en casa. </p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Bebidas alcohólicas</li>
+            <li><i class="at-check-circle text-green-500"></i> Materiales para cocinar</li>
+            <li><i class="at-check-circle text-green-500"></i> Cena</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> No es accesible para sillas de ruedas</li>
+            <li><i class="at-info-circle text-sky-500"></i> Accesible para cochecitos de bebé</li>
+            <li><i class="at-info-circle text-sky-500"></i> Cerca del transporte público</li>
+            <li><i class="at-info-circle text-sky-500"></i> Asientos para bebés disponibles</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Aprende a preparar la icónica paella española y a elaborar una auténtica y refrescante sangría con un
+chef local en un local convenientemente ubicado en el centro de Madrid. Tu instructor te recibirá en la puerta y te llevará a tu
+experiencia práctica. Te proporcionaremos todos los materiales e ingredientes necesarios.</p>
+
+<p class="text-lg text-justify my-5"> Comenzaremos con la preparación de una sabrosa sangría para lograr un sabor equilibrado y refrescante,
+con los mejores ingredientes. Conoce la historia de la paella y conoce sus ingredientes básicos. Descubre cómo cada
+ingrediente contribuye al sabor y la textura final del plato.</p>
+
+<p class="text-lg text-justify my-5"> Descubriremos los secretos para preparar una auténtica paella española paso a paso antes de
+cocinarla con una paellera tradicional. Disfruta de la paella y la sangría que habéis preparado juntos en un ambiente festivo y acogedor.</p>
+
+<p class="text-lg text-justify my-5">Recibe recetas detalladas para que puedas recrear estos platos en casa y sorprender a tus amigos y familiares.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Punto de encuentro</h3>
+
+<p class="text-lg text-justify my-5"> C. de la Montera, 24, Centro, 28013 Madrid, España</p>

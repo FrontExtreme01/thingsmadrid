@@ -1,0 +1,86 @@
+---
+lang: 'en'
+status: 1
+title: 'Santiago Bernabéu Stadium & Museum Admission'
+description: 'Visit the stadium of one of the most important clubs in the world. Explore the venue with a local guide.'
+featured: 'New'
+price: '25'
+stars: '5.0'
+reviews: '483 reviews'
+image:
+    url: '/assets/covers/tours/real-madrid-stadium-tour-bernabeu.webp'
+    alt: 'cover of the tour Santiago Bernabeu Stadium & Museum Admission'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846151?partialView=1'
+category: 'Spectator sports'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846151'
+location: 'Madrid, Spain'
+duration: '45 minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Monday & Thursday'
+cancelation: '24h before activity'
+meetingPoint: 'Paseo de la Castellana 140, 28046 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0629961409863!2d-3.6924348241209493!3d40.45174265350786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e253d8d20f%3A0x2d278c2e9af6077!2sP.%C2%BA%20de%20la%20Castellana%2C%20140%2C%20Chamart%C3%ADn%2C%2028046%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709582123506!5m2!1ses-419!2smx'
+keywords: 'santiago bernabeu, real madrid, stadium, museums, guided tours, football, soccer, sports, madrid, spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/santiago-bernabeu/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Home to Real Madrid, this tour will not leave any soccer - or football - fan indifferent. 
+Relive more than a hundred years of the clubs' history. Welcome to this Bernabéu guided tour, where you will see the stadium 
+as you have never seen it before.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> 2-hour private tour with access to Real Madrid FC stadium.</li>
+            <li><i class="at-check-circle text-green-500"></i> Local guide.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please note this tour is Non-Refundable. </li>
+            <li><i class="at-info-circle text-sky-500"></i> Not wheelchair accessible. Not accessible for people with reduced mobility.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Real Madrid FC reserves the right to cancel or modify the tour due to events held at the Stadium or force majeure circumstances.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Due to the works being carried out at the Santiago Bernabéu stadium, the Tour route will be temporarily affected and these areas will not be able to be visited: The perimeter of the playing field; the virtual reality area; the Presidential Box; the first team dressing room and the dressing room of the visiting team; players' tunnel and the pressroom.</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+
+<p class="text-lg text-justify my-5"> Feel the excitement of a player on the pitch, the thrill of a pre-match tension and the glow of past glories. 
+Get to know the history that has molded one of the world's best soccer teams.</p>
+
+<p class="text-lg text-justify my-5"> Enjoy a panoramic view of the stadium from one of the four towers. You will have a unique view of the 
+stadium that will astound you. </p>
+
+<p class="text-lg text-justify my-5"> Did you know Real Madrid is the most awarded football club in the world? Enter the Trophy room, 
+admire and take photos with some of the trophies. Wonder at an exhibition like no other. Great players, coaches and legendary teams 
+have all been here, in this same spot.</p>

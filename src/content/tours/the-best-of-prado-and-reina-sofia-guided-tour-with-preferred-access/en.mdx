@@ -1,0 +1,84 @@
+---
+lang: 'en'
+status: 1
+title: 'The Best Of Prado And Reina Sofía Guided Tour with Preferred Access'
+description: '"Discover on a half-day tour the Art Walk in Madrid! Enjoy preferential access to Madrid’s two great pictorial museums.'
+featured: 'New'
+price: '66'
+stars: '4.5'
+reviews: '267 reviews'
+image:
+    url: '/assets/covers/tours/Cover-PradoMuseum-ReinaSofia-madrid-museum-tour.webp'
+    alt: 'Cover of The Best of prado and reina sofia Guided tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846147?partialView=1'
+category: 'Museums, Exhibitions'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846147'
+location: 'Madrid, Spain'
+duration: '3 hours & 45 minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Friday & Saturday'
+cancelation: '24h before activity'
+meetingPoint: 'Ronda de Atocha 2, 28012 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.0541600037914!2d-3.6975320241230105!3d40.40765095619213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42262f25b99b79%3A0x32e0e8d87d897475!2sRda.%20de%20Atocha%2C%202%2C%20Centro%2C%2028012%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709580218462!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/prado-reina-sofia/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this Tour</h2>
+
+<p class="text-lg text-justify my-5"> Enjoy a guided tour of the highlights the two greatest art museums Madrid has. Skip the lines 
+at each of them and avoid the long queues.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Admission to Prado and Reina Sofía museums</li>
+            <li><i class="at-check-circle text-green-500"></i> Monolingual guide, art passionate</li>
+            <li><i class="at-check-circle text-green-500"></i> Individual radio-guided system</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Transportation</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Pick up/ Drop off from the customer’s hotel</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please keep in mind that the tour includes several visits on foot, comfortable shoes are recommended.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Visitors are kindly requested to respect the instructions of the Museums Security Staff: photography and filming are not permitted inside the exhibitions. </li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel reserves the right to cancel the tour or modify the itinerary due to events being held at the location or die to operational reasons of force majeure. </li>
+            <li><i class="at-info-circle text-sky-500"></i> Some paintings in our program might not be available on the day of your visit due to circumstances out of control despite belonging to the permanent collection of the museum. It might have been assigned to another exhibition. In these cases, the paintings would be replaced by another of similar artistic value.</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+<p class="text-lg text-justify my-5"> Our first stop will take you to the Prado Museum. See paintings from Rafael Sanzio, Fra Angélico, 
+El Bosco, Tiziano, Velázquez, Rubens and Goya. Follow your guide through the different rooms and learn about the backstories of all the 
+famous painters and paintings. </p>
+
+<p class="text-lg text-justify my-5"> Right after this second visit, take a break that you can use to have lunch before continuing to the 
+Reina Sofía Museum. Access the same with your knowledgeable guide. See the Guernica by Picasso and several Salvador Dalí artworks at the 
+site.</p>

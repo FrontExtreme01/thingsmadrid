@@ -3,6 +3,7 @@ import { z, defineCollection, getCollection } from "astro:content";
 const toursCollection = defineCollection({
     type: 'content',
     schema: z.object({
+        status: z.number(),
         lang: z.string().optional(),
         title: z.string(),
         description: z.string(),
@@ -41,6 +42,7 @@ const toursCollection = defineCollection({
 const restaurantsCollection = defineCollection({
     type: 'content',
     schema: z.object({
+        status: z.number(),
         lang: z.string().optional(),
         title: z.string(),
         description: z.string(),
@@ -75,26 +77,19 @@ export const collections = {
     restaurants: restaurantsCollection
 };
 
-
 // Funcion para obtener todos los restaurantes
 export async function getAllRest(lang: string) {
     const restaurants = await getCollection('restaurants');
-    return restaurants.filter((rest) => rest.data.lang === lang).map((rest) => {
-            const rest_slug = rest.slug.split('/')[0];
-            return {
-                ...rest,
-                rest_slug
-            };
-        });
+    return restaurants.filter((rest) => rest.data.lang === lang && rest.data.status === 1).map((rest) => {
+        const rest_slug = rest.slug.split('/')[0];
+        return { ...rest, rest_slug };
+    });
 }
 // Funcion para obtener todos los tours
 export async function getAllTours(lang: string) {
     const tours = await getCollection('tours');
-    return tours.filter((tour) => tour.data.lang === lang).map((tour) => {
-            const tour_slug = tour.slug.split('/')[0];
-            return {
-                ...tour,
-                tour_slug
-            };
-        });
+    return tours.filter((tour) => tour.data.lang === lang && tour.data.status === 1).map((tour) => {
+        const tour_slug = tour.slug.split('/')[0];
+        return { ...tour, tour_slug };
+    });
 }

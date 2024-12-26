@@ -1,0 +1,101 @@
+---
+lang: 'es'
+status: 1
+title: 'Lo más destacado de Madrid y Tour por el Estadio Santiago Bernabéu'
+description: 'Únete a nosotros en este recorrido panorámico por la hermosa ciudad de Madrid. Visita algunos de los lugares más importantes de la ciudad como la Plaza Mayor.'
+featured: 'Nuevo'
+price: '65'
+stars: '5.0'
+reviews: '96 reseñas'
+image:
+    url: '/assets/covers/tours/Madrid-Highlights-y-Tour-Bernabeu.webp'
+    alt: 'portada de Lo más destacado de Madrid y Tour por el Estadio Santiago Bernabéu'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846571?partialView=1'
+category: 'Visita turística, Tour a pie'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846571'
+location: 'Madrid, España'
+duration: '4 horas'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Martes y Miércoles'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle San Nicolás, 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'madrid, santiago bernabeu, estadio, tour, destacados, panorámico, ciudad, plaza mayor'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/santiago-bernabeu/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Visita guiada a pie de una hora</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrada al tour del Bernabéu</li>
+            <li><i class="at-check-circle text-green-500"></i> Tour operado en español e inglés</li>
+            <li><i class="at-check-circle text-green-500"></i> Transporte en autocar con aire acondicionado</li>
+            <li><i class="at-check-circle text-green-500"></i> Guía oficial local</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Regreso a su hotel</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Tenga en cuenta que este tour tiene una política de cancelación no reembolsable.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel se reserva el derecho de modificar o cancelar nuestro itinerario debido a eventos celebrados en la ciudad o razones operativas de fuerza mayor sin previo aviso.</li>
+            <li><i class="at-info-circle text-sky-500"></i> El Real Madrid se reserva el derecho de cancelar o modificar el tour debido al horario de partidos, entrenamientos o eventos especiales. Por favor, consulte el horario de apertura antes de su visita.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Los días de partido, el tour estará abierto hasta 5 horas antes del inicio, con acceso solo al museo y la vista panorámica del estadio.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Este tour/actividad tendrá un máximo de 30 viajeros por guía.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Debido a las obras que se están realizando en el estadio Santiago Bernabéu, el recorrido del Tour se verá afectado temporalmente y no se podrán visitar estas áreas: El perímetro del terreno de juego; la zona de realidad virtual; el Palco Presidencial; el vestuario del primer equipo y el vestuario del equipo visitante; el túnel de jugadores y la sala de prensa.</li>
+        </ul>
+    </div>
+</div>
+<hr/    >
+<p class="text-lg text-justify my-5"> Preséntate en nuestra oficina y únete a nosotros en la primera parte del tour, un recorrido a pie de una hora 
+por las calles del centro histórico de Madrid. ¡Descubre lugares emblemáticos que no te puedes perder! Pasea por la Plaza de la Villa, la famosa Plaza 
+Mayor, la Puerta del Sol y la Plaza de Oriente. Después, sube a uno de nuestros autobuses con aire acondicionado para dar un paseo por la ciudad. 
+¡Recuerda traer tu cámara o smartphone! </p>
+
+<p class="text-lg text-justify my-5"> Sal de la Plaza de Oriente y dirígete a la magnífica Puerta de Toledo. ¿Sabías que su construcción data 
+de la época napoleónica? Observa el puente más antiguo de Madrid y conduce junto al río Manzanares, desde donde tendrás unas vistas estupendas 
+del Palacio Real y la Catedral de la Almudena. Pasa por la calle Mayor, la Puerta del Sol y el barrio de Las Cortes de camino al Paseo del Prado. 
+Admira la arquitectura del Madrid antiguo al llegar al Barrio de Las Letras.</p>
+
+<p class="text-lg text-justify my-5"> Pasa por la Fuente de Cibeles, donde los aficionados del Real Madrid celebran las victorias del equipo. 
+No te pierdas la Puerta de Alcalá, la más famosa de las cinco puertas antiguas de la ciudad. Los últimos lugares de interés que verás en el 
+recorrido son el estadio Santiago Bernabéu a través del Paseo de la Castellana y la plaza de Colón.</p>
+
+<p class="text-lg text-justify my-5"> A continuación, en el horario previsto, realizarás una visita autoguiada a la sede del Real Madrid CF, 
+una visita que no dejará indiferente a ningún aficionado al fútbol. Disfruta de un recorrido por las instalaciones en pleno centro de Madrid, 
+donde podrás conocer y rememorar la historia de cientos de objetos de valor incalculable, entre ellos los trofeos más prestigiosos ganados por 
+el Real Madrid, el mejor club del siglo XX. <b>El recorrido incluye:</b></p>
+
+<ul class="md:ml-10 text-lg text-justify space-y-4 mb-4">
+    <li><i class="at-check-circle text-green-500"></i> Vista panorámica del estadio, la visita comienza por todo lo alto.</li>
+    <li><i class="at-check-circle text-green-500"></i> Museo del Real Madrid, donde podrás conocer la historia y ver los trofeos ganados por el equipo.</li>
+    <li><i class="at-check-circle text-green-500"></i> Vídeos y fotomontajes con los jugadores; llévate un recuerdo único y original.</li>
+</ul>

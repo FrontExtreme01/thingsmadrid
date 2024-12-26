@@ -1,0 +1,85 @@
+---
+lang: 'en'
+status: 1
+title: 'Ribera Del Duero And Rueda White & Red Wine Route'
+description: 'On this tour we will discover Ribera del Duero, where we will have the opportunity to take a tour and a wine tasting.'
+featured: 'New'
+price: '168'
+stars: '4.5'
+reviews: '752 reviews'
+image:
+    url: '/assets/covers/tours/wine-tour-from-madrid-ribera-del-duero-and-rueda.webp'
+    alt: 'cover of the Ribera del Duero and Rueda white and red wine route tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846161?partialView=1'
+category: 'Sightseeing, Culinary'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846160'
+location: 'Madrid, Spain'
+duration: '10 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Tuesday & Friday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'ribera del duero, rueda, white wine, red wine, wine route, madrid, spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/ribera-del-duero-y-segovia/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Guided visit to an important winery in Rueda, with a tasting of 3 wines accompanied by cold meats and local cheeses.</li>
+            <li><i class="at-check-circle text-green-500"></i> Guided visit to a prestigious winery in Ribera del Duero with tasting of 4 wines accompanied by gourmet tapas, including: Spanish omelet, cheese, chorizo, Iberian ham and an assortment of croquettes. </li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation on an air-conditioned coach</li>
+            <li><i class="at-check-circle text-green-500"></i> Local guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio-guide system</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> This tour/activity will have a maximum of 30 travelers per guide.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel reserves the right to modify or cancel the tour itinerary without prior notice due to force majeure reasons.</li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> In the morning, we will leave Madrid and head towards Rueda, located in the province of Valladolid. 
+Our first stop will be at one of the most important wineries with Denomination of Origin Rueda, place par excellence of the Verdejo white wine. 
+We will visit the vineyards and learn how the wine is made, from the grape harvest to the bottling process. We will finish the visit with a tasting 
+of the best wines of the winery accompanied by local cheeses and cold meats.</p>
+
+<p class="text-lg text-justify my-5"> At the end of the visit, we will get back to our coach to head towards Ribera del Duero, where one of 
+the most prestigious Designations of Origin in Spain is located. For this reason, we cannot miss a visit to one of the most important wineries 
+in Valladolid, where we will have the opportunity to do a wine tasting accompanied by a gourmet aperitif made up of local products such as Spanish 
+omelet, cheese, chorizo, Iberian ham and an assortment of croquettes. </p>
+
+<p class="text-lg text-justify my-5"> After having visited two renowned wineries and discovered two of Spain's most important Designations 
+of Origin in one day, we will return to Madrid.</p>

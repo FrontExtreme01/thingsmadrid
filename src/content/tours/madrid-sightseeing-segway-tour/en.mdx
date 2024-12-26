@@ -1,0 +1,119 @@
+---
+lang: 'en'
+status: 1
+title: 'Madrid Sightseeing Segway Tour'
+description: Explore Madrid's most emblematic monuments on a Segway tour. After a brief training by an experienced guide.
+featured: 'New'
+price: '30'
+stars: '4.5'
+reviews: '248 reviews'
+image:
+    url: '/assets/covers/tours/madrid-segway-tour.webp'
+    alt: 'cover of the Madrid Sightseeing Segway Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846580?partialView=1'
+category: 'Segway tour, Sightseeing'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846580'
+location: 'Madrid, Spain'
+duration: '1 hour'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Every day'
+cancelation: '24h before activity' 
+meetingPoint: 'Calle de la Escalinata 10, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6082703762218!2d-3.7118478241225525!3d40.41752805559099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287960a1b62b%3A0xabc588d8b24c1d87!2sC.%20de%20la%20Escalinata%2C%2010%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709650447525!5m2!1ses-419!2smx'
+keywords: 'segway, madrid, sightseeing, tour, monuments, guide, training, experience, explore, emblematic, easy, fun, adventures'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/segway/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Bilingual local guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Segway + helmet + bag to keep your belongings</li>
+            <li><i class="at-check-circle text-green-500"></i> Training</li>
+            <li><i class="at-check-circle text-green-500"></i> An oilskin on rainy days</li>
+            <li><i class="at-check-circle text-green-500"></i> A tapa (only with the option of Madrid with a tapa)</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Pick up and drop off services</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <p class="text-lg text-justify my-5 font-bold"> Safety Conditions: </p>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Helmets must be worn (Madrid Segway gives you one).</li>
+            <li><i class="at-info-circle text-sky-500"></i> Segway use is not permitted for people with recent surgery, kind of sprains or gypsums and/or pregnant women.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Segway use is not permitted to people who wear flip flops.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Minimum height: 135 centimetres // 4,4”</li>
+            <li><i class="at-info-circle text-sky-500"></i> Minimum age: 10 years old. Children between 10 and 17 must be accompanied by an adult.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Maximum weight is between 35 and 125 kilograms.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Essential Madrid (60 minutes tour)</h3>
+
+<p class="text-lg text-justify my-5"> Meet your guide at our office in Calle Escalinata number 10 (Plaza de la Opera). The first stops will be 
+at Plaza de Santiago and Plaza de Ramales, from where you will slide towards Plaza de Oriente. See the impressive Royal Palace and the beautiful 
+Almudena Cathedral. Glide down Mayor Street and learn about the city history in this itinerary that will take you to the main squares in town. 
+Admire the gastronomic temple the Mercado de San Miguel is and reach the Plaza Mayor. Continue to Puerta del Sol and see the emblematic Spanish 
+“Km0” and the statue of the Oso and the Madrone, symbol of the city. The itinerary finishes at the same departure point. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Magic Retiro (60 minutes tour)</h3>
+
+<p class="text-lg text-justify my-5"> The most magical tour of the Retiro Park, ideal for families. First of all, we will visit the ruins of 
+the Church of San Isidoro, the “Casita del Pescador” and the “Casa de Fieras”, the main building of the old zoo of Madrid converted 10 years ago 
+into a library. We will continue to the Cecilio Rodriguez gardens and visit the statue of the Fallen Angel, one of the few monuments to the devil 
+in the world, which is located 666 metres above sea level. We will continue to one of the most spectacular monuments in the park, the Crystal Palace. 
+In the last part of the visit we will discover the popular pond, where the monument to King Alfonso XII is located. We will visit one of the most 
+emblematic monuments of Madrid, the "Puerta de Alcalá" and we will see the oldest tree in Madrid. The tour ends at the same place of departure. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Madrid Downtown (90 minutes tour) - Best Seller</h3>
+
+<p class="text-lg text-justify my-5"> Discover Madrid in depth with this tour. Leave our office in Calle Escalinata number 10 and head towards the 
+Royal Palace and the Almudena Cathedral. Continue to Casa de Campo, the largest urban park in Spain and see its lake and historic Huerta de la Partida. 
+Glide along the Manzanares River and its three historic bridges. Come back downtown through Atens Park and Cuesta de la Vega and enter the historic 
+part of town. See emblematic areas such as Calle Mayor, Plaza de la Villa, the Mercado de San Miguel and Puerta del Sol. The tour finishes at the same 
+departure point </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Madrid with a tapa (150 minutes tour)</h3>
+
+<p class="text-lg text-justify my-5"> Leave our office in Calle Escalinata number 10 and head to the majestic Royal Palace. Visit Casa de Campo, 
+the largest urban park in Spain through Cuesta de la Vega. Slide along the Manzanares River and see its ancient bridges. Continue to reach the prestigious 
+Pasarela de Arganzuela and the artificial beaches Madrid has. </p>
+
+<p class="text-lg text-justify my-5"> Come back into the city center and enter the historic part of town. See emblematic areas such as Calle Mayor, 
+Plaza de la Villa, the Mercado de San Miguel and Puerta del Sol. There, you will be able to admire the well-known city symbol, the Bear and the Madrone. 
+This route finishes with a paella tapa at a restaurant located 1 minute walking distance from the departure point. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Meeting Point</h3>
+
+<p class="text-lg text-justify my-5"> This tour starts at Escalinata str. nº10 – by the Plaza de Isabel II (metro Opera), at the corner of McDonald’s 
+excluding the RETIRO MAGIC ROUTE that starts from Avenida de Menéndez Pelayo, 9 (10 meters in front of Retiro Park).</p>

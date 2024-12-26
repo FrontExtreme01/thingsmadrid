@@ -1,0 +1,93 @@
+---
+lang: 'en'
+status: 1
+title: 'Royal Palace And Prado Museum Guided Tour'
+description: 'Discover in one morning two of the must-see places in Madrid, the Royal Palace and the Prado Museum.'
+featured: 'New'
+price: '77'
+stars: '4.5'
+reviews: '394 reviews'
+image:
+    url: '/assets/covers/tours/Cover-RoyalPalace-PradoMuseum.webp'
+    alt: 'cover of Royal Palace And Prado Museum Guided Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846138?partialView=1'
+category: 'Museums, Exhibitions'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846138'
+location: 'Madrid, Spain'
+duration: '4 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Tuesday, Wednesday, Friday and Saturday'
+cancelation: '24h before the activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5108.731914717676!2d-3.716307571717333!3d40.41615699104534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709572112340!5m2!1ses-419!2smx'
+keywords: 'Royal Palace, Prado Museum, Madrid, Spain, Guided Tour, History, Art, Culture'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/royal-palace/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700">About this tour</h2>
+
+<p class="text-lg text-justify my-5">Start your visit by entering the Royal Palace of Madrid without queuing up. The Royal Palace, which was 
+built in the 18th century in a classicist Baroque with an Italian style, is located at the same place where the Alcázar of the Habsburgs used to stand.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Skip the line access and guided visit to Royal Palace and Prado Museum.</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual guided visit in both Spanish and English.</li>
+            <li><i class="at-check-circle text-green-500"></i> Transfer from the Royal Palace to the Prado Museum.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Food and drinks, unless specified.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please bear in mind this is a walking tour.</li>
+            <li><i class="at-info-circle text-sky-500"></i> This tour/activity will have a maximum of 30 travelers per guide..</li>
+            <li><i class="at-info-circle text-sky-500"></i> The departure point for this tour is JULIÀ TRAVEL OFFICE at San Nicolás Street, 15 (Next to Plaza de Ramales), Madrid. .</li>
+        </ul>
+    </div>
+    <p class="w-full text-lg text-justify my-5">*<b>Please note:</b> Some of the paintings might not be available despite belonging to the 
+    permanent collection for reasons out of our control. In those cases, the itinerary will be modified to comprise another painting with 
+    similar artistic value and significance.*</p>
+</div>
+
+<p class="text-lg text-justify my-5"> It covers an area of 135,000 square metres, almost twice as large as Buckingham Palace or the Palace of Versailles, 
+making it the largest palace in Western Europe, as well as one of the largest in the world.</p>
+
+<p class="text-lg text-justify my-5"> Although it is no longer the official residence of the Spanish monarchy, the most important receptions 
+of the Royal Crown are currently held inside.</p>
+
+<p class="text-lg text-justify my-5"> During the guided tour, you will have the opportunity to see the Main Square, the Grand Staircase, 
+the flats of King Charles III, the Queen's flats, the banqueting hall, the royal chapel, the throne room and the crown room.</p>
+
+<p class="text-lg text-justify my-5"> At the end of the visit inside the Royal Palace, we will take a bus, accompanied by our guide, 
+to the Prado Museum.</p>
+
+<p class="text-lg text-justify my-5"> The museum's current collection is made up of more than 1.000 works from four different centuries. 
+Our guide will show you some of the most important works by artists such as Velázquez, Goya, Sorolla, El Greco and El Bosco.</p>

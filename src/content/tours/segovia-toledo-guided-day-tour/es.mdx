@@ -1,0 +1,108 @@
+---
+lang: 'es'
+status: 1
+title: 'Tour de un día guiado por Segovia & Toledo'
+description: 'Descubra en un día dos de las ciudades más importantes que puede visitar desde Madrid: Segovia y Toledo.'
+featured: 'Nuevo'
+price: '92'
+stars: '5.0'
+reviews: '211 reseñas'
+image:
+    url: '/assets/covers/tours/toledo-and-segovia-tour-from-madrid.webp'
+    alt: 'portada de Tour Guiado por Segovia & Toledo'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846573?partialView=1'
+category: 'Excursiones y excursiones de un día'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846573'
+location: 'Madrid, España'
+duration: '11 horas'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Miércoles & Sábado'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/segovia-y-toledo/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del Tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Guía local</li>
+            <li><i class="at-check-circle text-green-500"></i> Entradas y visita guiada en Segovia: Catedral y Alcázar</li>
+            <li><i class="at-check-circle text-green-500"></i> Entradas y visita guiada en Toledo: Iglesia de Santo Tomé, Sinagoga de Santa María la Blanca y Monasterio de San Juan de los Reyes</li>
+            <li><i class="at-check-circle text-green-500"></i> Transporte en autocar climatizado</li>
+            <li><i class="at-check-circle text-green-500"></i> Sistema de radioguía</li>
+            <li><i class="at-check-circle text-green-500"></i> Tour bilingüe (inglés/español)</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Recogida y regreso al hotel</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Ten en cuenta que se trata de un tour a pie. Lleva ropa adecuada.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel se reserva el derecho de modificar o cancelar el itinerario del tour sin previo aviso por motivos de fuerza mayor.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Este tour/actividad tendrá un máximo de 30 viajeros por guía.</li>
+            <li><i class="at-info-circle text-sky-500"></i> La no presentación a la hora establecida de check-in puede suponer la pérdida del tour.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Por la mañana saldremos desde la oficina de Viajes Julià, dirección Segovia. Aparcaremos muy cerca del 
+Acueducto, que será el primer monumento que nos encontraremos en la ciudad. Formado por 167 arcos, está considerado uno de los mejor 
+conservados del mundo.</p>
+
+<p class="text-lg text-justify my-5"> Tendremos la oportunidad de realizar un tour a pie por la ciudad, que nos llevará en primer lugar a la 
+Plaza Mayor. En este lugar se encuentran varios monumentos, como el Ayuntamiento de Segovia o el Teatro Juan Bravo, aunque la gran protagonista 
+es la Catedral. Entraremos en el interior de la Catedral, donde tendremos una completa visita guiada.</p>
+
+<p class="text-lg text-justify my-5"> Al finalizar la visita al interior de la Catedral, tendremos un breve tiempo libre. La siguiente parada 
+será el Alcázar, uno de los castillos medievales mejor conservados y más famosos del mundo. Incluso se dice que inspiró a Walt Disney para 
+algunas de sus películas, como el Castillo de Cenicienta o el Castillo de la Reina en Blancanieves y los siete enanitos.</p>
+
+<p class="text-lg text-justify my-5"> Tras visitar el Alcázar, será el momento de regresar a Madrid, donde tendremos aproximadamente una 
+hora para almorzar.</p>
+
+<p class="text-lg text-justify my-5"> Por la tarde, abandonaremos Madrid para dirigirnos a la ciudad de las tres culturas, Toledo. 
+Pasearemos por las calles de una ciudad declarada Patrimonio de la Humanidad desde 1986. Durante nuestra visita tendremos la oportunidad 
+de pasear por los claustros del patio y los escudos reales del Monasterio de San Juan de los Reyes. Descubriremos la Sinagoga de Santa 
+María la Blanca que, aunque en sus orígenes era una sinagoga, 211 años después de su construcción fue expropiada y convertida en iglesia.</p>
+
+<p class="text-lg text-justify my-5"> Podremos admirar el mundialmente famoso cuadro de El Greco, El Entierro del Conde de Orgaz, que 
+se encuentra en la Iglesia de Santo Tomé. ¿Sabías que el propio Greco vivió en esta maravillosa ciudad?</p>
+
+<p class="text-lg text-justify my-5"> El recorrido a pie continuará hasta llegar a la Catedral, considerada una de las catedrales 
+góticas más importantes de España. La verás por fuera antes de finalizar la visita guiada. Después, dispondrás de tiempo libre para 
+explorar Toledo por tu cuenta antes de regresar a Madrid.</p>
+
+<p class="text-lg text-justify my-5"> Tras visitar estos tres monumentos, tendremos un breve tiempo libre en la ciudad, que podrás 
+aprovechar para hacer compras o tomar un café. Pasado este tiempo, será el momento de regresar a Madrid.</p>
+

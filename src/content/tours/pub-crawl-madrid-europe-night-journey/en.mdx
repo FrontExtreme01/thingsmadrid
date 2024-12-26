@@ -1,0 +1,69 @@
+---
+lang: 'en'
+status: 1
+title: 'Pub Crawl Madrid Europe Night Journey'
+description: Don't waste your time in Madrid in tourist trap bars. This pub crawl takes you to four of the best spots in town.
+featured: 'New'
+price: '17'
+stars: '4.4'
+reviews: '2,793 reviews'
+image:
+    url: '/assets/covers/tours/pub-crawl-madrid-best-bars.webp'
+    alt: 'cover of Pubal Crawl Madrid Europe Night Journey'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/544197?partialView=1'
+category: 'Nightlife, Party'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/544197'
+location: Madrid, Spain'
+duration: '4 to 6 hours'
+offered: 'English & Spanish'
+schedule: '11:00 am to 8:00 pm'
+availability: 'Every Day'
+cancelation: '24h before activity'
+meetingPoint: 'C. del Arenal, 17, 28013 Madrid, Spain. *Meet your host at the Palomeque store'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
+keywords: 'pub crawl, madrid, nightlife, party, best bars, europe, night journey'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/pub-crawl-madrid-europe-night-journey/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Don't waste your time in Madrid in tourist trap bars. This pub crawl takes you to four of the best 
+spots in town, including one of Madrid's hottest nightclubs, to ensure that you have a great night out. Party with like-minded people and 
+enjoy free shots and discounted drinks at each place</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Include free shots in each place we visit in all night <em>(3 bar-pubs and 1 big nightclub)</em></li>
+            <li><i class="at-check-circle text-green-500"></i> Gratuities</li>
+            <li><i class="at-check-circle text-green-500"></i> Access include to 3 bar/pubs and one big nigthclu</li>
+            <li><i class="at-check-circle text-green-500"></i> Entry/Admission - Enbabia Bar</li>
+            <li><i class="at-check-circle text-green-500"></i> Entry/Admission - Madrid</li>
+            <li><i class="at-check-circle text-green-500"></i> Entry/Admission - Monnalisa</li>
+            <li><i class="at-check-circle text-green-500"></i> Entry/Admission - ICON Madrid</li>
+        </ul>
+    </div>
+</div>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Meeting Point</h3>
+
+<p class="text-lg text-justify my-5"> C. del Arenal, 17, 28013 Madrid, Spain. Meet your host at the Palomeque store in central Madrid. 
+Find your host at the Palomeque store in the center of Madrid </p>

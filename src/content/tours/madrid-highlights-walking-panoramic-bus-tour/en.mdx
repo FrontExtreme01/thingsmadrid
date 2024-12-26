@@ -1,0 +1,89 @@
+---
+lang: 'en'
+status: 1
+title: 'Madrid Highlights Walking & Panoramic Bus Tour'
+description: 'Join us in this panoramic tour through the beautiful city of Madrid. See some of the most important sights in the city.'
+featured: 'New'
+price: '31'
+stars: '5.0'
+reviews: '480 reviews'
+image:
+    url: '/assets/covers/tours/madrid-walking-tour-panoramic-bus.webp'
+    alt: 'cover Madrid Highlights Walking & Panoramic Bus Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845895?partialView=1'
+category: 'Cultural and theme tours'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/845895'
+location: 'Madrid, Spain'
+duration: '3 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Tuesday, Wednesday, Friday & Saturday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5108.731914717676!2d-3.716307571717333!3d40.41615699104534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709572112340!5m2!1ses-419!2smx'
+keywords: 'Panoramic tour, Madrid, Spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/panoramica-de-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour </h2>
+<p class="text-lg text-justify my-5"> Preséntate en nuestra oficina y únete a nosotros en la primera parte del tour, un recorrido a pie de una hora 
+por las calles del centro histórico de Madrid. ¡Descubre lugares emblemáticos que no te puedes perder! Pasea por la Plaza de la Villa, la famosa 
+Plaza Mayor, la Puerta del Sol y la Plaza de Oriente. Después, sube a uno de nuestros autobuses con aire acondicionado para dar un paseo por la ciudad. 
+¡Recuerda traer tu cámara o smartphone! </p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Local guide.</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual tour (English/Spanish).</li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation by air-conditioned coach.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide service.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Food and drinks, except those specified.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup and drop-off service.</li>
+        </ul>
+    </div>
+    <div class="w-full  md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Wheelchair accessible (only folding chairs). You must be acompanied by someone who can assist you thoroughly.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Please note this activity includes walking tours. Wear appropriate attire.</li>
+            <li><i class="at-info-circle text-sky-500"></i> This tour/activity will have a maximum of 30 travelers per guide.</li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Check in at our office and join us on the first part of the tour, a one hour walking tour through the streets 
+of the historic city center of Madrid. Discover emblematic places you cannot miss! Stroll around Plaza de la Villa, the famous Plaza Mayor, Puerta 
+del Sol and Plaza de Oriente. Then board one of our air-conditioned buses for a ride through the city. Remember to bring your camera or Smartphone!</p>
+
+<p class="text-lg text-justify my-5"> Leave Plaza de Oriente and head to the magnificent Puerta de Toledo. Did you know its construction dates back 
+from the Napoleonic era? See the oldest bridge in Madrid and drive next to the Manzanares River, from where you will have great views of the Royal 
+Palace and the Almudena Cathedral. Pass by Mayor Street, Puerta del Sol square and the Las Cortes quarter on your way to the Paseo del Prado. Admire 
+the architecture of the Old Madrid arriving into the Las Letras Quarter. </p>
+
+<p class="text-lg text-justify my-5"> Drive by Cibeles Fountain, where Real Madrid fans celebrate the team victories. Do not miss Puerta de Alcalá, 
+the most famous of the five ancient gates into the city. The last sights you will see on the tour are the Santiago Bernabéu stadium through Paseo de 
+la Castellana street and Colon square.</p>

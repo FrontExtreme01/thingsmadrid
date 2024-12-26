@@ -1,0 +1,98 @@
+---
+lang: 'en'
+status: 1
+title: 'Toledo Full-Day Tour with Tapas & Wine'
+description: 'Get to know the impressive mix of cultures of Toledo and discover why this city is known as the city of three cultures.'
+featured: 'New'
+price: '65'
+stars: '5.0'
+reviews: '752 reviews'
+image:
+    url: '/assets/covers/tours/toledo-tapas-and-wine-tour-from-madrid.webp'
+    alt: 'cover of Toledo Full-Day tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846157?partialView=1'
+category: 'Sightseeing, Cultural and theme tours'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846157'
+location: 'Madrid, Spain'
+duration: '8 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Monday to Friday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/toledo-tapas-vinos/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> We will meet fifteen minutes before departure time at the Julià Travel office, located in the 
+centre of Madrid. From there, we will depart with the guide to the city of the three cultures, Toledo.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Local guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrance to the Synagogue of Santa María la Blanca</li>
+            <li><i class="at-check-circle text-green-500"></i> Visit to a Premium winery with a tasting of 3 wines and an aperitif of cured meats and cheese</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual tour <em>(English/Spanish)</em></li>
+            <li><i class="at-check-circle text-green-500"></i> Radio - guide system</li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation on an air-conditioned coach</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup and drop-off</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please keep in mind this is a walking tour. Wear appropriate attire.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel reserves the right to modify or cancel the tour itinerary without prior notice due to force majeure reasons.</li>
+            <li><i class="at-info-circle text-sky-500"></i> This tour/activity will have a maximum of 25 travelers per guide.</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+
+<p class="text-lg text-justify my-5"> After a bus ride of approximately one hour, we will arrive to Toledo, where we will first take a 
+panoramic tour. You will be impressed from the very first moment, as we will go up to the Mirador del Valle, an elevated area from 
+where we will have the best views of the city. At this point you will enjoy a short free time to take as many photos as you wish.</p>
+
+<p class="text-lg text-justify my-5"> Then, we will go down to the old town of Toledo, where we will start a walking tour through the 
+most important areas of the city, passing by places like the Cathedral, the Plaza de Zocodover or the Synagogue of Santa María la Blanca,
+where we will have the opportunity to access and visit it. Did you know that since 1986 Toledo is considered as World Heritage of Humanity? 
+No doubt, this is synonymous that the city will surprise you.</p>
+
+<p class="text-lg text-justify my-5"> At the end of the guided tour of the city, we will have free time to rest and have lunch, as we 
+will still have time to visit one of the most important wineries in Castilla La Mancha.</p>
+
+<p class="text-lg text-justify my-5"> After lunch, we will get back on the bus to head towards one of the most important wineries in the region. 
+Here we will have the opportunity to enjoy a complete wine tourism experience, as well as delve into the art of winemaking in a unique setting, a 
+prestigious winery that is surrounded by a carefully tended vineyard, where the most prestigious grape varieties in the country are found. Of course, 
+we can't leave without tasting some of its best wines, accompanied by an aperitif.</p>
+
+<p class="text-lg text-justify my-5"> Once we have finished our visit to the winery, we will return to Madrid, where we will finish the tour, very 
+close to the Royal Palace.</p>

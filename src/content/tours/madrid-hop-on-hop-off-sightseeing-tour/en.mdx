@@ -1,0 +1,134 @@
+---
+lang: 'en'
+status: 1
+title: 'Madrid Hop-on Hop-off Sightseeing Tour'
+description: 'Visit Madrid at your own pace aboard one of our double-decker red buses. Hop-on and hop-off as many times.'
+featured: 'New'
+price: '26'
+stars: '4.4'
+reviews: '120 reviews'
+image:
+    url: '/assets/covers/tours/madrid-city-tour-cover-hop-on-hop-off.webp'
+    alt: 'cover of the tour Madrid Hop-On Hop-Off Sightseeing Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845897?partialView=1'
+category: 'Sightseeing, Hop on hop off tour'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/845897'
+location: 'Madrid, Spain'
+duration: '1 day'
+offered: 'English & Spanish'
+schedule: '09:00 to 22:00 (Mar-Oct) and 10:00 to 18:00 (Nov-Feb)'
+availability: 'Every day'
+cancelation: '24h before the activity'
+meetingPoint: 'Hop on and off at any of the 37 available stops'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.7772180513766!2d-3.6947020241227175!3d40.413785855818624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses-419!2smx!4v1709575238178!5m2!1ses-419!2smx'
+keywords: 'madrid, hop on hop off, sightseeing bus, city tour, madrid city tour, madrid sightseeing, madrid tourism, madrid tourist, madrid sightseeing bus, madrid hop on hop off'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/madrid-city-tour-hop/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this Tour</h2>
+<p class="text-lg text-justify my-5"> Explore the city in comfort aboard one of our double-decker buses. Discover Madrid in detail with a 
+single ticket. Hop-on and hop-off our buses as many times as you wish and enjoy the city at your own pace</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> All routes and stops with a single ticket.</li>
+            <li><i class="at-check-circle text-green-500"></i> Multilingual digital audio system.</li>
+            <li><i class="at-check-circle text-green-500"></i> Open double-decker buses with air conditioning and sliding roof.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup and drop-off service.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified before.</li>
+        </ul>
+    </div>
+    <p class="w-full text-lg text-justify my-5 font-bold">*The frequency of the service varies depending on season.*</p>
+</div>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About Bus Stop</h2>
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Route nº 1 (Blue): Historical Madrid</h3>
+
+<p class="text-lg text-justify my-5"> <strong>The route 1 <em>(blue)</em></strong> will take you to discover the Historical Madrid. 
+This itinerary includes a complete historical, artistic and monumental circuit in which you will visit several landmarks of the city. 
+Go across the beautiful Paseo del Prado or admire magnificent buildings legacy of the Habsburgs period. Go to the Golden Triangle of 
+Art and take the opportunity to explore one of its museums in depth. From the Royal Palace to the Temple of Debod, sit back and enjoy 
+the views over the city.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Museo del Prado</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Barrio de Salamanca</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Colón</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Cibeles</li>
+            <li><i class="at-location text-sky-500"></i> Gran Via</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de España</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Templo de Debod</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de San Vicente</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Toledo</li>
+            <li><i class="at-location text-sky-500"></i> Gran Vía de San Francisco</li>
+            <li><i class="at-location text-sky-500"></i> Colegiata/Mayor</li>
+            <li><i class="at-location text-sky-500"></i> Atocha</li>
+            <li><i class="at-location text-sky-500"></i> Jardín Botánico and Museo del Prado</li>
+        </ul>
+    </div>
+</div>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Ruta nº 2 (Green): Madrid Moderno</h3>
+
+<p class="text-lg text-justify my-5"> <strong>The route 2 <em>(green)</em></strong> goes through the Modern Madrid. Discover the city 
+beyond the historical famous landmarks and the monuments to royalty. From Atocha to Nuevos Ministerios and from the symbolic Puerta de 
+Alcalá to Puerta del Sol. Admire the most impressive contemporary works of the Spanish capital. The itinerary will take you close to 
+the impressive KIO towers, the Museum of Public Art and the Real Madrid stadium. Uncover the life, art and new traditions of the city 
+inhabitants with this itinerary.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Plaza Neptuno</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Cibeles</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Colón</li>
+            <li><i class="at-location text-sky-500"></i> Museo Esculturas</li>
+            <li><i class="at-location text-sky-500"></i> Museo de Ciencias Naturales</li>
+            <li><i class="at-location text-sky-500"></i> Nuevos Ministerios</li>
+            <li><i class="at-location text-sky-500"></i> Santiago Bernabéu</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de las Cortes and Plaza de Neptuno</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> C.S.I Científicas</li>
+            <li><i class="at-location text-sky-500"></i> Museo Lázaro Galdiano</li>
+            <li><i class="at-location text-sky-500"></i> Serrano</li>
+            <li><i class="at-location text-sky-500"></i> Museo Arqueológico</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Puerta del Sol</li>
+        </ul>
+    </div>
+</div>

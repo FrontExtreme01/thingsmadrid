@@ -1,5 +1,6 @@
 ---
 lang: 'en'
+status: 1
 title: 'Real Madrid Guided Stadium & Museum Tour'
 description: 'Come live the emotion of soccer in one of the most emblematic stadiums in the world The Real Madrid'
 featured: ''
@@ -27,7 +28,7 @@ testimonials: []
 
 import SliderGallery from '@/components/detail-content/SliderGallery';
 
-export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
+export const images = import.meta.glob('@/img/galleries/tours/real-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 export const accessibility = {
@@ -43,13 +44,40 @@ export const accessibility = {
 
 <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700">About this tour</h2>
 
-<h3 class="text-2xl md:text-3xl font-bold text-sky-800" >The Impressive Santiago Bernabeu Stadium</h3>
+<h3 class="text-2xl md:text-3xl font-bold mb-4 text-sky-800" >The Impressive Santiago Bernabeu Stadium</h3>
 
 <p class="text-lg text-justify my-5"> Come live the emotion of soccer in one of the most emblematic stadiums in the world. 
 The <strong>Real Madrid Stadium tour</strong> is for you! With our visits to the <strong>Santiago Bernabeu Stadium</strong>. 
 First, you will have the opportunity to tour the facilities and discover the history and achievements of <strong>Real Madrid</strong>. 
 One of the most successful teams in the world. Our tour includes a panoramic view inside the stadium that will take your breath away. 
 You will be able to feel the emotion experienced on the playing field and enjoy a privileged view of the entire stadium.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Entrance to Santiago Bernabéu Stadium.</li>
+            <li><i class="at-check-circle text-green-500"></i> Access to the Santiago Bernabéu Museum, an immersive experience in the history of Real Madrid.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Food and drinks.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Tips not included.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Recommendations</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Comfortable shoes.</li>
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Cash for shopping in-store.</li>
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Arrive 5 min before the Meeting time.</li>
+        </ul>
+    </div>
+    <p class="w-full text-lg text-justify my-5 font-bold">*It is important to bring your ticket printed or on your mobile phone*</p>
+</div>
 
 <h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">Real Madrid Museum</h3>
 
@@ -65,3 +93,10 @@ so that you can take home an unforgettable memory of your visit. Lastly, you can
 <strong>official Real Madrid</strong> products. Here you will find jerseys, balls, scarves, and many items that will help you take the passion 
 of Real Madrid with you wherever others want you to go. Don’t miss the opportunity to live a unique experience at the Santiago Bernabeu Stadium Tour! 
 We assure you that it will be a visit that you will remember forever.</p>
+
+<h4 class="text-2xl font-bold mb-4 text-sky-800 text-center">Important!</h4>
+
+<p class="text-lg text-justify my-5 italic">We must inform you that due to ongoing renovations at the stadium, the tour has undergone some temporary 
+modifications. Some places, such as the field, the presidential area, the first-team dressing room, the players’ entrance tunnel, and the press room, 
+are not available for visits at this time. We apologize for any inconvenience this may cause. However, this does not diminish the rich experience offered 
+by Santiago Bernabéu on this exciting football journey. Enjoy your visit and live the passion of Real Madrid!</p>

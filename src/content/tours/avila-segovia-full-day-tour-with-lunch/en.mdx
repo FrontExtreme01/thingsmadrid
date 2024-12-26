@@ -1,0 +1,103 @@
+---
+lang: 'en'
+status: 1
+title: 'Ávila & Segovia Full-Day Tour with Lunch'
+description: 'Visit two emblematic medieval Spanish cities in one day. Admire the medieval walls in Ávila and discover the history behind many.'
+featured: 'New'
+price: '125'
+stars: '5.0'
+reviews: '952 reviews'
+image:
+    url: '/assets/covers/tours/avila-and-segovia-from-madrid-tour.webp'
+    alt: 'cover of the Ávila & Segovia Full-Day Tour with Lunch'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846563?partialView=1'
+category: 'Sightseeing, Cultural and theme tours'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846563'
+location: 'Madrid, Spain'
+duration: '9 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Every day'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'avila, segovia, full-day, tour, lunch, madrid, spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/avila-con-murallas-y-segovia/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Check in at our office in central Madrid 15 minutes in advance of your tour. 
+Leave the city towards Ávila aboard one of our air-conditioned coaches.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Admission to the Walls of Ávila. </li>
+            <li><i class="at-check-circle text-green-500"></i> Visit inside the Santa Teresa Church. </li>
+            <li><i class="at-check-circle text-green-500"></i> Local guide. </li>
+            <li><i class="at-check-circle text-green-500"></i> Tour operated in both Spanish and English. </li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation on an air-conditioned coach. </li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system. </li>
+            <li><i class="at-check-circle text-green-500"></i> If you select the <strong>GENERAL</strong> option: Free time to visit Segovia on your own. </li>
+            <li><i class="at-check-circle text-green-500"></i> If you select the option <strong>WITH ALCAZAR</strong>: Drink, tapa and visit inside the Alcazar of Segovia. </li>
+            <li><i class="at-check-circle text-green-500"></i> If you select the <strong>GASTRONOMIC LUNCH</strong> option: Visit inside the Alcazar of Segovia and gastronomic lunch. </li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup and drop-off</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> You can choose between the following tour options:</li> 
+            <li><i class="at-info-circle text-sky-500"></i> <strong>General:</strong> includes guided tour of Ávila and free time in Segovia to visit on your own.</li> 
+            <li><i class="at-info-circle text-sky-500"></i> <strong>With Alcázar:</strong> includes a guided tour of Ávila, a guided tour of Segovia and the Alcázar and a tapa with a courtesy drink.</li> 
+            <li><i class="at-info-circle text-sky-500"></i> <strong>Gastronomic Lunch:</strong> includes a guided tour of Ávila, a guided tour of Segovia and the Alcázar and a gastronomic lunch menu.</li> 
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Our first stop for the day will be at the city of Ávila, one of the best-preserved fortifications in Spain. 
+Follow your guide on a walking tour of the Old Town to discover the impressive history of this city. See Romanesque style churches, Gothic palaces 
+and a fortified cathedral of the Middle Ages. Visit the Walls of Ávila and imagine the stories they have seen through the centuries. Marvel at the 
+fortification and towers, which have granted the city a World Heritage Site status by UNESCO.</p>
+
+<p class="text-lg text-justify my-5"> We will continue the tour to Segovia. On arrival, we will divide in two groups. If you have chosen the option 
+to visit Segovia at your own pace, you will have approximately three hours of free time. The rest of the group will go to the restaurant. Those who 
+have chosen the gastronomic menu will enjoy a gastronomic lunch with roast suckling pig that will not leave you indifferent. People who have not 
+chosen the gastronomic lunch will have a typical courtesy tapa and a drink.</p>
+
+<p class="text-lg text-justify my-5"> After lunch, those who have chosen the tour with monuments will meet again with the guide to start the tour 
+in Segovia. Walk through the old Jewish quarter of the city, visit the outside of the Cathedral and walk towards the Alcazar of Segovia. Enjoy a 
+guided tour inside the castle and marvel at this spectacular fortification. Did you know that its architecture inspired Walt Disney for one of his 
+films? Can you tell us which one?</p>
+
+<p class="text-lg text-justify my-5"> If you have visited Segovia on your own, meet the rest of the group at the agreed time to return to Madrid. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Menu Details</h3>
+
+<p class="text-lg text-justify my-5"> <b>Gastronomic Lunch:</b> Special white beans from “La Granja”, Roasted suckling pig, Typical Segovian pastry 
+“Ponche Segoviano”. Bread, wine and mineral water. </p> 

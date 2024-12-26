@@ -1,0 +1,93 @@
+---
+lang: 'es'
+status: 1
+title: 'Tour Guiado por la Tarde en Toledo'
+description: 'Sumérgete en una fascinante mezcla de culturas en Toledo. Camina por el casco antiguo siguiendo a tu guía local y descubre los lugares más famosos.'
+featured: 'Nuevo'
+price: '56'
+stars: '4.3'
+reviews: '682 reseñas'
+image:
+    url: '/assets/covers/tours/toledo-afternoon-tour-from-madrid.webp'
+    alt: 'portada del Tour Guiado por la Tarde en Toledo'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846156?partialView=1'
+category: 'Paseos'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846156'
+location: 'Madrid, España'
+duration: '5 horas'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Martes, Jueves, Viernes & Domingo'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'Toledo, visita guiada de tarde, Madrid, España, visitas turísticas, a pie, casco antiguo, guía local, famoso, catedral, alcázar, barrio judío, sinagoga, iglesia, mezquita, mezcla de culturas'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/toledo-por-la-tarde/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir la galería de imagenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<p class="text-lg text-justify my-5"> Preséntese en nuestra oficina en el centro de Madrid con al menos 15 minutos de antelación a su visita.
+Salga de la ciudad en dirección a Toledo a bordo de uno de nuestros autocares con aire acondicionado.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Entrada a la Iglesia de Santo Tomé</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrada a la Sinagoga de Santa María la Blanca</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrada al Monasterio de San Juan de los Reyes</li>
+            <li><i class="at-check-circle text-green-500"></i> Autocar con aire acondicionado</li>
+            <li><i class="at-check-circle text-green-500"></i> Guía oficial bilingüe</li>
+            <li><i class="at-check-circle text-green-500"></i> Sistema de radioguiado individual</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Recogida y regreso al hotel.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Tenga en cuenta que la excursión incluye varias visitas a pie, se recomienda calzado cómodo</li>
+            <li><i class="at-info-circle text-sky-500"></i> La duración del recorrido incluye el viaje de ida y vuelta al destino</li>
+            <li><i class="at-info-circle text-sky-500"></i> Se ruega a los visitantes de la Iglesia de Santo Tomé que respeten las instrucciones del personal de seguridad: no se permite fotografiar ni filmar dentro de las exposiciones.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Relájate y disfruta del paisaje de camino a la ciudad. Sigue a tu guía local en un recorrido a pie por la
+Ciudad Histórica de Toledo, Ciudad Patrimonio de la Humanidad desde 1986. En su día fue la capital de España y es una mezcla perfecta de culturas árabe, 
+judía y cristiana. Conoce su fantástico patrimonio y observa cómo la coexistencia de culturas a lo largo de los siglos influyó en su estilo 
+arquitectónico actual.</p>
+
+<p class="text-lg text-justify my-5"> Pasea entre los claustros del patio y los escudos reales del Monasterio de San Juan de los Reyes.
+Admira el edificio patrocinado por la Reina Isabel de Castilla para convertirse en un mausoleo real, la construcción más importante construida por 
+los Reyes Católicos. Camina hasta la Sinagoga de Sta. María la Blanca y conoce su fascinante historia. Hoy en día, es un fantástico museo
+de estilo mudéjar (árabe) que visitarás. Admira el famoso cuadro de El Greco, El entierro del conde de Orgaz, en la
+Iglesia de Santo Tomé. ¿Sabías que el propio Greco vivió en esta hermosa ciudad?</p>
+
+<p class="text-lg text-justify my-5"> El recorrido a pie continuará hasta llegar a la Catedral, considerada una de las catedrales góticas más importantes de
+España. La verás desde fuera antes de que finalice la visita guiada. Después, tendrás tiempo libre para explorar Toledo por tu cuenta antes de regresar a Madrid.</p>

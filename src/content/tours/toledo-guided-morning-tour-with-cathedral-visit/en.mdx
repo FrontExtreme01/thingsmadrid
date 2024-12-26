@@ -1,0 +1,93 @@
+---
+lang: 'en'
+status: 1
+title: 'Toledo Guided Morning Tour with Cathedral Visit'
+description: 'Join a half day tour to the beautiful city of Toledo. Stroll around its Old Town and wonder at the fascinating mix of cultures.'
+featured: 'New'
+price: '56'
+stars: '5.0'
+reviews: '458 reviews'
+image:
+    url: '/assets/covers/tours/toledo-morning-tour-from-madrid.webp'
+    alt: 'cover of the Toledo Guided Morning Tour with Cathedral Visit'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846154?partialView=1'
+category: 'Sightseeing'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846154'
+location: 'Madrid, Spain'
+duration: '5 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Monday to Saturday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'toledo, guided tour, cathedral, morning, half day, old town, culture, history, sightseeing, spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/toledo-por-la-manana/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Check in at our office in central Madrid at least 15 minutes in advance of your tour. 
+Leave the city towards Toledo aboard one of our air-conditioned coaches.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Guided tour in Toledo.</li>
+            <li><i class="at-check-circle text-green-500"></i> Admission to the Cathedral of Toledo.</li>
+            <li><i class="at-check-circle text-green-500"></i> Local guide.</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual tour English and Spanish   .</li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation on an air-conditioned coach.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system.</li>
+            <li><i class="at-check-circle text-green-500"></i> Free time in Toledo.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please keep in mind that the excursion includes several visits on foot, comfortable shoes are recommended.</li>
+            <li><i class="at-info-circle text-sky-500"></i> The duration of the tour includes the round trip to the destination.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Cathedral of Toledo visitors are kindly requested to respect the instructions of the Security staff: Photography and filming are not permitted inside the exhibitions.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel reserves the right to modify or cancel the tour itinerary without prior notice due to force majeure reasons.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Dive into its history and discover a perfect mix of Arab, Jewish and Christian cultures. Wander around its Old Town, declared a 
+World Heritage City in 1986. The more than 2000 years of existence have given the city a huge historical importance. Did you know 
+it once was the capital of Spain? Get to know the city fantastic heritage and discover how the coexistence of the three cultures 
+throughout the centuries influenced its current architectural style.</p>
+
+<p class="text-lg text-justify my-5"> Follow your guide through the city cobbled streets until you reach the Cathedral. Built on the remains of an Arab mosque, 
+its construction started in the 13th century. Today, it is one of the most important Gothic Cathedrals of Spain. Admire the 
+magnificent façade and the huge bell tower before getting inside. Visit its interior and Sacristy, full of masterpieces of the 
+former art museum it was. Amongst them, see fifteen paintings by El Greco.</p>
+
+<p class="text-lg text-justify my-5"> At the end of the guided tour, you will have some free time to enjoy the city at your own pace before returning to Madrid.</p>

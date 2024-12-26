@@ -1,0 +1,55 @@
+---
+lang: 'es'
+status: 1
+title: 'Pub Crawl Madrid Europa Viaje Nocturno'
+description: 'No pierdas el tiempo en Madrid en bares que son una trampa para turistas. Este recorrido por los pubs te lleva a cuatro de los mejores lugares de la ciudad.'
+featured: 'Nuevo'
+price: '17'
+stars: '4.4'
+reviews: '2,793 reseñas'
+image:
+    url: '/assets/covers/tours/pub-crawl-madrid-best-bars.webp'
+    alt: 'portada de Pub Crawl Madrid Europa'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/544197?partialView=1'
+category: 'Vida nocturna, Fiesta'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/544197'
+location: 'Madrid, España'
+duration: '4 a 6 horas'
+offered: 'Inglés & Español'
+schedule: '11:00 am a 8:00 pm'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'C. del Arenal, 17, 28013 Madrid, España. *Encuentra a tu anfitrión en la tienda Palomeque'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.455304505642!2d-3.707718!3d40.417405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287eac0b589d%3A0x703b27a596d13107!2sC.%20del%20Arenal%2C%2017%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sus!4v1709230299708!5m2!1ses-419!2sus'
+keywords: 'pub crawl, madrid, vida nocturna, fiesta, mejores bares, europa, viaje nocturno'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/pub-crawl-madrid-europe-night-journey/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<p class="text-lg text-justify my-5"> No pierdas el tiempo en Madrid en bares que son una trampa para turistas. Este recorrido por los pubs te 
+lleva a cuatro de los mejores lugares de la ciudad, incluida una de las discotecas más populares de Madrid, para garantizar que pases una gran noche. 
+Diviértete con gente con tus mismos gustos y disfruta de chupitos gratis y bebidas con descuento en cada lugar</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Punto de encuentro</h3>
+
+<p class="text-lg text-justify my-5"> C. del Arenal, 17, 28013 Madrid, España. Reúnete con tu anfitrión en la tienda Palomeque en el centro de Madrid.
+Encuentra a tu anfitrión en la tienda Palomeque en el centro de Madrid </p>
+

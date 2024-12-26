@@ -1,0 +1,102 @@
+---
+lang: 'es'
+status: 1
+title: 'Tour de día completo a Ávila y Segovia con almuerzo'
+description: 'Visita dos emblemáticas ciudades medievales españolas en un día. Admira las murallas medievales en Ávila y descubre la historia detrás de muchas.'
+featured: 'Nuevo'
+price: '125'
+stars: '5.0'
+reviews: '952 reseñas'
+image:
+    url: '/assets/covers/tours/avila-and-segovia-from-madrid-tour.webp'
+    alt: 'portada del Tour de día completo a Ávila y Segovia con almuerzo'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846563?partialView=1'
+category: 'Visitas turísticas, culturales y temáticas'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846563'
+location: 'Madrid, España'
+duration: '9 horas'
+offered: 'Inglés y Español'
+schedule: 'XXX'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'avila, segovia, día completo, tour, almuerzo, madrid, españa'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/avila-con-murallas-y-segovia/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del Tour</h2>
+
+<p class="text-lg text-justify my-5"> Regístrese en nuestra oficina en el centro de Madrid 15 minutos antes de su recorrido.Deja la ciudad hacia Ávila a bordo de uno de nuestros entrenadores con aire acondicionado.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Admisión a las paredes de Ávila</li>
+            <li><i class="at-check-circle text-green-500"></i> Visite dentro de la iglesia de Santa Teresa</li>
+            <li><i class="at-check-circle text-green-500"></i> Guía local</li>
+            <li><i class="at-check-circle text-green-500"></i> Tour operado en español e inglés </li>
+            <li><i class="at-check-circle text-green-500"></i> Transporte en un entrenador con aire acondicionado </li>
+            <li><i class="at-check-circle text-green-500"></i> Sistema de guía de radio</li>
+            <li><i class="at-check-circle text-green-500"></i> Si selecciona la opción <strong> general </strong>: tiempo libre para visitar Segovia por su cuenta </li>
+            <li><i class="at-check-circle text-green-500"></i> Si selecciona la opción <strong> con Alcazar </strong>: bebe, tapa y visita dentro del Alcazar de Segovia </li>
+            <li><i class="at-check-circle text-green-500"></i> Si selecciona la opción <strong> Almuerzo gastronómico </strong>: Visite dentro del Alcázar de Segovia y el almuerzo gastronómico </li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Recogida y regresada del hotel </li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Puedes elegir entre las siguientes opciones de tour:</li>
+            <li><i class="at-info-circle text-sky-500"></i> <strong>General:</strong> incluye visita guiada a Ávila y tiempo libre en Segovia para visitar por tu cuenta.</li>
+            <li><i class="at-info-circle text-sky-500"></i> <strong>Con Alcázar:</strong> incluye visita guiada a Ávila, visita guiada a Segovia y el Alcázar y tapa con bebida de cortesía.</li>
+            <li><i class="at-info-circle text-sky-500"></i> <strong>Almuerzo Gastronómico:</strong> incluye visita guiada a Ávila, visita guiada a Segovia y el Alcázar y menú de almuerzo gastronómico.</li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Nuestra primera parada del día será en la ciudad de Ávila, una de las fortificaciones mejor conservadas de España. 
+Sigue a tu guía en un recorrido a pie por el casco antiguo para descubrir la impresionante historia de esta ciudad. Observa iglesias de estilo románico, 
+palacios góticos y una catedral fortificada de la Edad Media. Visita las Murallas de Ávila e imagina las historias que han visto a lo largo de los siglos. 
+Maravíllate con la fortificación y las torres, que han otorgado a la ciudad el estatus de Patrimonio de la Humanidad por la UNESCO.</p>
+
+<p class="text-lg text-justify my-5"> Continuaremos el recorrido hacia Segovia. A la llegada, nos dividiremos en dos grupos. Si has elegido la opción 
+de visitar Segovia a tu propio ritmo, tendrás aproximadamente tres horas de tiempo libre. El resto del grupo se dirigirá al restaurante. Aquellos que 
+hayan elegido el menú gastronómico disfrutarán de un almuerzo gastronómico con cochinillo asado que no te dejará indiferente. Las personas que no hayan 
+elegido el almuerzo gastronómico tendrán una tapa típica de cortesía y una bebida.</p>
+
+<p class="text-lg text-justify my-5"> Tras el almuerzo, quienes hayan elegido el tour con monumentos se reunirán de nuevo con el guía para iniciar el 
+recorrido en Segovia. Pasear por el antiguo barrio judío de la ciudad, visitar el exterior de la Catedral y caminar hacia el Alcázar de Segovia. 
+Disfruta de una visita guiada por el interior del castillo y maravíllate con esta espectacular fortificación. ¿Sabías que su arquitectura inspiró 
+a Walt Disney para una de sus películas? ¿Nos cuentas cuál?</p>
+
+<p class="text-lg text-justify my-5"> Si has visitado Segovia por tu cuenta, reúnete con el resto del grupo a la hora acordada para regresar a Madrid.  </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Detalles del Menú</h3>
+
+<p class="text-lg text-justify my-5"> <b>Almuerzo Gastronómico:</b> Alubias blancas especiales de “La Granja”, Cochinillo asado, Ponche Segoviano. 
+Pan, vino y agua mineral.</p> 

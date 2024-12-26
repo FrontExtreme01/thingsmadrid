@@ -1,0 +1,116 @@
+---
+lang: 'es'
+status: 1
+title: 'Tour en Segway por Madrid'
+description: 'Explora los monumentos más emblemáticos de Madrid en un tour en Segway. Después de un breve entrenamiento por un guía experimentado.'
+featured: 'Nuevo'
+price: '30'
+stars: '4.5'
+reviews: '248 reseñas'
+image:
+    url: '/assets/covers/tours/madrid-segway-tour.webp'
+    alt: 'portada del Tour en Segway por Madrid'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846580?partialView=1'
+category: 'Tour en Segway, Turismo'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846580'
+location: 'Madrid, España'
+duration: '1 hora'
+offered: 'Inglés y Español'
+schedule: 'XXX'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de la Escalinata 10, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6082703762218!2d-3.7118478241225525!3d40.41752805559099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287960a1b62b%3A0xabc588d8b24c1d87!2sC.%20de%20la%20Escalinata%2C%2010%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709650447525!5m2!1ses-419!2smx'
+keywords: 'segway, madrid, turismo, tour, monumentos, guía, entrenamiento, experiencia, explorar, emblemáticos, fácil, diversión, aventuras'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/segway/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Guía local bilingüe</li>
+            <li><i class="at-check-circle text-green-500"></i> Segway + casco + bolsa para guardar tus pertenencias</li>
+            <li><i class="at-check-circle text-green-500"></i> Formación</li>
+            <li><i class="at-check-circle text-green-500"></i> Un impermeable para los días de lluvia</li>
+            <li><i class="at-check-circle text-green-500"></i> Una tapa (solo con la opción de Madrid con tapa)</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Comida, bebidas u otros servicios no especificados</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Servicios de recogida y entrega</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información adicional</h4>
+        <p class="text-lg text-justify my-5 font-bold"> Condiciones de seguridad: </p>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Es obligatorio el uso de casco (Madrid Segway te proporciona uno).</li>
+            <li><i class="at-info-circle text-sky-500"></i> No se permite el uso del segway a personas con intervenciones quirúrgicas recientes, esguinces o yesos y/o mujeres embarazadas.</li>
+            <li><i class="at-info-circle text-sky-500"></i> No se permite el uso del segway a personas que lleven chanclas.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Altura mínima: 135 centímetros // 4,4”</li>
+            <li><i class="at-info-circle text-sky-500"></i> Edad mínima: 10 años Los niños de entre 10 y 17 años deben estar acompañados por un adulto.</li>
+            <li><i class="at-info-circle text-sky-500"></i> El peso máximo es de entre 35 y 125 kilogramos.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Madrid Esencial (Tour de 60 minutos)</h3>
+
+<p class="text-lg text-justify my-5"> Reúnete con tu guía en nuestra oficina en la Calle Escalinata número 10 (Plaza de la Ópera). Las primeras paradas serán
+en la Plaza de Santiago y la Plaza de Ramales, desde donde te deslizarás hacia la Plaza de Oriente. Observa el impresionante Palacio Real y la hermosa
+Catedral de la Almudena. Deslízate por la Calle Mayor y aprende sobre la historia de la ciudad en este itinerario que te llevará a las principales plazas de la ciudad.
+Admira el templo gastronómico que es el Mercado de San Miguel y llega hasta la Plaza Mayor. Continúa hasta la Puerta del Sol y contempla el emblemático
+“Km0” español y la estatua del Oso y el Madroño, símbolo de la ciudad. El itinerario finaliza en el mismo punto de partida. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800">Retiro mágico (recorrido de 60 minutos)</h3>
+
+<p class="text-lg text-justify my-5"> El recorrido más mágico por el Parque del Retiro, ideal para familias. En primer lugar, visitaremos las ruinas de la
+Iglesia de San Isidoro, la Casita del Pescador y la Casa de Fieras, el edificio principal del antiguo zoológico de Madrid reconvertido hace 10 años en biblioteca. Continuaremos hasta los jardines de Cecilio Rodríguez y visitaremos la estatua del Ángel Caído, uno de los pocos monumentos al diablo
+del mundo, que se encuentra a 666 metros sobre el nivel del mar. Continuaremos hasta uno de los monumentos más espectaculares del parque, el Palacio de Cristal.
+En la última parte de la visita descubriremos el popular estanque, donde se encuentra el monumento al rey Alfonso XII. Visitaremos uno de los monumentos más emblemáticos de Madrid, la Puerta de Alcalá y veremos el árbol más antiguo de Madrid. El recorrido finaliza en el mismo lugar de salida. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Madrid Centro (tour de 90 minutos) - Best Seller</h3>
+
+<p class="text-lg text-justify my-5"> Descubre Madrid a fondo con este tour. Sal de nuestra oficina en la Calle Escalinata número 10 y dirígete hacia el
+Palacio Real y la Catedral de la Almudena. Continúa hasta la Casa de Campo, el parque urbano más grande de España y contempla su lago y la histórica Huerta de la Partida.
+Deslízate por el río Manzanares y sus tres puentes históricos. Vuelve al centro por el Parque de Atenas y la Cuesta de la Vega y adéntrate en la parte histórica de la ciudad.
+Conoce zonas emblemáticas como la Calle Mayor, la Plaza de la Villa, el Mercado de San Miguel y la Puerta del Sol. El tour finaliza en el mismo
+punto de salida </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Madrid de tapas (tour de 150 minutos)</h3>
+
+<p class="text-lg text-justify my-5"> Sal de nuestra oficina en la Calle Escalinata número 10 y dirígete al majestuoso Palacio Real. Visita la Casa de Campo,
+el parque urbano más grande de España por la Cuesta de la Vega. Deslízate por el río Manzanares y contempla sus antiguos puentes. Continúa hasta llegar a la prestigiosa
+Pasarela de Arganzuela y las playas artificiales con las que cuenta Madrid. </p>
+
+<p class="text-lg text-justify my-5"> Vuelve al centro de la ciudad y adéntrate en la parte histórica de la ciudad. Conoce zonas emblemáticas como la Calle Mayor, la
+Plaza de la Villa, el Mercado de San Miguel y la Puerta del Sol. Allí podrás admirar el conocido símbolo de la ciudad, el Oso y el Madroño. Esta ruta finaliza con una tapa de paella en un restaurante situado a 1 minuto a pie del punto de salida. </p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Punto de encuentro</h3>
+
+<p class="text-lg text-justify my-5"> Este recorrido comienza en la calle Escalinata nº10 – junto a la Plaza de Isabel II (metro Ópera), esquina con McDonald’s
+excluyendo la RUTA MÁGICA DEL RETIRO que comienza en la Avenida de Menéndez Pelayo, 9 (a 10 metros frente al Parque del Retiro).</p>

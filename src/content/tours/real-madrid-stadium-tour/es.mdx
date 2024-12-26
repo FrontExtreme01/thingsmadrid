@@ -1,5 +1,6 @@
 ---
 lang: 'es'
+status: 1
 title: 'Visita guiada al estadio y museo del Real Madrid'
 description: 'Ven a vivir la emoción del fútbol en uno de los estadios más emblemáticos del mundo El Real Madrid'
 featured: ''
@@ -27,7 +28,7 @@ testimonials: []
 
 import SliderGallery from '@/components/detail-content/SliderGallery';
 
-export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
+export const images = import.meta.glob('@/img/galleries/tours/real-madrid/*.webp', { eager: true });
 export const arrayImages = Object.values(images).map((img) => img.default);
 
 export const accessibility = {
@@ -51,6 +52,33 @@ En primer lugar, tendrás la oportunidad de recorrer las instalaciones y descubr
 Uno de los equipos más laureados del mundo. Nuestro tour incluye una vista panorámica dentro del estadio que te dejará sin aliento. 
 Podrás sentir la emoción que se vive sobre el terreno de juego y disfrutar de una vista privilegiada de todo el estadio.</p>
 
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Entrada al Estadio Santiago Bernabéu.</li>
+            <li><i class="at-check-circle text-green-500"></i> Acceso al Museo Santiago Bernabéu, una experiencia inmersiva en la historia del Real Madrid.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Recogida en el hotel.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Comida y bebida.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Propinas no incluidas.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Recomendaciones</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Calzado cómodo.</li>
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Dinero en efectivo para compras en tienda.</li>
+            <li><i class="at-electric-lightbulb text-amber-500"></i> Llegar 5 min antes de la hora del Encuentro.</li>
+        </ul>
+    </div>
+    <p class="w-full text-lg text-justify my-5 font-bold">*Es importante traer la entrada impresa o en el móvil*</p>
+</div>
+
 <h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">Museo del Real Madrid</h3>
 
 <p class="text-lg text-justify my-5">Además, tendrás acceso al <strong>Museo del Real Madrid</strong>.
@@ -65,3 +93,10 @@ para que te lleves a casa un recuerdo inolvidable de tu visita. Por último, no 
 productos oficiales del Real Madrid. Aquí encontrarás camisetas, balones, bufandas y muchos artículos que te ayudarán a llevar contigo la pasión
 del Real Madrid allá donde otros quieran que vayas. ¡No pierdas la oportunidad de vivir una experiencia única en el Tour Estadio Santiago Bernabéu!
 Te aseguramos que será una visita que recordarás para siempre.</p>
+
+<h4 class="text-2xl font-bold mb-4 text-sky-800 text-center">¡Importante!</h4>
+
+<p class="text-lg text-justify my-5 italic">Debemos informarte que debido a las reformas que se están llevando a cabo en el estadio, el tour ha sufrido algunas modificaciones temporales. 
+Algunos lugares, como el terreno de juego, la zona presidencial, el vestuario del primer equipo, el túnel de entrada de jugadores y la sala de prensa, 
+no están disponibles para visitas en este momento. Lamentamos las molestias que esto pueda ocasionar. Sin embargo, esto no resta valor a la rica 
+experiencia que ofrece el Santiago Bernabéu en este apasionante viaje futbolístico. ¡Disfruta de tu visita y vive la pasión del Real Madrid!</p>

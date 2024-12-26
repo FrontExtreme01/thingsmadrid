@@ -1,0 +1,93 @@
+---
+lang: 'es'
+status: 1
+title: 'Tour guiado por Toledo por la mañana con visita a la Catedral'
+description: 'Únete a un tour de medio día a la hermosa ciudad de Toledo. Pasea por su casco antiguo y maravíllate con la fascinante mezcla de culturas.'
+featured: 'Nuevo'
+price: '56'
+stars: '5.0'
+reviews: '458 reseñas'
+image:
+    url: '/assets/covers/tours/toledo-morning-tour-from-madrid.webp'
+    alt: 'portada del Tour guiado por Toledo por la mañana con visita a la Catedral'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846154?partialView=1'
+category: 'Paseos'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846154'
+location: 'Madrid, España'
+duration: '5 horas'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Lunes a Sábado'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'toledo, tour guiado, catedral, mañana, medio día, casco antiguo, cultura, historia, paseo, españa'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/toledo-por-la-manana/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del tour</h2>
+
+<p class="text-lg text-justify my-5">Preséntese en nuestra oficina en el centro de Madrid con al menos 15 minutos de antelación a su visita.
+Salga de la ciudad en dirección a Toledo a bordo de uno de nuestros autocares con aire acondicionado.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Visita guiada por Toledo.</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrada a la Catedral de Toledo.</li>
+            <li><i class="at-check-circle text-green-500"></i> Guía local.</li>
+            <li><i class="at-check-circle text-green-500"></i> Visita bilingüe inglés y español.</li>
+            <li><i class="at-check-circle text-green-500"></i> Transporte en autocar con aire acondicionado.</li>
+            <li><i class="at-check-circle text-green-500"></i> Sistema de radioguía.</li>
+            <li><i class="at-check-circle text-green-500"></i> Tiempo libre en Toledo.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No incluido</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Recogida y regreso al hotel.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Tenga en cuenta que la excursión incluye varias visitas a pie, se recomienda calzado cómodo.</li>
+            <li><i class="at-info-circle text-sky-500"></i> La duración del recorrido incluye el viaje de ida y vuelta al destino.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Se ruega a los visitantes de la Catedral de Toledo que respeten las instrucciones del personal de Seguridad: No se permite fotografiar ni filmar dentro de las exposiciones.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel se reserva el derecho de modificar o cancelar la excursión. itinerario del tour sin previo aviso por razones de fuerza mayor.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Sumérgete en su historia y descubre una mezcla perfecta de culturas árabe, judía y cristiana. Pasea por su casco antiguo, declarado
+Ciudad Patrimonio de la Humanidad en 1986. Los más de 2000 años de existencia han otorgado a la ciudad una enorme importancia histórica. ¿Sabías que
+en su día fue la capital de España? Conoce el fantástico patrimonio de la ciudad y descubre cómo la convivencia de las tres culturas
+a lo largo de los siglos influyó en su estilo arquitectónico actual.</p>
+
+<p class="text-lg text-justify my-5"> Sigue a tu guía por las calles adoquinadas de la ciudad hasta llegar a la Catedral. Construida sobre los restos de una mezquita árabe,
+su construcción comenzó en el siglo XIII. Hoy, es una de las catedrales góticas más importantes de España. Admira la
+magnífica fachada y el enorme campanario antes de entrar. Visita su interior y la Sacristía, repleta de obras maestras del
+antiguo museo de arte que fue. Entre ellos, podrás ver quince cuadros de El Greco.</p>
+
+<p class="text-lg text-justify my-5"> Al finalizar la visita guiada, tendrás tiempo libre para disfrutar de la ciudad a tu propio ritmo antes de regresar a Madrid.</p>

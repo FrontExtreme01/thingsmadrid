@@ -1,0 +1,93 @@
+---
+lang: 'en'
+status: 1
+title: 'Toledo Guided Afternoon Tour'
+description: 'Dive into a fascinating mix of cultures in Toledo. Walk through the Old Town following your local guide and see the famous.'
+featured: 'New'
+price: '56'
+stars: '4.3'
+reviews: '682 reviews'
+image:
+    url: '/assets/covers/tours/toledo-afternoon-tour-from-madrid.webp'
+    alt: 'cover of the Toledo Guided Afternoon Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846156?partialView=1'
+category: 'Sightseeing'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846156'
+location: 'Madrid, Spain'
+duration: '5 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Tuesday, Thrusday, Friday & Sunday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: 'toledo, guided, afternoon, tour, madrid, spain, sightseeing, walking, old town, local guide, famous, cathedral, alcazar, jewish quarter, synagogue, church, mosque, mix of cultures'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/toledo-por-la-tarde/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this tour</h2>
+
+<p class="text-lg text-justify my-5"> Check in at our office in central Madrid at least 15 minutes in advance of your tour. 
+Leave the city towards Toledo aboard one of our air-conditioned coaches.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Entrance to Church of St. Tomé</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrance to Synagogue of Santa María la Blanca</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrance to Monastery of San Juan de los Reyes</li>
+            <li><i class="at-check-circle text-green-500"></i> Air conditioned motor coach</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual Official guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Individual radio-guided system</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pick up and drop off.</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please keep in mind that the excursion includes several visits on foot, Comfortable shoes are recommended</li>
+            <li><i class="at-info-circle text-sky-500"></i> The duration of the tour includes the round trip to the destination</li>
+            <li><i class="at-info-circle text-sky-500"></i> St Tomé Church visitors are kindly requested to respect the instructions of the Security staff: Photography and filming are not permitted inside the exhibitions.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Relax and enjoy the scenery on the way to the city. Follow your local guide on a walking tour of the 
+Historic City of Toledo, World Heritage City since 1986. Once Spain’s capital, it is a perfect mix of Arab, Jewish and Christian cultures. 
+Learn about its fantastic heritage and see how the coexistence of cultures through the centuries influenced its current architectural style.</p>
+
+<p class="text-lg text-justify my-5"> Stroll amid the courtyard cloisters and royal coats of arms at the San Juan de los Reyes Monastery. 
+Admire the building sponsored by Queen Elizabeth from Castilla to become a royal mausoleum, the most important construction built by the 
+Catholic Monarchs. Walk to the Synagogue of Sta. Maria la Blanca and learn about its fascinating history. Today, it is a fantastic museum 
+of Mudejar (Arabic) style that you will visit. Admire the world famous painting of by el Greco – The Burial of the Count of Orgaz – at the 
+Church of St. Tomé. Did you know el Greco himself lived in this beautiful city?</p>
+
+<p class="text-lg text-justify my-5"> The walking tour will continue until we reach the Cathedral, considered of the most important Gothic 
+Cathedrals in Spain. You will see it from the outside before the guided tour finishes. Then, you will have free time to explore Toledo on 
+your own before returning to Madrid.</p>

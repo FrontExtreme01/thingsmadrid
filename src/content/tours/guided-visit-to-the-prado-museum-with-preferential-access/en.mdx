@@ -1,0 +1,83 @@
+---
+lang: 'en'
+status: 1
+title: 'Guided Visit To The Prado Museum with Preferential Access'
+description: 'Visit one of the best art galleries in the world. Marvel at its collection and follow your guide on a visit of the most important artworks it holds.'
+featured: 'New'
+price: '39'
+stars: '5.0'
+reviews: '472 reviews'
+image:
+    url: '/assets/covers/tours/cover-prado-museum-skip-the-line-priority-access.webp'
+    alt: 'cover of the guided visit to the Prado Museum with preferential access'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846134?partialView=1'
+category: 'Museums, Exhibitions'
+calendar: 'https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=6b1de543-f859-42f0-8332-446d14d349f4'
+location: 'Madrid, Spain'
+duration: '1 Hour & 30 Minutes'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Every day'
+cancelation: '24h before activiy'
+meetingPoint: 'Calle de Felipe IV, 28014 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.489295770801!2d-3.69397103100746!3d40.4148472954269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d1901fc9d%3A0xf2b0d693f3749661!2sC.%20de%20Felipe%20IV%2C%2028014%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709577035122!5m2!1ses-419!2smx'
+keywords: 'prado museum, guided visit, preferential access, madrid, spain'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/visita-guiada-al-museo-del-prado/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del Tour</h2>
+<p class="text-lg text-justify my-5"> Meet your guide by the Madrid City Tour Information Center next to Prado Museum. 
+Remember to check in 15 minutes in advance of your activity. Enjoy a guided tour without queues with your skip the line ticket.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Admission to the Prado Museum.</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio guide system.</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual or monolingual guide, depending on chosen date and time.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Transportation</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please bear in mind this is a walking tour.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Please note photography and filming are not permitted inside the exhibitions.</li>
+            <li><i class="at-info-circle text-sky-500"></i> No shows will not be refunded.</li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Follow your guide through the Museum on a visit of the most important paintings. Admire great 
+European artworks by el Bosco, el Greco, Velazquez, Goya and Rubens. Discover the aim of the original building and why it changed to hold one 
+of the most important art galleries in the world. The current exhibition holds more than 1.000 paintings of four different centuries. 
+Given that for a first time visitor this can be overwhelming, let your guide show you around the site and learn about some of the most 
+important works and its backstories.</p>
+
+<p class="text-lg text-justify my-5 font-bold"> Did you know the royal collection represents the museum’s foundation?</p>
+
+<p class="text-lg text-justify my-5"> Once your guided tour finishes you can stay inside the museum for as long as you wish.</p>

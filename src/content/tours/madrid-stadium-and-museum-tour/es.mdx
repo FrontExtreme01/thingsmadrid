@@ -1,0 +1,89 @@
+---
+lang: 'es'
+status: 1
+title: 'Recorrido por el estadio y el museo del Atlético de Madrid'
+description: 'Embárcate en el mejor estadio del Atlético de Madrid y la aventura del tour del museo.¡Siente el legado!'
+featured: ''
+price: '30'
+stars: '4.5'
+reviews: '3,250 reseñas'
+image:
+    url: '/assets/covers/tours/atletico-madrid-stadium-and-museum-tour.webp'
+    alt: 'portada Atletico Madrid Stadium & Museum Tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/817122?partialView=1'
+category: 'Atracción turística'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/817122'
+location: 'Madrid, España'
+duration: '2 horas'
+offered: 'Inglés & Español'
+schedule: ''
+availability: 'Todos los días (excepto días de partido)'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'En la entrada del Museo Civitas Metropolitano. *Los días de partido la actividad no está disponible.'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12147.054625051129!2d-3.5994820000000005!3d40.436232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422fea8401b789%3A0x245d0d64dad50ec4!2sEstadio%20C%C3%ADvitas%20Metropolitano!5e0!3m2!1ses-419!2sus!4v1709569130863!5m2!1ses-419!2sus'
+keywords: 'atletico madrid, estadio, museo, tour, fútbol, deportes, madrid, españa'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/atletico-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "Abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Un viaje a través de la pasión rojiblanca</h2>
+<p class="text-lg text-justify my-5"> Sumérgete en el corazón palpitante del <strong>Estadio y Museo del Atlético de Madrid</strong> con nuestra
+<strong>Experiencia Exclusiva</strong>. Te espera una odisea por el icónico <strong>Estadio Cívitas Metropolitano</strong>, una de las
+maravillas modernas del mundo. Como <strong>verdadero aficionado al fútbol</strong>, esta experiencia es tu pasaporte para caminar por los 
+terrenos sagrados donde las leyendas escriben sus historias. </p>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Presentación del Territorio Atlético Místico</h2>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Tu viaje comienza: el reino del jugador</h3>
+
+<p class="text-lg text-justify my-5"> Adéntrate en el santuario interior de las <strong>estrellas del Atlético</strong>. Además, imagínate en el vestuario del primer equipo, respira la energía de la zona mixta y camina por el túnel por donde emergen los guerreros. Los banquillos te esperan y sentirás la intensidad que alimenta el día del partido.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Un vistazo a la realeza</h3>
+
+<p class="text-lg text-justify my-5"> Además, asciende a áreas exclusivas como el palco presidencial y el refugio de los medios, espacios reservados tanto para las luminarias como para las mentes tácticas. El recorrido revela secretos que alberga, creando el vínculo entre tú y la venerada historia del Atleti en el <strong>Recorrido por el Estadio y el Museo de Madrid</strong>.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800">Recorrido interactivo por el Estadio y el Museo de Madrid</h3>
+
+<p class="text-lg text-justify my-5"> Además, embárcate en una increíble exploración de nuestro legado en el <strong>Recorrido por el Estadio y el Museo Territorio Atleti</strong>.
+Las pantallas táctiles, la realidad virtual y las pantallas interactivas te llevan a la rica decoración de la saga rojiblanca, desde sus inicios en 1903 hasta la actualidad. Conviértete en el protagonista de cada capítulo y deja tu presencia grabada en la <strong>historia del Atleti</strong>.</p>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Imágenes y sonidos de la gloria</h3>
+
+<p class="text-lg text-justify my-5"> Observa cómo se desarrolla la historia a través de proyectores monumentales que ofrecen destellos de triunfos, desilusiones y el
+espíritu implacable que define el <strong>Estadio y Museo del Atlético de Madrid</strong>. Es <strong>más que un museo</strong>; es una
+odisea sensorial a través de la pasión y el orgullo encapsulados en cada paso de nuestro viaje.</p>
+
+<h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800">Lo que te espera</h3>
+
+<ul class="md:ml-10 text-lg text-justify space-y-4 mb-4">
+    <li><i class="at-check-circle text-green-500"></i> <strong>Sé testigo de las maravillas modernas:</strong> entra en uno de los estadios más grandes del mundo, un coliseo lleno de vida y pasión.</li>
+    <li><i class="at-check-circle text-green-500"></i> <strong>Captura el momento:</strong> párate en la famosa esquina y captura fotografías inspiradoras para grabar esta experiencia en tu memoria.</li>
+    <li><i class="at-check-circle text-green-500"></i> <strong>En los zapatos de los jugadores:</strong> recorre los vestuarios, el túnel de Héroes y banquillos, sintiendo el eco de leyendas pasadas. Extravagancia interactiva en el museo: sumérgete en el museo con realidad virtual, juegos interactivos y proyectores colosales que cuentan nuestra historia.</li>
+    <li><i class="at-check-circle text-green-500"></i> <strong>Artefactos de gloria:</strong> descubre una rara colección de artefactos, trofeos y camisetas históricas, cada una narrando un capítulo de nuestra ilustre historia.</li>
+</ul>
+
+<p class="text-lg text-justify my-5"><strong>Nota:</strong> <em>La hora que elijas marca el inicio del recorrido por el estadio. La experiencia Photo from the Corner se integra perfectamente
+con el recorrido por el estadio. Te recomendamos comenzar primero con el recorrido por el estadio y luego con la exploración del museo. El tiempo estimado para cada uno es de una hora.</em></p>
+
+<p class="text-lg text-center my-5">Experiencia Relacionada: 
+<a class="uppercase font-bold text-amber-500 hover:text-sky-800" href="/tours/real-madrid-stadium-tour/">Visita guiada al estadio y museo del Real Madrid</a></p>
+
+<p class="text-lg text-justify my-5">Por último, descubre la pasión, revive las victorias y sumérgete en la esencia del <strong>Atlético de Madrid</strong>.
+El <strong>Stadium And Museum Tour</strong> te invita a ser parte de un legado grabado en rojo y blanco. Tu viaje comienza aquí,
+donde cada paso resuena con los ecos de mil ovaciones. ¡Asegura tu lugar ahora y deja que el espíritu del Atleti te abrace!</p>

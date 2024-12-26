@@ -1,0 +1,86 @@
+---
+lang: 'es'
+status: 1
+title: 'Recorrido panorámico a pie y en autobús por lo más destacado de Madrid'
+description: 'Únase a nosotros en esta gira panorámica a través de la hermosa ciudad de Madrid.Vea algunos de los lugares más importantes de la ciudad.'
+featured: 'Nuevo'
+price: '31'
+stars: '5.0'
+reviews: '480 reseñas'
+image:
+    url: '/assets/covers/tours/madrid-walking-tour-panoramic-bus.webp'
+    alt: 'portada de Recorrido panorámico a pie y en autobús por lo más destacado de Madrid'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845895?partialView=1'
+category: 'Cultural y temáticos'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/845895'
+location: 'Madrid, España'
+duration: '3 horas'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Martes, Miércoles, Viernes y Sábado'
+cancelation: 24h antes de la actividad'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, España'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5108.731914717676!2d-3.716307571717333!3d40.41615699104534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709572112340!5m2!1ses-419!2smx'
+keywords: 'Recorrido panorámico, Madrid, España'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/panoramica-de-madrid/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "Abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del Tour</h2>
+
+<p class="text-lg text-justify my-5"> Preséntate en nuestra oficina y únete a nosotros en la primera parte del tour, un recorrido a pie de una hora 
+por las calles del centro histórico de Madrid. ¡Descubre lugares emblemáticos que no te puedes perder! Pasea por la Plaza de la Villa, la famosa 
+Plaza Mayor, la Puerta del Sol y la Plaza de Oriente. Después, sube a uno de nuestros autobuses con aire acondicionado para dar un paseo por la ciudad. 
+¡Recuerda traer tu cámara o smartphone! </p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Guía local.</li>
+            <li><i class="at-check-circle text-green-500"></i> Tour bilingüe (inglés/español).</li>
+            <li><i class="at-check-circle text-green-500"></i> Transporte en autobús con aire acondicionado.</li>
+            <li><i class="at-check-circle text-green-500"></i> Servicio de radioguía.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Comidas y bebidas, excepto las especificadas.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Servicio de recogida y regreso al hotel.</li>
+        </ul>
+    </div>
+    <div class="w-full  md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Accesible en silla de ruedas (solo sillas plegables). Debes estar acompañado por alguien que pueda ayudarte con todo lo que necesites.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Ten en cuenta que esta actividad incluye recorridos a pie. Usa ropa adecuada.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Este recorrido/actividad tendrá un máximo de 30 viajeros por guía.</li>
+        </ul>
+    </div>
+</div>
+
+<p class="text-lg text-justify my-5"> Sal de la Plaza de Oriente y dirígete a la magnífica Puerta de Toledo. ¿Sabías que su construcción data de la 
+época napoleónica? Conoce el puente más antiguo de Madrid y conduce junto al río Manzanares, desde donde tendrás unas vistas estupendas del Palacio 
+Real y la Catedral de la Almudena. Pasa por la calle Mayor, la Puerta del Sol y el barrio de Las Cortes de camino al Paseo del Prado. Admira la 
+arquitectura del Madrid antiguo al llegar al Barrio de Las Letras. </p>
+
+<p class="text-lg text-justify my-5"> Pasa por la Fuente de Cibeles, donde los aficionados del Real Madrid celebran las victorias del equipo. No te pierdas la Puerta de Alcalá, 
+la más famosa de las cinco puertas antiguas de entrada a la ciudad. Los últimos lugares de interés que verás en el recorrido son el estadio Santiago 
+Bernabéu a través del Paseo de la Castellana y la plaza de Colón.</p>

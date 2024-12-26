@@ -18,9 +18,9 @@ const url = translatePath(`/tours/${tour.tour_slug}/`);
                 <img width="650" height="450" loading="lazy" src={tour.data.image.url} class="h-[160px] w-full md:h-full object-cover rounded-md cursor-pointer duration-200 hover:scale-110" alt={tour.data.image.alt}>
             </a>
         </div>
-        <div class="p-[20px] rounded-md duration-300 text-justify text-sm min-h-[280px]">
-            <h2 class="font-bold text-lg md:text-[22px] mb-4 text-center min-h-14 text-sky-800">{tour.data.title}</h2>
-            <p class="min-h-[90px] md:h-auto line-clamp-3">{tour.data.description}</p>
+        <div class="p-[20px] rounded-md duration-300 text-justify text-sm">
+            <h2 class="line-clamp-3 md:line-clamp-2 font-bold text-lg md:text-[22px] mb-4 text-center min-h-14 text-sky-800">{tour.data.title}</h2>
+            <p class="min-h-[90px] md:min-h-[50px] md:h-auto line-clamp-4 md:line-clamp-3">{tour.data.description}</p>
             <div class="flex justify-around gap-5 mb-5 mt-5">
                 <div class="flex items-center gap-2">
                     <i class="at-dots-comment text-sky-800"></i> 
@@ -33,9 +33,9 @@ const url = translatePath(`/tours/${tour.tour_slug}/`);
             </div>
         </div>
         
-        <div class="flex justify-evenly gap-2 mb-5 lg:px-5">
-            <a aria-label="book now" href={tour.data.bokun} class="text-center bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline" target="_blank">{i18n.TOUR_PAGE.CARD.BUTTON_BOOK_NOW}</a>
-            <a aria-label="go to activity details" href={url} class="text-center bg-slate-200 hover:bg-slate-100 text-black font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline">{i18n.TOUR_PAGE.CARD.BUTTON_MORE}</a>
+        <div class="flex flex-wrap justify-evenly mb-5 lg:px-5 gap-y-3">
+            {tour.data.bokun != '' && <a aria-label="book now" href={tour.data.bokun} class="w-auto text-center bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline" target="_blank">{i18n.TOUR_PAGE.CARD.BUTTON_BOOK_NOW}</a>}
+            <a aria-label="go to activity details" href={url} class="w-auto text-center bg-slate-200 hover:bg-slate-100 text-black font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline">{i18n.TOUR_PAGE.CARD.BUTTON_MORE}</a>
         </div>
     </div>
 </article>

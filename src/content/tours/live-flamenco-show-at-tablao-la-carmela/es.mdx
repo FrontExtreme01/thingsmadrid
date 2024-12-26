@@ -1,0 +1,89 @@
+---
+lang: 'es'
+status: 1
+title: 'Show de flamenco en vivo en Tablao La Carmela'
+description: 'El tablao flamenco la Carmela, un lugar místico lleno de historia, es el mejor tablao flamenco para disfrutar de una experiencia única.'
+featured: 'Nuevo'
+price: '40'
+stars: '4.5'
+reviews: '249 reseñas'
+image:
+    url: '/assets/covers/tours/flamenco-show-tablao-la-carmela.webp'
+    alt: 'portada del Show de flamenco en vivo'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846579?partialView=1'
+category: 'Espectáculos, musicales, artes'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846579'
+location: 'Madrid, España'
+duration: '1 hora'
+offered: 'Inglés & Español'
+schedule: 'XXX'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Calle de la Victoria 4, 28012 Madrid, Spain'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6681994804344!2d-3.704326924122592!3d40.41620065567183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288092e26409%3A0x6ad68390d2a3e4e4!2sC.%20de%20la%20Victoria%2C%204%2C%20Centro%2C%2028012%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709650117373!5m2!1ses-419!2smx'
+keywords: 'shows flamenco, flamenco tablao, flamenco show madrid, flamenco madrid, flamenco la carmela'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/flamenco-en-tablao/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "abrir galería de imagenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerda del tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Espectáculo de flamenco</li>
+            <li><i class="at-check-circle text-green-500"></i> Bebida o cena “Menú Picoteo”, según opción seleccionada</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Comida, bebida u otros servicios no especificados</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Servicio de recogida y entrega</li>
+        </ul>
+    </div>
+    <div class="w-full  md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Información Adicional</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Se ruega presentarse 30 minutos antes de la hora de apertura. No se devolverá el importe a quien no se presente a la hora establecida.</li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<p class="text-lg text-justify my-5"> Disfruta del auténtico arte flamenco en el Tablao La Carmela. Situado muy cerca de la Puerta del Sol, 
+en las antiguas carboneras de la Taberna "La Carmela" <em>(antiguo Convento de la Victoria, derribado en 1836 tras la Guerra de la Independencia)</em>. </p>
+
+<p class="text-lg text-justify my-5"> Cada noche acuden al Tablao La Carmela los mejores bailaores, que te harán
+disfrutar de este arte en cada uno de sus espectáculos.</p>
+
+<p class="text-lg text-justify my-5"> Si eliges la opción de cena, te deleitarás con la mejor gastronomía tradicional. Con el
+"Menú Picoteo", podrás descubrir los sabores que reflejan el pasado y el presente del tablao mientras disfrutas del espectáculo.</p>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Menu Details</h2>
+<h3 class="text-3xl md:text-3xl font-bold mb-4 text-sky-800"> Picoteo Menu <em>(si has seleccionado la opción)</em></h3>
+
+<ul class="text-lg text-justify space-y-4 mb-4">
+    <li><i class="at-check-circle text-green-500"></i> Jamón de bellota 100% ibérico y queso manchego curado o surtido de jamón ibérico de bellota, lomo, salchichón y chorizo ​​<em>(a elegir entre las dos opciones)</em>.</li>
+    <li><i class="at-check-circle text-green-500"></i> <em>“Gildas del Norte”</em> - Aceituna, anchoa y piparra.</li>
+    <li><i class="at-check-circle text-green-500"></i> Croquetas de jamón y rabo de toro.</li>
+    <li><i class="at-check-circle text-green-500"></i> Cerveza, vino o refresco.</li>
+</ul>

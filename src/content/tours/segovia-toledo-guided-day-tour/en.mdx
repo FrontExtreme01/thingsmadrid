@@ -1,0 +1,107 @@
+---
+lang: 'en'
+status: 1
+title: 'Segovia & Toledo Guided Day Tour'
+description: 'Discover in one day two of the most important cities that you can visit from Madrid: Segovia and Toledo.'
+featured: 'New'
+price: '92'
+stars: '5.0'
+reviews: '211 reviews'
+image:
+    url: '/assets/covers/tours/toledo-and-segovia-tour-from-madrid.webp'
+    alt: 'cover of Segovia & Toledo Day tour'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/846573?partialView=1'
+category: 'Day trips and excursions'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/846573'
+location: 'Madrid, Spain'
+duration: '11 hours'
+offered: 'English & Spanish'
+schedule: 'XXX'
+availability: 'Wednesday & Saturday'
+cancelation: '24h before activity'
+meetingPoint: 'Calle de San Nicolás 15, 28013 Madrid, Spain'
+difficulty: 'Easy'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6486732638714!2d-3.7145593241225603!3d40.416633155645336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296fa427a647%3A0x4f757529951b6d8f!2sC.%20de%20San%20Nicol%C3%A1s%2C%2015%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1709584160025!5m2!1ses-419!2smx'
+keywords: ''
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/segovia-y-toledo/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `tour image ${frontmatter.title}`,
+    ariaLabelGallery: "Open gallery of images",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> About this Tour</h2>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Local guide</li>
+            <li><i class="at-check-circle text-green-500"></i> Tickets and guided visit in Segovia: Cathedral and Alcazar</li>
+            <li><i class="at-check-circle text-green-500"></i> Entrance fees and guided tour in Toledo: Church of Santo Tomé, Synagogue of Santa María la Blanca and Monastery of San Juan de los Reyes</li>
+            <li><i class="at-check-circle text-green-500"></i> Transportation on an air-conditioned coach</li>
+            <li><i class="at-check-circle text-green-500"></i> Radio - guide system</li>
+            <li><i class="at-check-circle text-green-500"></i> Bilingual tour (English/Spanish)</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Not Included</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Lunch, beverages or other services not specified above</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Hotel pickup and drop-off</li>
+        </ul>
+    </div>
+    <div class="w-full md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Additional Information</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-info-circle text-sky-500"></i> Please keep in mind this is a walking tour. Wear appropriate attire.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Julià Travel reserves the right to modify or cancel the tour itinerary without prior notice due to force majeure reasons.</li>
+            <li><i class="at-info-circle text-sky-500"></i> This tour/activity will have a maximum of 30 travelers per guide.</li>
+            <li><i class="at-info-circle text-sky-500"></i> Failure to show up at the established check-in time may entail losing the tour.</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+
+
+<p class="text-lg text-justify my-5"> In the morning, we will depart from the Julià Travel office, direction to Segovia. We will park very 
+close to the Aqueduct, which will be the first monument we will find in the city. Formed by 167 arches, it is considered one of the best 
+preserved in the world. </p>
+
+<p class="text-lg text-justify my-5"> We will have the opportunity to take a walking tour of the city, which will take us first of all 
+to the Plaza Mayor. There are several monuments in this place, such as the Town Hall of Segovia or the Juan Bravo Theatre, although the 
+main protagonist is the Cathedral. We will enter inside the Cathedral, where we will have a complete guided tour.</p>
+
+<p class="text-lg text-justify my-5"> At the end of the visit inside the Cathedral, we will have a short free time. The next stop will 
+be the Alcázar, one of the best preserved and most famous medieval castles in the world. It is even said to have inspired Walt Disney 
+for some of his films, such as Cinderella's Castle or the Queen's Castle in Snow White and the Seven Dwarfs.</p>
+
+<p class="text-lg text-justify my-5"> After visiting the Alcázar, it will be time to return to Madrid, where we will have approximately 
+one hour for lunch.</p>
+
+<p class="text-lg text-justify my-5"> In the afternoon, we will leave Madrid to go to the city of the three cultures, Toledo. We will walk 
+through the streets of a city that has been declared a World Heritage Site since 1986. During our visit we will have the opportunity to walk 
+through the cloisters of the courtyard and the royal coats of arms in the Monastery of San Juan de los Reyes. We will discover the Synagogue 
+of Santa María la Blanca which, although originally a synagogue, 211 years after its construction was expropriated and converted into a church.</p>
+
+<p class="text-lg text-justify my-5"> We can admire the world-famous painting by El Greco, The Burial of the Count of Orgaz, which can be 
+found in the Church of Santo Tomé. Did you know that El Greco himself lived in this wonderful city?</p>
+
+<p class="text-lg text-justify my-5"> The walking tour will continue until we reach the Cathedral, considered of the most important Gothic 
+Cathedrals in Spain. You will see it from the outside before the guided tour finishes. Then, you will have free time to explore Toledo on 
+your own before returning to Madrid.</p>
+
+<p class="text-lg text-justify my-5"> After visiting these three monuments, we will have a short free time in the city, which you can use 
+for shopping or having a coffee. After this time, it will be time to return to Madrid.</p>

@@ -93,13 +93,13 @@ export default function FormReservation({ dataForm }: any) {
                     <img src={dataForm.image.url} alt={dataForm.image.alt} className="w-full h-24 md:h-32 md:w-full rounded-2xl object-cover" loading="lazy" />
                 </div>
                 <div className="w-8/12 pl-2">
-                    <p className="font-bold text-base md:text-lg">{dataForm.titleCard}</p>
+                    <p className="font-bold text-base">{dataForm.titleCard}</p>
                     <p className="text-sm text-slate-500 mt-1">
                         <i className="at-star-decor text-amber-500 font-bold"></i> <b>{dataForm.stars}</b> ({dataForm.reviews})
                     </p>
                     <div className="flex flex-wrap space-x-4 items-center mt-2">
-                        <p className="text-sm md:text-base"> Adultos: <span className="text-slate-500 font-bold">{counterAdults}</span></p>
-                        <p className="text-sm md:text-base"> Niños: <span className="text-slate-500 font-bold">{counterChildren}</span></p>
+                        <p className="text-sm md:text-base"> {dataForm.i18n.LABELS.ADULTS}: <span className="text-slate-500 font-bold">{counterAdults}</span></p>
+                        <p className="text-sm md:text-base"> {dataForm.i18n.LABELS.CHILDRENS}: <span className="text-slate-500 font-bold">{counterChildren}</span></p>
                     </div>
                     {priceTotal > 0 && (
                         <p className="text-lg font-bold mt-2">Total: <span className="text-amber-500">{priceTotal} €</span></p>

@@ -1,0 +1,135 @@
+---
+lang: 'es'
+status: 1
+title: 'Recorrido turístico en autobús con paradas libres por Madrid'
+description: 'Visite Madrid a su propio ritmo a bordo de uno de nuestros autobuses rojos de dos pisos.Hop-On y Hop-Off como muchas veces.'
+featured: 'Nuevo'
+price: '26'
+stars: '4.4'
+reviews: '120 reseñas'
+image:
+    url: '/assets/covers/tours/madrid-city-tour-cover-hop-on-hop-off.webp'
+    alt: 'portada del tour Recorrido turístico en autobús con paradas libres por Madrid'
+bokun: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience/845897?partialView=1'
+category: 'Visita turística, recorrido en autobús'
+calendar: 'https://widgets.bokun.io/online-sales/6b1de543-f859-42f0-8332-446d14d349f4/experience-calendar/845897'
+location: 'Madrid, España'
+duration: '1 día'
+offered: 'Inglés & Español'
+schedule: '09:00 a 22:00 (Mar-Oct) y 10:00 a 18:00 (Nov-Feb)'
+availability: 'Todos los días'
+cancelation: '24h antes de la actividad'
+meetingPoint: 'Sube y baja en cualquiera de las 37 paradas disponibles'
+difficulty: 'Fácil'
+mapFrame: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.7772180513766!2d-3.6947020241227175!3d40.413785855818624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses-419!2smx!4v1709575238178!5m2!1ses-419!2smx'
+keywords: 'madrid, hop on hop off, autobús turístico, city tour, madrid city tour, madrid sightseeing, madrid turismo, madrid turístico, madrid autobús turístico, madrid paradas libres'
+testimonials: []
+---
+
+import SliderGallery from '@/components/detail-content/SliderGallery';
+
+export const images = import.meta.glob('@/img/galleries/tours/madrid-city-tour-hop/*.webp', { eager: true });
+export const arrayImages = Object.values(images).map((img) => img.default);
+
+export const accessibility = {
+    altImg: `imagen del tour ${frontmatter.title}`,
+    ariaLabelGallery: "Abrir galería de imágenes",
+};
+
+<SliderGallery 
+    client:load 
+    images={arrayImages} 
+    accessibility={accessibility}
+/>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca del Tour</h2>
+<p class="text-lg text-justify my-5"> Explora la ciudad con comodidad a bordo de uno de nuestros autobuses de dos pisos. 
+Descubre Madrid al detalle con un único billete. Sube y baja de nuestros autobuses tantas veces como quieras y disfruta 
+de la ciudad a tu propio ritmo</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-check-circle text-green-500"></i> Todas las rutas y paradas con un único billete.</li>
+            <li><i class="at-check-circle text-green-500"></i> Sistema de audio digital multilingüe.</li>
+            <li><i class="at-check-circle text-green-500"></i> Autobuses de dos pisos descubiertos con aire acondicionado y techo corredizo.</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <h4 class="text-2xl font-bold mb-4 text-sky-800">No Incluye</h4>
+        <ul class="text-lg space-y-4">
+            <li><i class="at-xmark-circle text-red-500"></i> Servicio de recogida y regreso al hotel.</li>
+            <li><i class="at-xmark-circle text-red-500"></i> Almuerzo, bebidas u otros servicios no especificados anteriormente.</li>
+        </ul>
+    </div>
+    <p class="w-full text-lg text-justify my-5 font-bold">*La frecuencia del servicio varía según la temporada.*</p>
+</div>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-red-700"> Acerca de las Rutas</h2>
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Ruta nº 1 (Azul): Madrid Histórico</h3>
+
+<p class="text-lg text-justify my-5"> <strong>La ruta 1 <em>(azul)</em></strong> te llevará a descubrir el Madrid Histórico. 
+Este itinerario incluye un completo circuito histórico, artístico y monumental en el que visitarás varios puntos de interés de la ciudad. 
+Recorre el precioso Paseo del Prado o admira magníficos edificios legado de la época de los Austrias. Acércate al Triángulo del Arte y 
+aprovecha para explorar a fondo alguno de sus museos. Desde el Palacio Real hasta el Templo de Debod, siéntate y disfruta de las vistas 
+sobre la ciudad.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Museo del Prado</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Barrio de Salamanca</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Colón</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Cibeles</li>
+            <li><i class="at-location text-sky-500"></i> Gran Via</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de España</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Templo de Debod</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de San Vicente</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Toledo</li>
+            <li><i class="at-location text-sky-500"></i> Gran Vía de San Francisco</li>
+            <li><i class="at-location text-sky-500"></i> Colegiata/Mayor</li>
+            <li><i class="at-location text-sky-500"></i> Atocha</li>
+            <li><i class="at-location text-sky-500"></i> Jardín Botánico and Museo del Prado</li>
+        </ul>
+    </div>
+</div>
+
+<h3 class="text-2xl md:text-3xl font-bold text-sky-800"> Ruta nº 2 (Verde): Madrid Moderno</h3>
+
+<p class="text-lg text-justify my-5"> <strong>La ruta 2 <em>(verde)</em></strong> recorre el Madrid Moderno. Descubre la ciudad más allá 
+de los monumentos históricos y de la realeza. Desde Atocha hasta Nuevos Ministerios y desde la simbólica Puerta de Alcalá hasta la Puerta 
+del Sol. Admira las obras contemporáneas más impresionantes de la capital española. El itinerario te llevará cerca de las impresionantes
+torres KIO, el Museo de Arte Público y el estadio del Real Madrid. Descubre la vida, el arte y las nuevas tradiciones de los habitantes 
+de la ciudad con este itinerario.</p>
+
+<div class="flex flex-wrap gap-y-5 my-5">
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> Plaza Neptuno</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Cibeles</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de Colón</li>
+            <li><i class="at-location text-sky-500"></i> Museo Esculturas</li>
+            <li><i class="at-location text-sky-500"></i> Museo de Ciencias Naturales</li>
+            <li><i class="at-location text-sky-500"></i> Nuevos Ministerios</li>
+            <li><i class="at-location text-sky-500"></i> Santiago Bernabéu</li>
+            <li><i class="at-location text-sky-500"></i> Plaza de las Cortes and Plaza de Neptuno</li>
+        </ul>
+    </div>
+    <div class="w-full md:w-1/2 md:pr-5">
+        <ul class="text-lg space-y-4">
+            <li><i class="at-location text-sky-500"></i> C.S.I Científicas</li>
+            <li><i class="at-location text-sky-500"></i> Museo Lázaro Galdiano</li>
+            <li><i class="at-location text-sky-500"></i> Serrano</li>
+            <li><i class="at-location text-sky-500"></i> Museo Arqueológico</li>
+            <li><i class="at-location text-sky-500"></i> Puerta de Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Alcalá</li>
+            <li><i class="at-location text-sky-500"></i> Puerta del Sol</li>
+        </ul>
+    </div>
+</div>
