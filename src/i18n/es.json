@@ -152,7 +152,8 @@
         "TITLE_FORM": "Envíenos un mensaje",
         "DESCRIPTION": "¡Nos encantaría saber de ti! Si tienes alguna pregunta, consulta o comentario, no dudes en ponerte en contacto con nosotros. Nuestro equipo en ThingsToDoInMadrid.com está aquí para ayudarte y asegurarte de que tengas la mejor experiencia posible.",
         "FORM": {
-            "BUTTON": "Enviar mensaje",
+            "BUTTON_SEND": "Enviar mensaje",
+            "BUTTON_PROCESS": "Enviando...",
             "LABELS": {
                 "NAME": "Nombre",
                 "PHONE": "Teléfono",

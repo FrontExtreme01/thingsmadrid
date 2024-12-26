@@ -166,7 +166,7 @@ export default function FormReservation({ dataForm }: any) {
                     <input required type="email" id="email" name="email" placeholder={dataForm.i18n.PLACEHOLDERS.EMAIL} className="mt-2 w-full bg-slate-100 rounded-2xl p-3 focus:outline-none focus:shadow-outline focus:border-slate-300 focus:ring-1 focus:ring-slate-300" />
                 </div>
                 <div className="px-2 w-full md:w-10/12 mt-5 mb-6 mx-auto">
-                    <button disabled={isSubmitting} type="submit" className="w-full bg-amber-500 text-white font-bold text-lg px-5 py-4 rounded-2xl hover:bg-amber-600 focus:outline-none focus:shadow-outline focus:border-amber-300 focus:ring-1 focus:ring-amber-300">
+                    <button disabled={isSubmitting} type="submit" className="w-full bg-amber-500 text-white font-bold text-lg px-5 py-4 rounded-2xl hover:bg-amber-600 focus:outline-none focus:shadow-outline focus:border-amber-300 focus:ring-1 focus:ring-amber-300 disabled:bg-slate-200 disabled:text-slate-500 transition">
                         {isSubmitting ? dataForm.i18n.BUTTON_PROCESS : dataForm.i18n.BUTTON_SEND}
                     </button>
                 </div>

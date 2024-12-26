@@ -152,7 +152,8 @@
         "TITLE_FORM": "Send Us a Message",
         "DESCRIPTION": "We would love to hear from you! If you have any questions, inquiries, or feedback, please don’t hesitate to get in touch with us. Our team at ThingsToDoInMadrid.com is here to assist you and ensure you have the best possible experience.",
         "FORM": {
-            "BUTTON": "Send Message",
+            "BUTTON_SEND": "Send Message",
+            "BUTTON_PROCESS": "Sending Message",
             "LABELS": {
                 "NAME": "Name",
                 "PHONE": "Phone",

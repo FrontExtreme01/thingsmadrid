@@ -31,15 +31,17 @@ const arrayTestimonials = [
     />
 
     <section class="container mx-auto text-justify">
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_1}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_2}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_3}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_4}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_5}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_6}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_7}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_8}</p>
-        <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_9}</p>
+        <div class="mx-10">
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_1}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_2}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_3}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_4}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_5}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_6}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_7}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_8}</p>
+            <p class="text-lg">{i18n.ABOUT_PAGE.DESCRIPTIONS.TEXT_9}</p>
+        </div>
     </section>
     
 	<Testimonials client:visible testimonials={arrayTestimonials} title={i18n.HOME_PAGE.TESTIMONIALS.TITLE} />
