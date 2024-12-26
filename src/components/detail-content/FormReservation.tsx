@@ -124,6 +124,9 @@ export default function FormReservation({ dataForm }: any) {
                                 +
                             </button>
                         </div>
+                        <p className="mt-5 text-sm">
+                            <i className="at-info-circle"></i> {dataForm.i18n.TEXT_AGE} 13
+                        </p>
                     </div>
                     <div className="w-1/2 px-2">
                         <label className="font-bold text-lg text-slate-900" htmlFor="children">{dataForm.i18n.LABELS.CHILDRENS}</label>
@@ -140,6 +143,9 @@ export default function FormReservation({ dataForm }: any) {
                                 +
                             </button>
                         </div>
+                        <p className="mt-5 text-sm">
+                            <i className="at-info-circle"></i> {dataForm.i18n.TEXT_AGE} 4 - 12
+                        </p>
                     </div>
                 </div>
                 <div className="px-2 w-full mb-6">

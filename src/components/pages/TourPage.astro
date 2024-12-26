@@ -1,9 +1,8 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Card from "../tours/Card.astro";
-import Partners from "../home/Partners";
 import Hero from "../Hero.astro";
+import Partners from "../home/Partners";
 
 import { getI18N } from "@/i18n";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -32,7 +31,7 @@ const seoMetaDatos = {
         <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
             {i18n.TOUR_PAGE.DESCRIPTION}
         </p>
-        <div class="flex flex-wrap md:-mx-4">
+        <div class="flex flex-wrap">
             {allTours.map((tour) => <Card tour={tour} lang={lang} />)}
         </div>
     </section>

@@ -306,6 +306,8 @@
             "BUTTON_MODAL": "Book now",
             "BUTTON_SEND": "Make reservation",
             "BUTTON_PROCESS": "Processing...",
+            "AGE_ADULT": "Over 13 years old",
+            "AGE_CHILDREN": "From 4 years old",
             "LABELS": {
                 "FULLNAME": "Full name",
                 "PHONE": "Phone",

@@ -13,9 +13,6 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 
 const allRestaurants = await getAllRest(lang);
-const filteredRestaurants = allRestaurants.filter(
-    (rest) => rest.data.lang === lang,
-);
 
 const seoMetaDatos = {
     title: i18n.SEO.RESTAURANT_PAGE.TITLE,
@@ -34,7 +31,7 @@ const seoMetaDatos = {
         <p class="text-center my-14 text-base md:text-xl mx-7 lg:mx-40">
             {i18n.RESTAURANT_PAGE.DESCRIPTION}
         </p>
-        <div class="flex flex-wrap md:-mx-4">
+        <div class="flex flex-wrap">
             {allRestaurants.map((rest) => <Card restaurant={rest} lang={lang} />)}
         </div>
     </section>

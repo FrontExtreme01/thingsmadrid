@@ -306,6 +306,8 @@
             "BUTTON_MODAL": "Reservar ahora",
             "BUTTON_SEND": "Realizar reserva",
             "BUTTON_PROCESS": "Procesando...",
+            "AGE_ADULT": "Mayores de 13 años",
+            "AGE_CHILDREN": "A partir de 4 años",
             "LABELS": {
                 "FULLNAME": "Nombre Completo",
                 "PHONE": "Teléfono",
