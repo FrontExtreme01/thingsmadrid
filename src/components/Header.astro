@@ -15,15 +15,22 @@ const translatePath = useTranslatedPath(lang);
 
 const navigation = [
   {
+    icon: "at-location-glasses",
     title: t("nav.tours"),
     link: translatePath('/tours/'),
   },
   {
+    icon:  "at-restaurant",
     title: t("nav.rest"),
     link: translatePath('/restaurants/'),
   },
-  { title: "blog", link: "https://thingstodoinmadrid.com/blog/" },
   {
+    icon: "at-open-book", 
+    title: "blog", 
+    link: "https://thingstodoinmadrid.com/blog/"
+  },
+  {
+    icon: "at-fast-envelope",
     title: t("nav.contact"),
     link: translatePath('/contact/'),
   },
@@ -96,7 +103,7 @@ const navigation = [
                 href={nav.link}
                 class="text-lg hover:text-red-700 uppercase font-extrabold leading-6 text-gray-600"
               >
-                {nav.title}
+                <i class={nav.icon}></i> {nav.title}
               </a>
             ))
           }
